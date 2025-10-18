@@ -37,7 +37,8 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground relative">
+    <>
+      <div>
       <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
         <div className="flex flex-col gap-4">
           {["intro", "work", "thoughts", "connect"].map((section) => (
@@ -323,7 +324,7 @@ export default function Home() {
               <div className="text-sm text-muted-foreground font-mono">ELSEWHERE</div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {
+                {[
                   { name: "GitHub", handle: "@NabilThange", url: "https://github.com/NabilThange" },
                   { name: "LinkedIn", handle: "/in/nabil-thange", url: "https://www.linkedin.com/in/nabil-thange/" },
                   { name: "X (Twitter)", handle: "@THEONLYNABIL", url: "https://x.com/THEONLYNABIL" },
@@ -409,5 +410,6 @@ export default function Home() {
 
       <div className="fixed bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none"></div>
     </div>
+    </>
   )
 }
