@@ -58,10 +58,6 @@ export default function RootLayout({
         {/* Theme color for browser UI */}
         <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
         <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-        
-        {/* Verification tags (TODO: Add actual verification codes when available) */}
-        {/* <meta name="google-site-verification" content="YOUR_CODE" /> */}
-        {/* <meta name="msvalidate.01" content="YOUR_CODE" /> */}
       </head>
       <body className="font-sans antialiased">{children}</body>
     </html>

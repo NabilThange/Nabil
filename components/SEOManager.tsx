@@ -14,6 +14,10 @@ export const siteConfig = {
   url: 'https://nabil-thange.vercel.app',
   ogImage: '/og-image.png', // TODO: Add actual OG image
   twitterHandle: '@THEONLYNABIL',
+  // Google Search Console verification code
+  // To get your code: https://search.google.com/search-console
+  // Add your property, then copy ONLY the content value from the meta tag
+  googleVerification: 'ECVhL-uOKKAR4INSHOcwPxBFg9lULvqSJD2qwx4viTQ',
   author: {
     name: 'Nabil Thange',
     email: 'thangenabil@gmail.com',
@@ -115,6 +119,12 @@ export function generateDefaultMetadata(overrides?: Partial<Metadata>): Metadata
       apple: '/apple-touch-icon.png',
     },
     manifest: '/site.webmanifest',
+    // Google Search Console verification
+    verification: {
+      google: siteConfig.googleVerification !== 'ECVhL-uOKKAR4INSHOcwPxBFg9lULvqSJD2qwx4viTQ' 
+        ? siteConfig.googleVerification 
+        : undefined,
+    },
     ...overrides,
   };
 }
