@@ -1,55 +1,69 @@
-"use client"
+import type { Metadata } from "next"
+import GalleryContent from "@/components/GalleryContent"
+import { siteConfig } from "@/components/SEOManager"
 
-import InfiniteGallery from "@/components/InfiniteGallery"
-import { ChevronLeft } from "lucide-react"
+// SEO Metadata for Gallery
+export const metadata: Metadata = {
+  title: "Gallery — Projects by Nabil Thange",
+  description:
+    "Explore selected work by Nabil Thange — interactive, AI-powered, and web experiences. Built with Next.js, React, and Three.js.",
+  keywords: [
+    "Nabil Thange Gallery",
+    "Web Projects",
+    "Three.js",
+    "Next.js Portfolio",
+    "Mumbai Developer",
+  ],
+  openGraph: {
+    title: "Gallery — Projects by Nabil Thange",
+    description:
+      "A curated selection of interactive projects and visual explorations.",
+    url: `${siteConfig.url}/gallery`,
+    siteName: siteConfig.name,
+    locale: "en_IN",
+    type: "website",
+    images: [
+      { url: "/og-image.png", width: 1200, height: 630, alt: "Nabil Thange — Gallery" },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gallery — Projects by Nabil Thange",
+    description: "Interactive and AI-powered projects by Nabil Thange.",
+    creator: "@THEONLYNABIL",
+    images: ["/og-image.png"],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/gallery`,
+  },
+}
 
-export default function Home() {
-  const handleBack = () => {
-    window.history.back()
+export default function GalleryPage() {
+  // ImageGallery structured data
+  const imageGallerySchema = {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    name: "Portfolio Gallery — Nabil Thange",
+    url: `${siteConfig.url}/gallery`,
+    locationCreated: {
+      "@type": "Place",
+      name: "Mumbai, India",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Mumbai",
+        addressRegion: "Maharashtra",
+        addressCountry: "India",
+      },
+    },
   }
 
-  const sampleImages = [
-    { src: "/1.webp", alt: "Gitskinz", link: "https://gitskinz.netlify.app/" },
-    { src: "/2.webp", alt: "Shopwiz", link: "https://shopwz.vercel.app/" },
-    { src: "/3.webp", alt: "Techwiser", link: "https://techwiser.vercel.app/" },
-    { src: "/4.webp", alt: "HungryzHub", link: "https://hungryzhub.vercel.app/" },
-    { src: "/5.webp", alt: "Studenza", link: "https://clgsphere.vercel.app/" },
-    { src: "/6.webp", alt: "Nutrisnap", link: "https://nutrisnapp-ai.vercel.app/" },
-    { src: "/7.webp", alt: "SnippetSphere", link: "https://snippetsphere.vercel.app/" },
-    { src: "/8.webp", alt: "Techwiser CMS", link: "https://techwisercms.vercel.app/" },
-    { src: "/9.webp", alt: "Musty MU", link: "https://musty-mu.vercel.app/" },
-    { src: "/10.webp", alt: "Nbail", link: "https://nbail-v4.vercel.app/" },
-  
-  ]
-
   return (
-    <main className="min-h-screen bg-black">
-      <button
-        onClick={handleBack}
-        className="fixed top-6 left-6 z-50 p-2 rounded-lg hover:bg-white/10 transition-colors duration-200 text-white/60 hover:text-white/90"
-        aria-label="Go back"
-      >
-        <ChevronLeft size={20} />
-      </button>
-
-      <InfiniteGallery
-        images={sampleImages}
-        speed={1.2}
-        zSpacing={3}
-        visibleCount={12}
-        falloff={{ near: 0.8, far: 14 }}
-        className="h-screen w-full rounded-lg overflow-hidden"
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(imageGallerySchema).replace(/</g, "\\u003c") }}
       />
-      <div className="h-screen inset-0 pointer-events-none fixed flex items-center justify-center text-center px-3 mix-blend-exclusion text-white">
-        <h1 className="font-serif text-4xl md:text-7xl tracking-tight">
-          <span className="italic">I create;</span> therefore I am
-        </h1>
-      </div>
-
-      <div className="text-center fixed bottom-10 left-0 right-0 font-mono uppercase text-[11px] font-semibold">
-        <p>Use mouse wheel, arrow keys, or touch to navigate</p>
-        <p className=" opacity-60">Click to uncover the journey</p>
-      </div>
-    </main>
+      <GalleryContent />
+    </>
   )
 }

@@ -10,9 +10,9 @@ import { Metadata } from 'next';
 export const siteConfig = {
   name: 'Nabil Thange',
   title: 'Nabil Thange - Full-Stack Developer & Creative Technologist',
-  description: 'Full-stack developer specializing in Next.js, React, and modern web technologies. Creating innovative digital experiences with expertise in AI integration, responsive design, and performance optimization.',
+  description: 'Full-stack developer creating innovative digital experiences with Next.js, React, and AI integration.',
   url: 'https://nabil-thange.vercel.app',
-  ogImage: '/og-image.png', // TODO: Add actual OG image
+  ogImage: '/og-image.png',
   twitterHandle: '@THEONLYNABIL',
   // Google Search Console verification code
   // To get your code: https://search.google.com/search-console
@@ -95,6 +95,7 @@ export function generateDefaultMetadata(overrides?: Partial<Metadata>): Metadata
     },
     twitter: {
       card: 'summary_large_image',
+      site: siteConfig.twitterHandle,
       title: siteConfig.title,
       description: siteConfig.description,
       creator: siteConfig.twitterHandle,

@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { getAllBlogPosts } from '@/lib/blog-posts'
 
 /**
  * Dynamic Sitemap Generation
@@ -27,22 +28,39 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 1.0, // Homepage - highest priority
     },
     {
+      url: `${baseUrl}/about`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.9, // About page - high priority for SEO/GEO
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8, // Contact page - important for conversions
+    },
+    {
       url: `${baseUrl}/gallery`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.9, // Portfolio showcase
     },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.8, // Blog hub page
+    },
   ]
   
-  // Future: Add dynamic routes here
-  // Example for blog posts:
-  // const posts = await getAllPosts()
-  // const blogPages: MetadataRoute.Sitemap = posts.map((post) => ({
-  //   url: `${baseUrl}/blog/${post.slug}`,
-  //   lastModified: new Date(post.updatedAt),
-  //   changeFrequency: 'monthly',
-  //   priority: 0.7,
-  // }))
+  // Dynamic blog post routes
+  const blogPosts = getAllBlogPosts()
+  const blogPostPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }))
   
   // Example for projects:
   // const projects = await getAllProjects()
@@ -55,7 +73,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   
   return [
     ...staticPages,
-    // ...blogPages, // Uncomment when blog is added
+    ...blogPostPages,
     // ...projectPages, // Uncomment when individual project pages are added
   ]
 }

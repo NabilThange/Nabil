@@ -2,6 +2,8 @@
 
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
+import AnimatedButton from "@/components/AnimatedButton"
+import { blogPosts } from "@/lib/blog-posts"
 
 export default function Home() {
   const [isDark, setIsDark] = useState(true)
@@ -84,7 +86,12 @@ export default function Home() {
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                     Available for work
                   </div>
-                  <div>Mumbai, India</div>
+                  <div className="flex items-center gap-3">
+                    <div>Mumbai, India</div>
+                    <div className="scale-75 origin-left">
+                      <AnimatedButton href="/about" text={["More"]} />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -122,25 +129,22 @@ export default function Home() {
           className="min-h-screen py-20 sm:py-32 opacity-0"
         >
           <div className="space-y-12 sm:space-y-16">
-            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+            <div className="flex flex-row items-center justify-between gap-4">
               <h2 className="text-3xl sm:text-4xl font-light">{"My Work"} </h2>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
-                <div className="text-sm text-muted-foreground font-mono">2025</div>
-                <Link
-                  href="/gallery"
-                  className="group px-4 py-2 text-sm border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm text-foreground hover:text-muted-foreground inline-flex items-center gap-2 w-fit"
+              <Link
+                href="/gallery"
+                className="group relative px-5 py-2.5 text-sm font-medium border-2 border-foreground rounded-lg bg-foreground text-background hover:bg-transparent hover:text-foreground transition-all duration-300 inline-flex items-center gap-2 whitespace-nowrap"
+              >
+                <span className="relative z-10">View All Projects</span>
+                <svg
+                  className="w-4 h-4 relative z-10 transform group-hover:translate-x-1 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
                 >
-                  View All Projects
-                  <svg
-                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </div>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
             </div>
 
             <div className="space-y-8 sm:space-y-12">
@@ -221,70 +225,42 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-light">Recent Thoughts</h2>
 
             <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
-              {[
-                {
-                  title: "Building AI That Doesn't Suck",
-                  excerpt:
-                    "Most AI applications feel like tech demos. I explore what it takes to build AI-powered tools that people actually want to use daily.",
-                  date: "Dec 2024",
-                  readTime: "8 min",
-                },
-                {
-                  title: "The Commerce Kid's Guide to Tech",
-                  excerpt:
-                    "My unconventional journey from balance sheets to code. Why starting late in tech is actually an advantage.",
-                  date: "Nov 2024",
-                  readTime: "6 min",
-                },
-                {
-                  title: "Hackathons: Speed-Running Product Development",
-                  excerpt:
-                    "What I learned from winning multiple hackathons. A playbook for learning to build fast, validate quickly, and iterate ruthlessly.",
-                  date: "Oct 2024",
-                  readTime: "10 min",
-                },
-                {
-                  title: "Why I Built Gitskinz",
-                  excerpt:
-                    "The story behind creating a GitHub profile generator used by developers worldwide. Why the best way to learn is to solve your own problems publicly.",
-                  date: "Sep 2024",
-                  readTime: "7 min",
-                },
-              ].map((post, index) => (
-                <article
-                  key={index}
-                  className="group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg cursor-pointer"
-                >
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between text-xs text-muted-foreground font-mono">
-                      <span>{post.date}</span>
-                      <span>{post.readTime}</span>
+              {blogPosts.map((post) => (
+                <Link key={post.slug} href={`/blog/${post.slug}`}>
+                  <article
+                    className="group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg cursor-pointer"
+                  >
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between text-xs text-muted-foreground font-mono">
+                        <span>{post.date}</span>
+                        <span>{post.readTime}</span>
+                      </div>
+
+                      <h3 className="text-lg sm:text-xl font-medium group-hover:text-muted-foreground transition-colors duration-300">
+                        {post.title}
+                      </h3>
+
+                      <p className="text-muted-foreground leading-relaxed">{post.excerpt}</p>
+
+                      <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                        <span>Read more</span>
+                        <svg
+                          className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </div>
                     </div>
-
-                    <h3 className="text-lg sm:text-xl font-medium group-hover:text-muted-foreground transition-colors duration-300">
-                      {post.title}
-                    </h3>
-
-                    <p className="text-muted-foreground leading-relaxed">{post.excerpt}</p>
-
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                      <span>Read more</span>
-                      <svg
-                        className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </article>
+                  </article>
+                </Link>
               ))}
             </div>
           </div>
