@@ -25,6 +25,9 @@ export default function robots(): MetadataRoute.Robots {
           '/llms.txt',
           '/humans.txt',
           '/about.txt',
+          '/faq.json',
+          '/breadcrumbs.json',
+          '/feed.xml',
         ],
         disallow: [
           '/api/',
@@ -121,7 +124,10 @@ export default function robots(): MetadataRoute.Robots {
       //   disallow: '/',
       // },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: [
+      `${baseUrl}/sitemap.xml`,
+      `${baseUrl}/feed.xml`,
+    ],
     host: baseUrl,
   }
 }

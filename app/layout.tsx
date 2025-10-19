@@ -23,7 +23,7 @@ export default function RootLayout({
   const personSchema = createPersonSchema({
     name: siteConfig.author.name,
     url: siteConfig.url,
-    image: `${siteConfig.url}/profile.jpg`, // TODO: Add actual profile image
+    image: `${siteConfig.url}/profile.png`, // Profile image
     jobTitle: "Full-Stack Developer & Creative Technologist",
     description: siteConfig.description,
     socialProfiles: getSocialProfileURLs(),
@@ -47,6 +47,14 @@ export default function RootLayout({
       <head>
         {/* Structured Data for SEO/AEO/GEO */}
         <StructuredData data={knowledgeGraph} />
+        
+        {/* RSS Feed for AI discovery and content syndication */}
+        <link 
+          rel="alternate" 
+          type="application/rss+xml" 
+          title="Nabil Thange Blog RSS Feed" 
+          href="https://nabil-thange.vercel.app/feed.xml" 
+        />
         
         {/* Preconnect to critical domains for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

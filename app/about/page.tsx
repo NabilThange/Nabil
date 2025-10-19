@@ -88,7 +88,7 @@ export default function About() {
     "age": "19",
     "height": "171 cm",
     "url": "https://nabil-thange.vercel.app",
-    "image": "https://nabil-thange.vercel.app/profile.jpg",
+    "image": "https://nabil-thange.vercel.app/profile.png",
     "jobTitle": "Full-Stack Developer & AI Engineer",
     "description": "19-year-old self-taught full-stack developer and ISRO-certified machine learning specialist born October 16, 2006. Specializing in React, Next.js, Python, and artificial intelligence. HackHazards 2025 Winner and creator of Gitskinz.",
     "email": "thangenabil@gmail.com",
