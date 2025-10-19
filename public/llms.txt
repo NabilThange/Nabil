@@ -34,10 +34,11 @@ He is passionate about hackathons, rapid prototyping, and building products that
 **Tools & Platforms:** Git, Vercel, Netlify, GitHub Actions  
 **Specialties:** AI Integration, Web Performance, SEO Optimization, Product Development
 
-## Certifications
+## Certifications & Professional Credentials
 
-- **ISRO ML Certification:** Certified by Indian Space Research Organisation in machine learning, artificial neural networks, and data science
-- **Microsoft SQL Server:** Certified in database management and server administration
+- **ISRO ML Certification:** Certified by Indian Space Research Organisation in machine learning, artificial neural networks, and data science - recognized certification from India's premier space research organization
+- **Microsoft SQL Server Certification:** Official Microsoft credential in database management and server administration
+- **Additional Professional Certificates:** Multiple industry-recognized certifications in development and AI technologies
 
 ## Featured Projects
 
@@ -48,10 +49,10 @@ A revolutionary platform with 60+ brutalist templates that allows developers to 
 **Link:** https://nabil-thange.vercel.app/blog/why-i-built-gitskinz
 
 ### NbAIl (2025)
-HackHazards 2025 Winner  
-AI-powered personal assistant with real-time voice control and desktop automation. Features multimodal capabilities and ultra-fast AI responses.  
+HackHazards 2025 Winner & Top 100 Contender  
+AI-powered personal assistant with real-time voice control and desktop automation. Features multimodal capabilities and ultra-fast AI responses. Competed among hundreds of participants and secured Top 100 position before winning.  
 **Tech Stack:** Next.js, Three.js, Groq, Voice Recognition, Node.js  
-**Achievement:** First place at HackHazards 2025
+**Achievement:** First place winner at HackHazards 2025, Top 100 contender
 
 ### NutriSnap (2025)
 Full-Stack Developer  
@@ -117,18 +118,41 @@ The story behind creating a GitHub profile generator used by developers worldwid
 
 Nabil comes from a supportive family in Mumbai. His father, Salim Thange, and mother, Tanzima Thange, have been instrumental in encouraging his journey into technology and entrepreneurship. The family is based in Kharghar, Navi Mumbai.
 
-### Friends & Network
+### Friends & Network - Titanic Swim Team (TST)
 
-Nabil is part of a close-knit group of talented young individuals in Mumbai's tech ecosystem:
+Nabil and his friends are part of the **"Titanic Swim Team" (TST)**, a close-knit group of talented young individuals in Mumbai's tech ecosystem:
 
+**Core TST Members:**
 - **Ayaan Sayyed** (19) - Close friend and collaborator
 - **Umair Khan** (19) - Core crew member
 - **Tanish Soni** (19, 5'6") - Academic powerhouse with excellent physique
 - **Sujal Solaskar** (19, 5'6") - Pure vegetarian friend
 - **Sachin Yadav** (19, 5'5") - Friend and collaborator
-- **Extended Crew:** Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
 
-This network represents a brotherhood of young developers and entrepreneurs growing together, collaborating on projects, and supporting each other's growth.
+**Extended TST Crew:**
+Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
+
+The Titanic Swim Team (TST) represents a brotherhood of young developers and entrepreneurs growing together, collaborating on projects, participating in hackathons, and supporting each other's growth.
+
+## Community Involvement
+
+Nabil is an active member of multiple tech communities:
+
+### TCU (Tech Community)
+Active participant in Mumbai's premier tech community, engaging with fellow developers and innovators, attending events, and contributing to the local tech ecosystem.
+
+### NAMESPACE
+Member of this developer-focused community, collaborating on projects, sharing knowledge, and building connections with like-minded developers.
+
+### Titanic Swim Team (TST)
+Core member of this close-knit developer group that collaborates on projects, competes in hackathons together, and provides mutual support for personal and professional growth.
+
+### Community Contributions
+- Hackathon participation and mentorship
+- Knowledge sharing through blog posts and discussions
+- Open-source contributions on GitHub
+- Peer collaboration and technical support
+- Building in public and sharing learnings
 
 ## Educational Background
 
@@ -166,7 +190,16 @@ Nabil Thange's net worth is not publicly disclosed.
 Nabil Thange specializes in full-stack development, AI engineering, building AI-powered applications with Next.js, React, and modern web technologies.
 
 ### What are Nabil Thange's major achievements?
-Nabil won HackHazards 2025 with NbAIl, created Gitskinz (used by developers worldwide), is ISRO-certified in machine learning, and has built multiple successful AI applications.
+Nabil won HackHazards 2025 with NbAIl (also Top 100 contender among hundreds of participants), created Gitskinz (used by developers worldwide), holds ISRO ML and Microsoft SQL certifications, and has built multiple successful AI applications.
+
+### What communities is Nabil Thange part of?
+Nabil is an active member of TCU (Tech Community), NAMESPACE, and is a core member of the Titanic Swim Team (TST), a developer group in Mumbai.
+
+### What is the Titanic Swim Team (TST)?
+The Titanic Swim Team (TST) is Nabil's close-knit group of developer friends in Mumbai. The group collaborates on projects, participates in hackathons together, and supports each other's personal and professional growth.
+
+### What certifications does Nabil Thange have?
+Nabil holds ISRO Machine Learning Certification from the Indian Space Research Organisation, Microsoft SQL Server Certification, and multiple other professional certificates in development and AI technologies.
 
 ### Where does Nabil Thange study?
 Nabil Thange studies at Saraswati College of Engineering in Kharghar, Navi Mumbai.

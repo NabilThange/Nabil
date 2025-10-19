@@ -29,6 +29,13 @@ export const metadata: Metadata = {
     "teen entrepreneur India",
     "Salim Thange son",
     "Tanzima Thange son",
+    "Titanic Swim Team",
+    "TST developer group",
+    "TCU member",
+    "NAMESPACE community",
+    "HackHazards Top 100",
+    "ISRO certified developer",
+    "Microsoft certified developer",
   ],
   openGraph: {
     title: "About Nabil Salim Thange — 19-Year-Old Full-Stack Developer & AI Engineer from Mumbai",
@@ -178,8 +185,35 @@ export default function About() {
     ],
     "award": [
       "HackHazards 2025 Winner",
+      "HackHazards 2025 Top 100 Contender",
       "ISRO Machine Learning Certification",
       "Microsoft SQL Server Certification",
+    ],
+    "memberOf": [
+      {
+        "@type": "Organization",
+        "name": "TCU (Tech Community)",
+        "description": "Mumbai's premier tech community",
+      },
+      {
+        "@type": "Organization",
+        "name": "NAMESPACE",
+        "description": "Developer-focused community",
+      },
+      {
+        "@type": "Organization",
+        "name": "Titanic Swim Team (TST)",
+        "description": "Close-knit developer group collaborating on projects and hackathons",
+        "foundingDate": "2024",
+        "member": [
+          "Nabil Salim Thange",
+          "Ayaan Sayyed",
+          "Umair Khan",
+          "Tanish Soni",
+          "Sujal Solaskar",
+          "Sachin Yadav",
+        ],
+      },
     ],
     "hasCredential": [
       {
@@ -413,6 +447,12 @@ export default function About() {
             <h2 className="text-3xl sm:text-4xl font-light">Certifications & Achievements</h2>
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
+                <h3 className="text-lg font-medium mb-2">HackHazards 2025</h3>
+                <p className="text-muted-foreground">
+                  Winner and Top 100 Contender among hundreds of participants. Built NbAIl, an AI personal assistant with voice control.
+                </p>
+              </div>
+              <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
                 <h3 className="text-lg font-medium mb-2">ISRO ML Certification</h3>
                 <p className="text-muted-foreground">
                   Certified by Indian Space Research Organisation in machine learning, artificial neural networks, and data science.
@@ -421,42 +461,81 @@ export default function About() {
               <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
                 <h3 className="text-lg font-medium mb-2">Microsoft SQL Server</h3>
                 <p className="text-muted-foreground">
-                  Certified Microsoft SQL developer with expertise in database management and server administration.
+                  Official Microsoft certification in database management and server administration.
+                </p>
+              </div>
+              <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
+                <h3 className="text-lg font-medium mb-2">Additional Certifications</h3>
+                <p className="text-muted-foreground">
+                  Multiple industry-recognized professional certificates in development and AI technologies.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* Friends & Network */}
+          {/* Friends & Network - Titanic Swim Team */}
           <section className="space-y-8">
-            <h2 className="text-3xl sm:text-4xl font-light">Friends & Network</h2>
+            <h2 className="text-3xl sm:text-4xl font-light">Friends & Network - Titanic Swim Team (TST)</h2>
             <div className="space-y-6">
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-                I'm fortunate to have an incredible group of friends who inspire, challenge, and support me:
+                I'm part of the <span className="text-foreground font-semibold">"Titanic Swim Team" (TST)</span>, an incredible group of friends who inspire, challenge, and support each other:
               </p>
-              <div className="grid sm:grid-cols-2 gap-4 text-muted-foreground">
-                <div>
-                  <span className="text-foreground font-medium">Ayaan Sayyed</span> (19) - Close friend and collaborator
-                </div>
-                <div>
-                  <span className="text-foreground font-medium">Umair Khan</span> (19) - Core crew member
-                </div>
-                <div>
-                  <span className="text-foreground font-medium">Tanish Soni</span> (19, 5'6") - Academic powerhouse
-                </div>
-                <div>
-                  <span className="text-foreground font-medium">Sujal Solaskar</span> (19, 5'6") - Pure vegetarian friend
-                </div>
-                <div>
-                  <span className="text-foreground font-medium">Sachin Yadav</span> (19, 5'5") - Friend and collaborator
+              <div>
+                <h3 className="text-lg font-medium mb-3">Core TST Members</h3>
+                <div className="grid sm:grid-cols-2 gap-4 text-muted-foreground">
+                  <div>
+                    <span className="text-foreground font-medium">Ayaan Sayyed</span> (19) - Close friend and collaborator
+                  </div>
+                  <div>
+                    <span className="text-foreground font-medium">Umair Khan</span> (19) - Core crew member
+                  </div>
+                  <div>
+                    <span className="text-foreground font-medium">Tanish Soni</span> (19, 5'6") - Academic powerhouse
+                  </div>
+                  <div>
+                    <span className="text-foreground font-medium">Sujal Solaskar</span> (19, 5'6") - Pure vegetarian friend
+                  </div>
+                  <div>
+                    <span className="text-foreground font-medium">Sachin Yadav</span> (19, 5'5") - Friend and collaborator
+                  </div>
                 </div>
               </div>
               <p className="text-muted-foreground">
-                <span className="text-foreground">Extended crew:</span> Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
+                <span className="text-foreground font-medium">Extended TST Crew:</span> Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
               </p>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-                Together, we're building, learning, and growing in Mumbai's tech ecosystem. This is more than friendship—it's a brotherhood.
+                The Titanic Swim Team represents more than friendship—it's a brotherhood of young developers and entrepreneurs growing together in Mumbai's tech ecosystem. We collaborate on projects, compete in hackathons, and support each other's growth.
               </p>
+            </div>
+          </section>
+
+          {/* Community Involvement */}
+          <section className="space-y-8">
+            <h2 className="text-3xl sm:text-4xl font-light">Community Involvement</h2>
+            <div className="space-y-6">
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+                Active member of multiple tech communities in Mumbai:
+              </p>
+              <div className="grid sm:grid-cols-3 gap-6">
+                <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
+                  <h3 className="text-lg font-medium mb-2">TCU</h3>
+                  <p className="text-muted-foreground">
+                    Tech Community - Active participant engaging with fellow developers and innovators
+                  </p>
+                </div>
+                <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
+                  <h3 className="text-lg font-medium mb-2">NAMESPACE</h3>
+                  <p className="text-muted-foreground">
+                    Developer-focused community for collaboration and knowledge sharing
+                  </p>
+                </div>
+                <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
+                  <h3 className="text-lg font-medium mb-2">Titanic Swim Team</h3>
+                  <p className="text-muted-foreground">
+                    Core member of this developer group building projects and competing in hackathons
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
 

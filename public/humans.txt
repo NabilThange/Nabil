@@ -15,12 +15,20 @@ Father: Salim Thange
 Mother: Tanzima Thange
 Education: Saraswati College of Engineering, Kharghar
 Background: Commerce to Computer Science transition
-Notable: HackHazards 2025 Winner, Gitskinz Creator
+Notable: HackHazards 2025 Winner & Top 100 Contender, Gitskinz Creator
+Certifications: ISRO ML, Microsoft SQL Server, and more
 
-/* NETWORK */
-Close Friends: Ayaan Sayyed, Umair Khan, Tanish Soni, Sujal Solaskar, Sachin Yadav
-Extended Crew: Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
-Community: Mumbai tech ecosystem, developer brotherhood
+/* NETWORK - TITANIC SWIM TEAM (TST) */
+Group Name: Titanic Swim Team (TST)
+Core TST Members: Ayaan Sayyed, Umair Khan, Tanish Soni, Sujal Solaskar, Sachin Yadav
+Extended TST Crew: Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
+Group Mission: Brotherhood of developers collaborating on projects and hackathons
+
+/* COMMUNITIES */
+TCU: Tech Community - Active participant
+NAMESPACE: Developer-focused community - Active member
+Titanic Swim Team (TST): Core member and founder group
+Contributions: Hackathons, open-source, knowledge sharing, peer collaboration
 
 /* SITE */
 Last update: 2025-01-19

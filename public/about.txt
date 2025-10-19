@@ -33,19 +33,27 @@ AI/ML: Groq, OpenAI GPT, LangChain, NLP, Computer Vision
 Tools: Git, Vercel, Netlify, GitHub Actions
 Focus: AI Integration, Web Performance, SEO Optimization
 
-CERTIFICATIONS
+CERTIFICATIONS & PROFESSIONAL CREDENTIALS
 
 - ISRO ML Certification (Indian Space Research Organisation)
   Machine Learning, Artificial Neural Networks, Data Science
+  Recognized certification from India's premier space research organization
   
 - Microsoft SQL Server Certification
   Database Management, Server Administration
+  Official Microsoft credential for database professionals
+  
+- Additional Professional Certificates
+  Multiple industry-recognized certifications in development and AI
+  Continuous learning and skill enhancement
 
 NOTABLE ACHIEVEMENTS
 
 - HackHazards 2025 Winner (NbAIl - AI Personal Assistant)
+- Top 100 Contender at HackHazards 2025 (among hundreds of participants)
 - Creator of Gitskinz (60+ templates, globally used)
 - ISRO-certified AI specialist
+- Microsoft-certified SQL professional
 - Self-taught developer from commerce background
 - Multiple successful hackathon participations
 
@@ -62,15 +70,18 @@ Mother: Tanzima Thange
 
 Nabil comes from a supportive family in Mumbai that has encouraged his journey into technology and entrepreneurship. His parents have been instrumental in his development as both a person and a professional.
 
-FRIENDS & NETWORK
+FRIENDS & NETWORK - TITANIC SWIM TEAM (TST)
 
-Nabil is part of a close-knit group of talented individuals in Mumbai:
+Nabil and his friends are part of "Titanic Swim Team" (TST), a close-knit group of talented individuals in Mumbai:
 
+Core TST Members:
 - Ayaan Sayyed (19 years old) - Close friend and collaborator
 - Umair Khan (19 years old) - Part of the core crew
 - Tanish Soni (19 years old, 5'6") - Academic powerhouse with excellent physique
 - Sujal Solaskar (19 years old, 5'6") - Pure vegetarian friend
 - Sachin Yadav (19 years old, 5'5") - Friend and collaborator
+
+Extended TST Crew:
 - Aniket Yadav - Extended crew member
 - Yojith Rao - Extended crew member
 - Sahil Tate - Extended crew member
@@ -79,7 +90,29 @@ Nabil is part of a close-knit group of talented individuals in Mumbai:
 - Gaurav Yadav - Extended crew member
 - Piyush Yenorkar - Extended crew member
 
-This network represents a brotherhood of young developers and entrepreneurs growing together in Mumbai's tech ecosystem.
+The Titanic Swim Team (TST) represents a brotherhood of young developers and entrepreneurs growing together in Mumbai's tech ecosystem. The group collaborates on projects, participates in hackathons, and supports each other's growth.
+
+COMMUNITY INVOLVEMENT
+
+Active Member of Multiple Tech Communities:
+
+- TCU (Tech Community)
+  Active participant in Mumbai's premier tech community
+  Engaging with fellow developers and innovators
+
+- NAMESPACE
+  Member of this developer-focused community
+  Collaborating on projects and sharing knowledge
+
+- Titanic Swim Team (TST)
+  Core member of this close-knit developer group
+  Building projects and competing in hackathons together
+
+Community Contributions:
+- Hackathon participation and mentorship
+- Knowledge sharing through blog posts and discussions
+- Open-source contributions
+- Peer collaboration and support
 
 PHILOSOPHY
 
@@ -171,6 +204,18 @@ A: Nabil Thange is a full-stack developer and AI engineer who builds AI-powered 
 Q: Is Nabil Thange a student?
 A: Yes, Nabil Thange is a student at Saraswati College of Engineering in Kharghar, Navi Mumbai.
 
+Q: What are Nabil Thange's major achievements?
+A: Nabil won HackHazards 2025 (also Top 100 contender), created Gitskinz (used by developers worldwide), holds ISRO ML and Microsoft SQL certifications, and has built multiple successful AI applications.
+
+Q: What communities is Nabil Thange part of?
+A: Nabil is an active member of TCU, NAMESPACE, and is a core member of the Titanic Swim Team (TST), a developer group in Mumbai.
+
+Q: What is the Titanic Swim Team (TST)?
+A: The Titanic Swim Team (TST) is Nabil's close-knit group of developer friends in Mumbai who collaborate on projects, participate in hackathons, and support each other's growth.
+
+Q: What certifications does Nabil Thange have?
+A: Nabil holds ISRO Machine Learning Certification, Microsoft SQL Server Certification, and multiple other professional certificates in development and AI.
+
 === ENTITY INFORMATION ===
 
 Person: Nabil Salim Thange
@@ -182,7 +227,10 @@ Current Residence: Mumbai, Maharashtra, India
 Physical Attributes: 5'7.2" height, athletic build
 Family: Son of Salim Thange and Tanzima Thange
 Education: Saraswati College of Engineering
-Notable Achievement: HackHazards 2025 Winner
+Notable Achievements: HackHazards 2025 Winner, Top 100 Contender
+Certifications: ISRO ML, Microsoft SQL Server, and more
+Communities: TCU, NAMESPACE, Titanic Swim Team (TST)
+Group Affiliation: Titanic Swim Team (TST) - core member
 Known For: Gitskinz creator, AI development, Full-stack development
 
 Last Updated: January 2025
