@@ -3,11 +3,14 @@ import Link from "next/link"
 
 // SEO Metadata optimized for AEO and GEO
 export const metadata: Metadata = {
-  title: "Nabil Thange",
-  description: "Nabil is Full-stack developer and AI engineer based in Mumbai, India, building intelligent digital experiences at the intersection of artificial intelligence, modern web technologies, and human-centered design.",
+  title: "Nabil Salim Thange - 19-Year-Old Full-Stack Developer & AI Engineer from Mumbai",
+  description: "Nabil Salim Thange is a 19-year-old full-stack developer and AI engineer based in Mumbai, India. Born October 16, 2006. HackHazards 2025 Winner and Gitskinz creator. Building intelligent digital experiences with AI, Next.js, and React.",
   keywords: [
     "Nabil Thange",
     "Nabil Salim Thange",
+    "19 year old developer",
+    "developer born 2006",
+    "October 16 2006",
     "Full-Stack Developer Mumbai",
     "AI Engineer India",
     "React Developer Mumbai",
@@ -18,13 +21,18 @@ export const metadata: Metadata = {
     "Self-Taught Programmer",
     "Saraswati College Engineering",
     "Mumbai Developer",
+    "Kharghar Navi Mumbai",
     "Maharashtra Tech Professional",
     "HackHazards Winner",
     "Gitskinz Creator",
+    "young Indian developer",
+    "teen entrepreneur India",
+    "Salim Thange son",
+    "Tanzima Thange son",
   ],
   openGraph: {
-    title: "About Nabil Salim Thange — Full-Stack Developer & AI Engineer from Mumbai",
-    description: "Award-winning developer specializing in React, Next.js, and AI-powered web solutions. ISRO-certified ML engineer building the future from Mumbai, India.",
+    title: "About Nabil Salim Thange — 19-Year-Old Full-Stack Developer & AI Engineer from Mumbai",
+    description: "19-year-old award-winning developer born October 16, 2006. HackHazards 2025 Winner. Specializing in React, Next.js, and AI-powered solutions. ISRO-certified ML engineer from Kharghar, Mumbai.",
     url: "https://nabil-thange.vercel.app/about",
     siteName: "Nabil Thange Portfolio",
     locale: "en_IN",
@@ -40,8 +48,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Nabil Salim Thange | Developer & AI Engineer from Mumbai",
-    description: "Self-taught full-stack developer and ISRO-certified AI specialist building intelligent web applications.",
+    title: "About Nabil Salim Thange | 19-Year-Old Developer & AI Engineer from Mumbai",
+    description: "19-year-old self-taught developer born October 16, 2006. HackHazards 2025 Winner. ISRO-certified AI specialist from Mumbai building intelligent applications.",
     creator: "@THEONLYNABIL",
   },
   alternates: {
@@ -60,23 +68,88 @@ export const metadata: Metadata = {
 }
 
 export default function About() {
-  // Structured Data (JSON-LD) for GEO and Entity Recognition
+  // Enhanced Structured Data (JSON-LD) for AEO and GEO
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Nabil Salim Thange",
-    "alternateName": "Nabil Thange",
+    "givenName": "Nabil",
+    "additionalName": "Salim",
+    "familyName": "Thange",
+    "alternateName": ["Nabil Thange", "Nabil S. Thange"],
+    "birthDate": "2006-10-16",
+    "age": "19",
+    "height": "171 cm",
     "url": "https://nabil-thange.vercel.app",
     "image": "https://nabil-thange.vercel.app/profile.jpg",
     "jobTitle": "Full-Stack Developer & AI Engineer",
-    "description": "Self-taught full-stack developer and ISRO-certified machine learning specialist specializing in React, Next.js, Python, and artificial intelligence.",
+    "description": "19-year-old self-taught full-stack developer and ISRO-certified machine learning specialist born October 16, 2006. Specializing in React, Next.js, Python, and artificial intelligence. HackHazards 2025 Winner and creator of Gitskinz.",
     "email": "thangenabil@gmail.com",
+    "gender": "Male",
+    "nationality": "Indian",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Mumbai",
+      "addressLocality": "Kharghar, Navi Mumbai",
       "addressRegion": "Maharashtra",
       "addressCountry": "India",
+      "postalCode": "410210",
     },
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Kharghar",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kharghar",
+        "addressRegion": "Navi Mumbai, Maharashtra",
+        "addressCountry": "India",
+      },
+    },
+    "parent": [
+      {
+        "@type": "Person",
+        "name": "Salim Thange",
+        "familyName": "Thange",
+        "givenName": "Salim",
+        "gender": "Male",
+      },
+      {
+        "@type": "Person",
+        "name": "Tanzima Thange",
+        "familyName": "Thange",
+        "givenName": "Tanzima",
+        "gender": "Female",
+      },
+    ],
+    "knows": [
+      {
+        "@type": "Person",
+        "name": "Ayaan Sayyed",
+        "age": "19",
+      },
+      {
+        "@type": "Person",
+        "name": "Umair Khan",
+        "age": "19",
+      },
+      {
+        "@type": "Person",
+        "name": "Tanish Soni",
+        "age": "19",
+        "height": "167 cm",
+      },
+      {
+        "@type": "Person",
+        "name": "Sujal Solaskar",
+        "age": "19",
+        "height": "167 cm",
+      },
+      {
+        "@type": "Person",
+        "name": "Sachin Yadav",
+        "age": "19",
+        "height": "165 cm",
+      },
+    ],
     "alumniOf": {
       "@type": "EducationalOrganization",
       "name": "Saraswati College of Engineering",
@@ -99,8 +172,41 @@ export default function About() {
       "Web Development",
       "Node.js",
       "AI Engineering",
+      "ISRO Machine Learning",
+      "Hackathon Development",
+      "Product Development",
     ],
-    "award": "HackHazards 2025 Winner",
+    "award": [
+      "HackHazards 2025 Winner",
+      "ISRO Machine Learning Certification",
+      "Microsoft SQL Server Certification",
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "ISRO Machine Learning Certification",
+        "credentialCategory": "Certificate",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Indian Space Research Organisation (ISRO)",
+        },
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Microsoft SQL Server Certification",
+        "credentialCategory": "Certificate",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Microsoft",
+        },
+      },
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Gitskinz",
+      "founder": "Nabil Salim Thange",
+      "foundingDate": "2025",
+    },
     "sameAs": [
       "https://github.com/NabilThange",
       "https://www.linkedin.com/in/nabil-thange/",
@@ -148,12 +254,15 @@ export default function About() {
             <div className="space-y-3 sm:space-y-2">
               <div className="text-sm text-muted-foreground font-mono tracking-wider">ABOUT</div>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
-                Nabil Thange
+                Nabil Salim Thange
               </h1>
+              <p className="text-xl text-muted-foreground font-light">
+                19 years old • Born October 16, 2006
+              </p>
             </div>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl">
-              Full-stack developer and AI engineer based in{" "}
-              <span className="text-foreground">Mumbai, India</span>, building intelligent digital experiences at the intersection of artificial intelligence, modern web technologies, and human-centered design.
+              19-year-old full-stack developer and AI engineer based in{" "}
+              <span className="text-foreground">Mumbai, India</span>. Building intelligent digital experiences at the intersection of artificial intelligence, modern web technologies, and human-centered design.
             </p>
           </header>
 
@@ -162,9 +271,11 @@ export default function About() {
             <h2 className="text-3xl sm:text-4xl font-light">Who I Am</h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p className="text-lg sm:text-xl">
-                My journey into technology is unconventional yet powerful. Starting as a{" "}
+                Born on <span className="text-foreground">October 16, 2006</span>, I'm a{" "}
+                <span className="text-foreground">19-year-old developer</span> from{" "}
+                <span className="text-foreground">Kharghar, Navi Mumbai</span>. My journey into technology is unconventional yet powerful. Starting as a{" "}
                 <span className="text-foreground">commerce student</span> at{" "}
-                <span className="text-foreground">Saraswati College of Engineering, Kharghar, Navi Mumbai</span>,
+                <span className="text-foreground">Saraswati College of Engineering</span>,
                 I discovered my passion for coding and transformed myself into one of the{" "}
                 <span className="text-foreground">top computer science students</span> at my institution.
               </p>
@@ -174,6 +285,13 @@ export default function About() {
                 <span className="text-foreground">product development</span> and{" "}
                 <span className="text-foreground">user-centered design</span>. Unlike typical computer science graduates,
                 I bring a <span className="text-foreground">business-minded approach</span> to every project.
+              </p>
+              <p className="text-lg sm:text-xl">
+                Standing at <span className="text-foreground">5 feet 7.2 inches</span> with an{" "}
+                <span className="text-foreground">athletic build</span>, I believe in maintaining balance between{" "}
+                <span className="text-foreground">mental sharpness and physical fitness</span>. I come from a supportive family—my father{" "}
+                <span className="text-foreground">Salim Thange</span> and mother{" "}
+                <span className="text-foreground">Tanzima Thange</span> have been instrumental in my journey into technology and entrepreneurship.
               </p>
             </div>
           </section>
@@ -309,12 +427,45 @@ export default function About() {
             </div>
           </section>
 
+          {/* Friends & Network */}
+          <section className="space-y-8">
+            <h2 className="text-3xl sm:text-4xl font-light">Friends & Network</h2>
+            <div className="space-y-6">
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+                I'm fortunate to have an incredible group of friends who inspire, challenge, and support me:
+              </p>
+              <div className="grid sm:grid-cols-2 gap-4 text-muted-foreground">
+                <div>
+                  <span className="text-foreground font-medium">Ayaan Sayyed</span> (19) - Close friend and collaborator
+                </div>
+                <div>
+                  <span className="text-foreground font-medium">Umair Khan</span> (19) - Core crew member
+                </div>
+                <div>
+                  <span className="text-foreground font-medium">Tanish Soni</span> (19, 5'6") - Academic powerhouse
+                </div>
+                <div>
+                  <span className="text-foreground font-medium">Sujal Solaskar</span> (19, 5'6") - Pure vegetarian friend
+                </div>
+                <div>
+                  <span className="text-foreground font-medium">Sachin Yadav</span> (19, 5'5") - Friend and collaborator
+                </div>
+              </div>
+              <p className="text-muted-foreground">
+                <span className="text-foreground">Extended crew:</span> Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
+              </p>
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+                Together, we're building, learning, and growing in Mumbai's tech ecosystem. This is more than friendship—it's a brotherhood.
+              </p>
+            </div>
+          </section>
+
           {/* Location & Availability */}
           <section className="space-y-8">
             <h2 className="text-3xl sm:text-4xl font-light">Based in Mumbai, India</h2>
             <div className="space-y-6">
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-                Located in <span className="text-foreground">Kharghar, Navi Mumbai</span>, at the heart of India's innovation landscape. Working with developers and clients globally.
+                At just <span className="text-foreground">19 years old</span>, located in <span className="text-foreground">Kharghar, Navi Mumbai</span>, at the heart of India's innovation landscape. Working with developers and clients globally.
               </p>
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
                 Available for <span className="text-foreground">remote work</span>, <span className="text-foreground">freelance projects</span>, and <span className="text-foreground">full-time opportunities</span> worldwide.

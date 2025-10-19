@@ -1,10 +1,26 @@
 /* TEAM */
-Developer & Designer: Nabil Thange
+Developer & Designer: Nabil Salim Thange
+Age: 19 years old
+Born: October 16, 2006
+Height: 5 feet 7.2 inches (171 cm)
+Build: Athletic/Fairly Built
 Contact: thangenabil@gmail.com
-Location: Mumbai, India
+Location: Mumbai, Maharashtra, India (Kharghar, Navi Mumbai)
 Website: https://nabil-thange.vercel.app
 GitHub: https://github.com/NabilThange
 LinkedIn: https://linkedin.com/in/nabil-thange
+
+/* PERSONAL */
+Father: Salim Thange
+Mother: Tanzima Thange
+Education: Saraswati College of Engineering, Kharghar
+Background: Commerce to Computer Science transition
+Notable: HackHazards 2025 Winner, Gitskinz Creator
+
+/* NETWORK */
+Close Friends: Ayaan Sayyed, Umair Khan, Tanish Soni, Sujal Solaskar, Sachin Yadav
+Extended Crew: Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
+Community: Mumbai tech ecosystem, developer brotherhood
 
 /* SITE */
 Last update: 2025-01-19

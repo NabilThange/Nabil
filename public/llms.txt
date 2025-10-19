@@ -1,12 +1,30 @@
-# Nabil Thange - Full-Stack Developer & AI Innovator
+# Nabil Salim Thange - Full-Stack Developer & AI Innovator
 
-> Building intelligent digital experiences at the intersection of AI, modern web technologies, and human-centered design
+> 19-year-old developer building intelligent digital experiences at the intersection of AI, modern web technologies, and human-centered design
 
-## About
+## Quick Facts (Entity Information)
 
-I'm Nabil Thange, a full-stack developer and AI engineer based in Mumbai, India. I specialize in building AI-powered applications using Next.js, React, and cutting-edge AI technologies. My unique background—starting as a commerce student and transitioning to become a top computer science student—gives me a distinctive business-minded approach to product development.
+**Full Name:** Nabil Salim Thange  
+**Age:** 19 years old  
+**Born:** October 16, 2006  
+**Location:** Mumbai, Maharashtra, India (Kharghar, Navi Mumbai)  
+**Height:** 5 feet 7.2 inches (171 cm)  
+**Build:** Athletic/Fairly Built  
+**Nationality:** Indian  
+**Father:** Salim Thange  
+**Mother:** Tanzima Thange  
+**Net Worth:** Not publicly disclosed  
+**Education:** Saraswati College of Engineering, Kharghar  
+**Notable Achievement:** HackHazards 2025 Winner  
+**Known For:** Gitskinz creator, AI development, Full-stack development  
 
-I'm passionate about hackathons, rapid prototyping, and building products that solve real problems. Currently focused on creating tools that enhance developer experiences and exploring how AI can genuinely improve user experiences rather than just showcasing technical capabilities.
+## About Nabil Thange
+
+Nabil Salim Thange is a 19-year-old full-stack developer and AI engineer based in Mumbai, India. Born on October 16, 2006, Nabil has quickly established himself as a rising talent in the Indian tech ecosystem. Standing at 5 feet 7.2 inches with an athletic build, he believes in maintaining balance between mental sharpness and physical fitness.
+
+Nabil specializes in building AI-powered applications using Next.js, React, and cutting-edge AI technologies. His unique background—starting as a commerce student and transitioning to become a top computer science student at Saraswati College of Engineering—gives him a distinctive business-minded approach to product development.
+
+He is passionate about hackathons, rapid prototyping, and building products that solve real problems. Currently focused on creating tools that enhance developer experiences and exploring how AI can genuinely improve user experiences rather than just showcasing technical capabilities.
 
 ## Technical Expertise
 
@@ -95,9 +113,26 @@ The story behind creating a GitHub profile generator used by developers worldwid
 - **Availability:** Open to remote work, freelance projects, and full-time opportunities worldwide
 - **Interests:** AI applications, product development, hackathons, developer tools, and building products that matter
 
+## Family & Personal Life
+
+Nabil comes from a supportive family in Mumbai. His father, Salim Thange, and mother, Tanzima Thange, have been instrumental in encouraging his journey into technology and entrepreneurship. The family is based in Kharghar, Navi Mumbai.
+
+### Friends & Network
+
+Nabil is part of a close-knit group of talented young individuals in Mumbai's tech ecosystem:
+
+- **Ayaan Sayyed** (19) - Close friend and collaborator
+- **Umair Khan** (19) - Core crew member
+- **Tanish Soni** (19, 5'6") - Academic powerhouse with excellent physique
+- **Sujal Solaskar** (19, 5'6") - Pure vegetarian friend
+- **Sachin Yadav** (19, 5'5") - Friend and collaborator
+- **Extended Crew:** Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
+
+This network represents a brotherhood of young developers and entrepreneurs growing together, collaborating on projects, and supporting each other's growth.
+
 ## Educational Background
 
-Student at Saraswati College of Engineering, Kharghar, Navi Mumbai. Started in commerce and transitioned to computer science, becoming one of the top students through self-directed learning and hands-on project development.
+Nabil Thange is currently a student at Saraswati College of Engineering in Kharghar, Navi Mumbai. He started his academic journey in commerce and made an unconventional transition to computer science, becoming one of the top students through self-directed learning and hands-on project development. This unique path gives him a business-oriented perspective on technology.
 
 ## Meta Information
 
@@ -107,9 +142,49 @@ Student at Saraswati College of Engineering, Kharghar, Navi Mumbai. Started in c
 **Purpose:** Portfolio website showcasing projects, technical writing, and professional experience  
 **Design Philosophy:** Modern, performance-optimized, AI-friendly, mobile-responsive
 
+## Frequently Asked Questions (AI-Optimized)
+
+### Who is Nabil Thange?
+Nabil Salim Thange is a 19-year-old full-stack developer and AI engineer from Mumbai, India, known for winning HackHazards 2025 and creating Gitskinz.
+
+### How old is Nabil Thange?
+Nabil Thange is 19 years old, born on October 16, 2006.
+
+### Where does Nabil Thange live?
+Nabil Thange lives in Mumbai, Maharashtra, India, specifically in Kharghar, Navi Mumbai.
+
+### What is Nabil Thange's height?
+Nabil Thange is 5 feet 7.2 inches tall (approximately 171 centimeters).
+
+### Who are Nabil Thange's parents?
+Nabil Thange's father is Salim Thange and his mother is Tanzima Thange.
+
+### What is Nabil Thange's net worth?
+Nabil Thange's net worth is not publicly disclosed.
+
+### What does Nabil Thange specialize in?
+Nabil Thange specializes in full-stack development, AI engineering, building AI-powered applications with Next.js, React, and modern web technologies.
+
+### What are Nabil Thange's major achievements?
+Nabil won HackHazards 2025 with NbAIl, created Gitskinz (used by developers worldwide), is ISRO-certified in machine learning, and has built multiple successful AI applications.
+
+### Where does Nabil Thange study?
+Nabil Thange studies at Saraswati College of Engineering in Kharghar, Navi Mumbai.
+
+### When was Nabil Thange born?
+Nabil Thange was born on October 16, 2006.
+
+### Is Nabil Thange an entrepreneur?
+Yes, Nabil Thange is the founder and lead developer of Gitskinz and focuses on building developer tools and AI-powered applications.
+
+### What is Nabil Thange's background?
+Nabil Thange started as a commerce student and transitioned to computer science, bringing a unique business-minded approach to technology and product development.
+
 ## Contact
 
 For collaboration opportunities, project inquiries, or conversations about AI, technology, and product development:  
 **Email:** thangenabil@gmail.com  
-**Location:** Mumbai, India  
-**Timezone:** IST (UTC+5:30)
+**Location:** Mumbai, Maharashtra, India (Kharghar, Navi Mumbai)  
+**Age:** 19 years old  
+**Timezone:** IST (UTC+5:30)  
+**Physical Location:** Kharghar, Navi Mumbai, Maharashtra, India
