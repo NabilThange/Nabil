@@ -71,6 +71,116 @@
       "source": "/home",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://nabil-thange.vercel.app/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "nabilthange.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://nabil-thange.vercel.app/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "nabil-thange-portfolio.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://nabil-thange.vercel.app/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "nabilthange-portfolio.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://nabil-thange.vercel.app/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "nabil-thange-dev.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://nabil-thange.vercel.app/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "nabilthange-dev.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://nabil-thange.vercel.app/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "nabill.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://nabil-thange.vercel.app/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "nabilt.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://nabil-thange.vercel.app/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "nn.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://nabil-thange.vercel.app/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "nabt.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://nabil-thange.vercel.app/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "nnn.vercel.app"
+        }
+      ]
     }
   ],
   "rewrites": [],
