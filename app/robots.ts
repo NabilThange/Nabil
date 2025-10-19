@@ -20,7 +20,12 @@ export default function robots(): MetadataRoute.Robots {
       // Default rules for all crawlers
       {
         userAgent: '*',
-        allow: '/',
+        allow: [
+          '/',
+          '/llms.txt',
+          '/humans.txt',
+          '/about.txt',
+        ],
         disallow: [
           '/api/',
           '/_next/',

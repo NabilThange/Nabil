@@ -1,0 +1,62 @@
+/* TEAM */
+Developer & Designer: Nabil Thange
+Contact: thangenabil@gmail.com
+Location: Mumbai, India
+Website: https://nabil-thange.vercel.app
+GitHub: https://github.com/NabilThange
+LinkedIn: https://linkedin.com/in/nabil-thange
+
+/* SITE */
+Last update: 2025-01-19
+Language: English
+Standards: HTML5, CSS3, JavaScript ES6+, TypeScript
+Components: React 19, Next.js 15
+Styling: Tailwind CSS 4
+3D Graphics: Three.js, React Three Fiber
+Fonts: Geist (sans-serif)
+IDE: Visual Studio Code
+
+/* TECH STACK */
+Frontend Framework: Next.js 15.2.4
+UI Library: React 19
+Language: TypeScript 5
+Styling: Tailwind CSS 4.1.9
+Animation: Tailwind Animate, Three.js
+Icons: Lucide React
+Components: Radix UI
+Forms: React Hook Form with Zod validation
+Markdown: React Markdown with remark-gfm
+3D Engine: Three.js 0.180.0
+
+/* HOSTING */
+Platform: Vercel
+Domain: nabil-thange.vercel.app
+CDN: Vercel Edge Network
+Deployment: Continuous deployment from Git
+Performance: Edge-optimized with ISR
+
+/* FEATURES */
+- Responsive design (mobile-first)
+- Dark/light theme support
+- SEO optimized with structured data (Schema.org)
+- AI-friendly (llms.txt, comprehensive meta tags)
+- Fast page loads (Next.js App Router)
+- Blog with markdown support
+- 3D interactive gallery
+- Sitemap and robots.txt
+- Open Graph and Twitter Cards
+- Progressive Web App ready
+
+/* THANKS */
+Inspiration: The developer community
+UI Components: Radix UI, shadcn/ui patterns
+Fonts: Vercel (Geist font family)
+Icons: Lucide Icons
+Community: Dev.to, GitHub, lablab.ai
+
+/* PHILOSOPHY */
+Building with purpose: Every line of code should serve the user
+AI-first design: Optimized for both humans and AI discovery
+Performance matters: Fast, lightweight, accessible
+Learn in public: Share knowledge through blog posts
+Build to solve: Create tools that solve real problems

@@ -1,0 +1,111 @@
+ABOUT NABIL THANGE
+
+Name: Nabil Thange
+Role: Full-Stack Developer & AI Innovator
+Location: Mumbai, India (Kharghar, Navi Mumbai)
+Education: Saraswati College of Engineering
+Background: Commerce to Computer Science
+Specialization: AI-powered applications, Web Development, Product Development
+
+PROFESSIONAL SUMMARY
+
+Full-stack developer and AI engineer building intelligent digital experiences at the intersection of artificial intelligence, modern web technologies, and human-centered design. Known for rapid prototyping, hackathon victories, and creating developer tools used globally.
+
+UNIQUE PERSPECTIVE
+
+Started as a commerce student, transitioned to become one of the top computer science students. This unconventional journey provides a distinctive business-minded approach to product development, combining technical expertise with user-centric thinking.
+
+TECHNICAL SKILLS
+
+Frontend: React.js, Next.js, TypeScript, Tailwind CSS, Three.js
+Backend: Node.js, Express.js, Python, REST APIs, GraphQL
+AI/ML: Groq, OpenAI GPT, LangChain, NLP, Computer Vision
+Tools: Git, Vercel, Netlify, GitHub Actions
+Focus: AI Integration, Web Performance, SEO Optimization
+
+CERTIFICATIONS
+
+- ISRO ML Certification (Indian Space Research Organisation)
+  Machine Learning, Artificial Neural Networks, Data Science
+  
+- Microsoft SQL Server Certification
+  Database Management, Server Administration
+
+NOTABLE ACHIEVEMENTS
+
+- HackHazards 2025 Winner (NbAIl - AI Personal Assistant)
+- Creator of Gitskinz (60+ templates, globally used)
+- ISRO-certified AI specialist
+- Self-taught developer from commerce background
+- Multiple successful hackathon participations
+
+CURRENT WORK
+
+Founder & Lead Developer at Gitskinz (2025 - Present)
+Building developer tools and AI-powered applications
+Focused on solving real problems with elegant solutions
+
+PHILOSOPHY
+
+- Build AI that actually helps, not just impresses
+- Solve your own problems publicly
+- Ship fast, iterate ruthlessly
+- Learn by doing, teach by sharing
+- Business mindset + technical execution = better products
+
+AVAILABILITY
+
+Open to: Remote work, Freelance projects, Full-time opportunities
+Timezone: IST (UTC+5:30)
+Contact: thangenabil@gmail.com
+Based: Mumbai, India (willing to work globally)
+
+INTERESTS
+
+- AI application development
+- Product development and UX
+- Hackathons and rapid prototyping
+- Developer tools and productivity
+- Building in public
+- Technical writing and knowledge sharing
+
+SOCIAL PRESENCE
+
+Portfolio: https://nabil-thange.vercel.app
+Email: thangenabil@gmail.com
+GitHub: https://github.com/NabilThange
+LinkedIn: https://linkedin.com/in/nabil-thange
+Twitter/X: https://twitter.com/THEONLYNABIL
+Dev.to: https://dev.to/nabil_thange
+Devpost: https://devpost.com/thangenabil
+HuggingFace: https://huggingface.co/Nabil-Oc
+lablab.ai: https://lablab.ai/u/@NabilT
+
+NOTABLE PROJECTS
+
+1. Gitskinz (2025)
+   GitHub profile generator with 60+ brutalist templates
+   Used by developers worldwide
+   
+2. NbAIl (2025)
+   HackHazards 2025 Winner
+   AI assistant with voice control and desktop automation
+   
+3. NutriSnap (2025)
+   First AI nutrition app with Indian food support
+   Computer vision for instant nutritional analysis
+   
+4. Shopwiz (2025)
+   Natural language shopping assistant
+   Conversational product discovery
+
+WRITING TOPICS
+
+- AI development and user experience
+- Career transitions in tech
+- Hackathon strategies
+- Building developer tools
+- Self-taught programming journey
+- Product development mindset
+
+Last Updated: January 2025

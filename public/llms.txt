@@ -1,0 +1,115 @@
+# Nabil Thange - Full-Stack Developer & AI Innovator
+
+> Building intelligent digital experiences at the intersection of AI, modern web technologies, and human-centered design
+
+## About
+
+I'm Nabil Thange, a full-stack developer and AI engineer based in Mumbai, India. I specialize in building AI-powered applications using Next.js, React, and cutting-edge AI technologies. My unique background—starting as a commerce student and transitioning to become a top computer science student—gives me a distinctive business-minded approach to product development.
+
+I'm passionate about hackathons, rapid prototyping, and building products that solve real problems. Currently focused on creating tools that enhance developer experiences and exploring how AI can genuinely improve user experiences rather than just showcasing technical capabilities.
+
+## Technical Expertise
+
+**Frontend:** React.js, Next.js, TypeScript, Tailwind CSS, Three.js  
+**Backend:** Node.js, Express.js, Python, REST APIs, GraphQL  
+**AI/ML:** Groq, OpenAI GPT, LangChain, NLP, Computer Vision  
+**Tools & Platforms:** Git, Vercel, Netlify, GitHub Actions  
+**Specialties:** AI Integration, Web Performance, SEO Optimization, Product Development
+
+## Certifications
+
+- **ISRO ML Certification:** Certified by Indian Space Research Organisation in machine learning, artificial neural networks, and data science
+- **Microsoft SQL Server:** Certified in database management and server administration
+
+## Featured Projects
+
+### Gitskinz (2025)
+Founder & Creator  
+A revolutionary platform with 60+ brutalist templates that allows developers to build stunning GitHub profiles without writing code. Used by developers globally.  
+**Tech Stack:** Vite, React, Netlify, No-Code Tools  
+**Link:** https://nabil-thange.vercel.app/blog/why-i-built-gitskinz
+
+### NbAIl (2025)
+HackHazards 2025 Winner  
+AI-powered personal assistant with real-time voice control and desktop automation. Features multimodal capabilities and ultra-fast AI responses.  
+**Tech Stack:** Next.js, Three.js, Groq, Voice Recognition, Node.js  
+**Achievement:** First place at HackHazards 2025
+
+### NutriSnap (2025)
+Full-Stack Developer  
+First comprehensive nutrition tracking app with proper Indian food support. Users snap photos and receive instant nutritional breakdowns powered by AI image recognition.  
+**Tech Stack:** AI Image Recognition, React, Real-time Processing  
+**Innovation:** Solved critical gap in nutrition tracking for Indian users
+
+### Shopwiz (2025)
+AI/UX Developer  
+Revolutionized product discovery with natural language shopping. Users describe what they want conversationally instead of using filters and endless scrolling.  
+**Tech Stack:** NLP, Conversational AI, Web Scraping
+
+## Writing & Blog Posts
+
+### Building AI That Doesn't Suck (Dec 2024)
+An exploration of what it takes to build AI-powered tools that people actually want to use daily, beyond just technical demos.  
+**Topics:** AI Development, User Experience, Product Design  
+**Link:** https://nabil-thange.vercel.app/blog/building-ai-that-doesnt-suck
+
+### The Commerce Kid's Guide to Tech (Nov 2024)
+My unconventional journey from balance sheets to code, and why starting late in tech is actually an advantage.  
+**Topics:** Career Transition, Self-Taught Development, Business Mindset  
+**Link:** https://nabil-thange.vercel.app/blog/the-commerce-kids-guide-to-tech
+
+### Hackathons: Speed-Running Product Development (Oct 2024)
+Lessons learned from winning multiple hackathons. A playbook for building fast, validating quickly, and iterating ruthlessly.  
+**Topics:** Hackathons, Product Development, Rapid Prototyping  
+**Link:** https://nabil-thange.vercel.app/blog/hackathons-speed-running-product-development
+
+### Why I Built Gitskinz (Sep 2024)
+The story behind creating a GitHub profile generator used by developers worldwide. Why solving your own problems publicly is the best way to learn.  
+**Topics:** Open Source, Developer Tools, Building in Public  
+**Link:** https://nabil-thange.vercel.app/blog/why-i-built-gitskinz
+
+## Site Navigation
+
+- **Home:** https://nabil-thange.vercel.app
+- **About:** https://nabil-thange.vercel.app/about
+- **Projects:** https://nabil-thange.vercel.app/gallery
+- **Blog:** https://nabil-thange.vercel.app/blog
+- **Contact:** https://nabil-thange.vercel.app/contact
+
+## Professional Presence
+
+- **Portfolio:** https://nabil-thange.vercel.app
+- **Email:** thangenabil@gmail.com
+- **GitHub:** https://github.com/NabilThange
+- **LinkedIn:** https://linkedin.com/in/nabil-thange
+- **Twitter/X:** https://twitter.com/THEONLYNABIL
+- **Dev.to:** https://dev.to/nabil_thange
+- **Devpost:** https://devpost.com/thangenabil
+- **HuggingFace:** https://huggingface.co/Nabil-Oc
+- **lablab.ai:** https://lablab.ai/u/@NabilT
+
+## Current Focus
+
+- **Role:** Founder & Lead Developer at Gitskinz (2025 - Present)
+- **Location:** Mumbai, India (Kharghar, Navi Mumbai)
+- **Availability:** Open to remote work, freelance projects, and full-time opportunities worldwide
+- **Interests:** AI applications, product development, hackathons, developer tools, and building products that matter
+
+## Educational Background
+
+Student at Saraswati College of Engineering, Kharghar, Navi Mumbai. Started in commerce and transitioned to computer science, becoming one of the top students through self-directed learning and hands-on project development.
+
+## Meta Information
+
+**Last Updated:** January 2025  
+**Site Technology:** Next.js 15, React 19, TypeScript, Tailwind CSS, Three.js  
+**Hosting:** Vercel  
+**Purpose:** Portfolio website showcasing projects, technical writing, and professional experience  
+**Design Philosophy:** Modern, performance-optimized, AI-friendly, mobile-responsive
+
+## Contact
+
+For collaboration opportunities, project inquiries, or conversations about AI, technology, and product development:  
+**Email:** thangenabil@gmail.com  
+**Location:** Mumbai, India  
+**Timezone:** IST (UTC+5:30)
