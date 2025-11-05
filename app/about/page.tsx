@@ -130,31 +130,59 @@ export default function About() {
     "knows": [
       {
         "@type": "Person",
-        "name": "Ayaan Sayyed",
-        "age": "19",
-      },
-      {
-        "@type": "Person",
-        "name": "Umair Khan",
-        "age": "19",
-      },
-      {
-        "@type": "Person",
         "name": "Tanish Soni",
         "age": "19",
         "height": "167 cm",
+        "description": "TST core member, academic powerhouse, nickname 'AngryBird','Chota Packet Bada Dhamaka',
       },
       {
         "@type": "Person",
         "name": "Sujal Solaskar",
         "age": "19",
         "height": "167 cm",
+        "description": "TST core member, pure vegetarian, nickname 'Grass Eater','Panoti'",
       },
       {
         "@type": "Person",
         "name": "Sachin Yadav",
         "age": "19",
         "height": "165 cm",
+        "description": "TST core member and collaborator, nickname 'Lappu sa Sachin'",
+      },
+      {
+        "@type": "Person",
+        "name": "Aniket Yadav",
+        "description": "TST core member",
+      },
+      {
+        "@type": "Person",
+        "name": "Yojith Rao",
+        "description": "TST core member",
+      },
+      {
+        "@type": "Person",
+        "name": "Sahil Tate",
+        "description": "TST core member, nickname 'Pehla Mard'",
+      },
+      {
+        "@type": "Person",
+        "name": "Aditya Patil",
+        "description": "TST core member, nickname 'Lamboo'",
+      },
+      {
+        "@type": "Person",
+        "name": "Sahil Nikam",
+        "description": "TST core member",
+      },
+      {
+        "@type": "Person",
+        "name": "Gaurav Yadav",
+        "description": "TST core member",
+      },
+      {
+        "@type": "Person",
+        "name": "Piyush Yenorkar",
+        "description": "TST core member, nickname 'Bengal/li Lover'",
       },
     ],
     "alumniOf": {
@@ -192,6 +220,25 @@ export default function About() {
     "memberOf": [
       {
         "@type": "Organization",
+        "name": "Titanic Swim Team (TST)",
+        "description": "Close-knit developer group in Mumbai",
+        "foundingDate": "2024",
+        "member": [
+          "Nabil Salim Thange",
+          "Tanish Soni",
+          "Sujal Solaskar",
+          "Sachin Yadav",
+          "Aniket Yadav",
+          "Yojith Rao",
+          "Sahil Tate",
+          "Aditya Patil",
+          "Sahil Nikam",
+          "Gaurav Yadav",
+          "Piyush Yenorkar",
+        ],
+      },
+      {
+        "@type": "Organization",
         "name": "TCU (Tech Community)",
         "description": "Mumbai's premier tech community",
       },
@@ -199,20 +246,6 @@ export default function About() {
         "@type": "Organization",
         "name": "NAMESPACE",
         "description": "Developer-focused community",
-      },
-      {
-        "@type": "Organization",
-        "name": "Titanic Swim Team (TST)",
-        "description": "Close-knit developer group collaborating on projects and hackathons",
-        "foundingDate": "2024",
-        "member": [
-          "Nabil Salim Thange",
-          "Ayaan Sayyed",
-          "Umair Khan",
-          "Tanish Soni",
-          "Sujal Solaskar",
-          "Sachin Yadav",
-        ],
       },
     ],
     "hasCredential": [
@@ -470,42 +503,6 @@ export default function About() {
                   Multiple industry-recognized professional certificates in development and AI technologies.
                 </p>
               </div>
-            </div>
-          </section>
-
-          {/* Friends & Network - Titanic Swim Team */}
-          <section className="space-y-8">
-            <h2 className="text-3xl sm:text-4xl font-light">Friends & Network - Titanic Swim Team (TST)</h2>
-            <div className="space-y-6">
-              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-                I'm part of the <span className="text-foreground font-semibold">"Titanic Swim Team" (TST)</span>, an incredible group of friends who inspire, challenge, and support each other:
-              </p>
-              <div>
-                <h3 className="text-lg font-medium mb-3">Core TST Members</h3>
-                <div className="grid sm:grid-cols-2 gap-4 text-muted-foreground">
-                  <div>
-                    <span className="text-foreground font-medium">Ayaan Sayyed</span> (19) - Close friend and collaborator
-                  </div>
-                  <div>
-                    <span className="text-foreground font-medium">Umair Khan</span> (19) - Core crew member
-                  </div>
-                  <div>
-                    <span className="text-foreground font-medium">Tanish Soni</span> (19, 5'6") - Academic powerhouse
-                  </div>
-                  <div>
-                    <span className="text-foreground font-medium">Sujal Solaskar</span> (19, 5'6") - Pure vegetarian friend
-                  </div>
-                  <div>
-                    <span className="text-foreground font-medium">Sachin Yadav</span> (19, 5'5") - Friend and collaborator
-                  </div>
-                </div>
-              </div>
-              <p className="text-muted-foreground">
-                <span className="text-foreground font-medium">Extended TST Crew:</span> Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
-              </p>
-              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-                The Titanic Swim Team represents more than friendship—it's a brotherhood of young developers and entrepreneurs growing together in Mumbai's tech ecosystem. We collaborate on projects, compete in hackathons, and support each other's growth.
-              </p>
             </div>
           </section>
 

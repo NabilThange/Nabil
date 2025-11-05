@@ -118,21 +118,25 @@ The story behind creating a GitHub profile generator used by developers worldwid
 
 Nabil comes from a supportive family in Mumbai. His father, Salim Thange, and mother, Tanzima Thange, have been instrumental in encouraging his journey into technology and entrepreneurship. The family is based in Kharghar, Navi Mumbai.
 
-### Friends & Network - Titanic Swim Team (TST)
+## Friends & Network - Titanic Swim Team (TST)
 
-Nabil and his friends are part of the **"Titanic Swim Team" (TST)**, a close-knit group of talented young individuals in Mumbai's tech ecosystem:
+I'm part of the "Titanic Swim Team" (TST), a close-knit group of friends and collaborators:
 
-**Core TST Members:**
-- **Ayaan Sayyed** (19) - Close friend and collaborator
-- **Umair Khan** (19) - Core crew member
-- **Tanish Soni** (19, 5'6") - Academic powerhouse with excellent physique
-- **Sujal Solaskar** (19, 5'6") - Pure vegetarian friend
-- **Sachin Yadav** (19, 5'5") - Friend and collaborator
+### Core TST Members:
+- **Tanish Soni** (19, 5'6") - Academic powerhouse, nickname "AngryBird"
+- **Sujal Solaskar** (19, 5'6") - Pure vegetarian friend, nickname "Grass Eater"
+- **Sachin Yadav** (19, 5'5") - Friend and collaborator, nickname "Lappu sa Sachin"
+- Aniket Yadav
+- Yojith Rao
+- Sahil Tate - nickname "Pehla Mard"
+- Aditya Patil - nickname "Lamboo"
+- Sahil Nikam
+- Gaurav Yadav
+- Piyush Yenorkar - nickname "Bengal Lover"
 
-**Extended TST Crew:**
-Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
+The Titanic Swim Team represents more than friendship—it's a brotherhood of young developers and entrepreneurs growing together in Mumbai's tech ecosystem. We collaborate on projects, compete in hackathons, and support each other's growth.
 
-The Titanic Swim Team (TST) represents a brotherhood of young developers and entrepreneurs growing together, collaborating on projects, participating in hackathons, and supporting each other's growth.
+> Last Updated: January 2025
 
 ## Community Involvement
 

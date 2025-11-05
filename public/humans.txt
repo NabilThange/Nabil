@@ -19,10 +19,10 @@ Notable: HackHazards 2025 Winner & Top 100 Contender, Gitskinz Creator
 Certifications: ISRO ML, Microsoft SQL Server, and more
 
 /* NETWORK - TITANIC SWIM TEAM (TST) */
-Group Name: Titanic Swim Team (TST)
-Core TST Members: Ayaan Sayyed, Umair Khan, Tanish Soni, Sujal Solaskar, Sachin Yadav
-Extended TST Crew: Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
-Group Mission: Brotherhood of developers collaborating on projects and hackathons
+Core Members: Tanish Soni (AngryBird), Sujal Solaskar (Grass Eater), Sachin Yadav (Lappu sa Sachin),Aniket Yadav, Yojith Rao, Sahil Tate (Pehla Mard), Aditya Patil (Lamboo), Sahil Nikam, Gaurav Yadav, Piyush Yenorkar (Bengal Lover)
+Philosophy: Brotherhood of developers in Mumbai's tech ecosystem
+Location: Mumbai, Maharashtra, India
+Founded: 2024
 
 /* COMMUNITIES */
 TCU: Tech Community - Active participant

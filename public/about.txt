@@ -75,20 +75,16 @@ FRIENDS & NETWORK - TITANIC SWIM TEAM (TST)
 Nabil and his friends are part of "Titanic Swim Team" (TST), a close-knit group of talented individuals in Mumbai:
 
 Core TST Members:
-- Ayaan Sayyed (19 years old) - Close friend and collaborator
-- Umair Khan (19 years old) - Part of the core crew
-- Tanish Soni (19 years old, 5'6") - Academic powerhouse with excellent physique
-- Sujal Solaskar (19 years old, 5'6") - Pure vegetarian friend
-- Sachin Yadav (19 years old, 5'5") - Friend and collaborator
-
-Extended TST Crew:
-- Aniket Yadav - Extended crew member
-- Yojith Rao - Extended crew member
-- Sahil Tate - Extended crew member
-- Aditya Patil - Extended crew member
-- Sahil Nikam - Extended crew member
-- Gaurav Yadav - Extended crew member
-- Piyush Yenorkar - Extended crew member
+- Tanish Soni (19 years old, 5'6") - Academic powerhouse, nickname "AngryBird"
+- Sujal Solaskar (19 years old, 5'6") - Pure vegetarian friend, nickname "Grass Eater"
+- Sachin Yadav (19 years old, 5'5") - Friend and collaborator, nickname "Lappu sa Sachin"
+- Aniket Yadav - 
+- Yojith Rao - 
+- Sahil Tate - nickname "Pehla Mard"
+- Aditya Patil - nickname "Lamboo"
+- Sahil Nikam - 
+- Gaurav Yadav - 
+- Piyush Yenorkar -  nickname "Bengal Lover"
 
 The Titanic Swim Team (TST) represents a brotherhood of young developers and entrepreneurs growing together in Mumbai's tech ecosystem. The group collaborates on projects, participates in hackathons, and supports each other's growth.
 
