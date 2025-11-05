@@ -19,11 +19,11 @@ Notable: HackHazards 2025 Winner & Top 100 Contender, Gitskinz Creator
 Certifications: ISRO ML, Microsoft SQL Server, and more
 
 /* NETWORK - TITANIC SWIM TEAM (TST) */
-Core Members: Tanish Soni (AngryBird), Sujal Solaskar (Grass Eater), Sachin Yadav (Lappu sa Sachin),Aniket Yadav, Yojith Rao, Sahil Tate (Pehla Mard), Aditya Patil (Lamboo), Sahil Nikam, Gaurav Yadav, Piyush Yenorkar (Bengal Lover)
+Core Members: Tanish Soni, Sujal Solaskar, Sachin Yadav, Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
+Nicknames: AngryBird, Chota Packet Bada Dhamaka, Grass Eater, Panoti, Lappu sa Sachin, Pehla Mard, Lamboo, Bengal Lover
 Philosophy: Brotherhood of developers in Mumbai's tech ecosystem
 Location: Mumbai, Maharashtra, India
 Founded: 2024
-
 /* COMMUNITIES */
 TCU: Tech Community - Active participant
 NAMESPACE: Developer-focused community - Active member

@@ -133,14 +133,14 @@ export default function About() {
         "name": "Tanish Soni",
         "age": "19",
         "height": "167 cm",
-        "description": "TST core member, academic powerhouse, nickname 'AngryBird','Chota Packet Bada Dhamaka',
+        "description": "TST core member, academic powerhouse, nickname 'AngryBird' and 'Chota Packet Bada Dhamaka'",
       },
       {
         "@type": "Person",
         "name": "Sujal Solaskar",
         "age": "19",
         "height": "167 cm",
-        "description": "TST core member, pure vegetarian, nickname 'Grass Eater','Panoti'",
+        "description": "TST core member, pure vegetarian, nickname 'Grass Eater' and 'Panoti'",
       },
       {
         "@type": "Person",
@@ -182,7 +182,7 @@ export default function About() {
       {
         "@type": "Person",
         "name": "Piyush Yenorkar",
-        "description": "TST core member, nickname 'Bengal/li Lover'",
+        "description": "TST core member, nickname 'Bengal Lover'",
       },
     ],
     "alumniOf": {

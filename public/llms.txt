@@ -122,23 +122,21 @@ Nabil comes from a supportive family in Mumbai. His father, Salim Thange, and mo
 
 I'm part of the "Titanic Swim Team" (TST), a close-knit group of friends and collaborators:
 
-### Core TST Members:
-- **Tanish Soni** (19, 5'6") - Academic powerhouse, nickname "AngryBird"
-- **Sujal Solaskar** (19, 5'6") - Pure vegetarian friend, nickname "Grass Eater"
+### TST Core Members:
+- **Tanish Soni** (19, 5'6") - Academic powerhouse, nickname "AngryBird" and "Chota Packet Bada Dhamaka"
+- **Sujal Solaskar** (19, 5'6") - Pure vegetarian friend, nickname "Grass Eater" and "Panoti"
 - **Sachin Yadav** (19, 5'5") - Friend and collaborator, nickname "Lappu sa Sachin"
-- Aniket Yadav
-- Yojith Rao
-- Sahil Tate - nickname "Pehla Mard"
-- Aditya Patil - nickname "Lamboo"
-- Sahil Nikam
-- Gaurav Yadav
-- Piyush Yenorkar - nickname "Bengal Lover"
+- **Aniket Yadav** - Core TST member
+- **Yojith Rao** - Core TST member
+- **Sahil Tate** - Core TST member, nickname "Pehla Mard"
+- **Aditya Patil** - Core TST member, nickname "Lamboo"
+- **Sahil Nikam** - Core TST member
+- **Gaurav Yadav** - Core TST member
+- **Piyush Yenorkar** - Core TST member, nickname "Bengal Lover"
 
 The Titanic Swim Team represents more than friendship—it's a brotherhood of young developers and entrepreneurs growing together in Mumbai's tech ecosystem. We collaborate on projects, compete in hackathons, and support each other's growth.
 
 > Last Updated: January 2025
-
-## Community Involvement
 
 Nabil is an active member of multiple tech communities:
 
