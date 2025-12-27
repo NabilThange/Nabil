@@ -6,7 +6,15 @@ import { Canvas, useFrame } from "@react-three/fiber"
 import { useTexture } from "@react-three/drei"
 import * as THREE from "three"
 
-type ImageItem = string | { src: string; alt?: string; link?: string }
+export interface Project {
+  id: string
+  title: string
+  description: string
+  src: string
+  link: string
+  tags?: string[]
+  year?: string
+}
 
 interface FadeSettings {
   /** Fade in range as percentage of depth range (0-1) */
@@ -37,7 +45,7 @@ interface BlurSettings {
 }
 
 interface InfiniteGalleryProps {
-  images: ImageItem[]
+  items: Project[]
   /** Speed multiplier applied to scroll delta (default: 1) */
   speed?: number
   /** Spacing between images along Z in world units (default: 2.5) */
@@ -54,12 +62,14 @@ interface InfiniteGalleryProps {
   className?: string
   /** Optional style for outer container */
   style?: React.CSSProperties
+  onItemSelect?: (item: Project) => void
+  onItemHover?: (item: Project | null) => void
 }
 
 interface PlaneData {
   index: number
   z: number
-  imageIndex: number
+  itemIndex: number
   x: number
   y: number // Added y property for vertical positioning
 }
@@ -169,13 +179,17 @@ function ImagePlane({
   position,
   scale,
   material,
-  link,
+  item,
+  onSelect,
+  onHover,
 }: {
   texture: THREE.Texture
   position: [number, number, number]
   scale: [number, number, number]
   material: THREE.ShaderMaterial
-  link?: string
+  item: Project
+  onSelect?: (item: Project) => void
+  onHover?: (item: Project | null) => void
 }) {
   const meshRef = useRef<THREE.Mesh>(null)
   const [isHovered, setIsHovered] = useState(false)
@@ -193,10 +207,12 @@ function ImagePlane({
   }, [material, isHovered])
 
   const handleClick = useCallback(() => {
-    if (link) {
-      window.open(link, "_blank")
+    if (onSelect) {
+      onSelect(item)
+    } else if (item.link) {
+      window.open(item.link, "_blank")
     }
-  }, [link])
+  }, [item, onSelect])
 
   return (
     <mesh
@@ -206,12 +222,12 @@ function ImagePlane({
       material={material}
       onPointerEnter={() => {
         setIsHovered(true)
-        if (link) {
-          document.body.style.cursor = "pointer"
-        }
+        if (onHover) onHover(item)
+        document.body.style.cursor = "pointer"
       }}
       onPointerLeave={() => {
         setIsHovered(false)
+        if (onHover) onHover(null)
         document.body.style.cursor = "auto"
       }}
       onClick={handleClick}
@@ -222,7 +238,7 @@ function ImagePlane({
 }
 
 function GalleryScene({
-  images,
+  items,
   speed = 1,
   visibleCount = 8,
   fadeSettings = {
@@ -234,6 +250,8 @@ function GalleryScene({
     blurOut: { start: 0.9, end: 1.0 },
     maxBlur: 3.0,
   },
+  onItemSelect,
+  onItemHover,
 }: Omit<InfiniteGalleryProps, "className" | "style">) {
   const [scrollVelocity, setScrollVelocity] = useState(0)
   const [autoPlay, setAutoPlay] = useState(true)
@@ -259,14 +277,9 @@ function GalleryScene({
   const horizontalOffset = isMobile ? 2.5 : MAX_HORIZONTAL_OFFSET
   const verticalOffset = isMobile ? 2 : MAX_VERTICAL_OFFSET
 
-  // Normalize images to objects
-  const normalizedImages = useMemo(
-    () => images.map((img) => (typeof img === "string" ? { src: img, alt: "" } : img)),
-    [images],
-  )
 
   // Load textures
-  const textures = useTexture(normalizedImages.map((img) => img.src))
+  const textures = useTexture(items.map((item) => item.src))
 
   // Create materials pool
   const materials = useMemo(() => Array.from({ length: visibleCount }, () => createClothMaterial()), [visibleCount])
@@ -293,7 +306,7 @@ function GalleryScene({
     return positions
   }, [visibleCount, isMobile, horizontalOffset, verticalOffset])
 
-  const totalImages = normalizedImages.length
+  const totalImages = items.length
   const depthRange = DEFAULT_DEPTH_RANGE
 
   // Initialize plane data
@@ -301,7 +314,7 @@ function GalleryScene({
     Array.from({ length: visibleCount }, (_, i) => ({
       index: i,
       z: visibleCount > 0 ? ((depthRange / visibleCount) * i) % depthRange : 0,
-      imageIndex: totalImages > 0 ? i % totalImages : 0,
+      itemIndex: totalImages > 0 ? i % totalImages : 0,
       x: spatialPositions[i]?.x ?? 0, // Use spatial positions for x
       y: spatialPositions[i]?.y ?? 0, // Use spatial positions for y
     })),
@@ -311,7 +324,7 @@ function GalleryScene({
     planesData.current = Array.from({ length: visibleCount }, (_, i) => ({
       index: i,
       z: visibleCount > 0 ? ((depthRange / Math.max(visibleCount, 1)) * i) % depthRange : 0,
-      imageIndex: totalImages > 0 ? i % totalImages : 0,
+      itemIndex: totalImages > 0 ? i % totalImages : 0,
       x: spatialPositions[i]?.x ?? 0,
       y: spatialPositions[i]?.y ?? 0,
     }))
@@ -460,12 +473,12 @@ function GalleryScene({
       }
 
       if (wrapsForward > 0 && imageAdvance > 0 && totalImages > 0) {
-        plane.imageIndex = (plane.imageIndex + wrapsForward * imageAdvance) % totalImages
+        plane.itemIndex = (plane.itemIndex + wrapsForward * imageAdvance) % totalImages
       }
 
       if (wrapsBackward > 0 && imageAdvance > 0 && totalImages > 0) {
-        const step = plane.imageIndex - wrapsBackward * imageAdvance
-        plane.imageIndex = ((step % totalImages) + totalImages) % totalImages
+        const step = plane.itemIndex - wrapsBackward * imageAdvance
+        plane.itemIndex = ((step % totalImages) + totalImages) % totalImages
       }
 
       plane.z = ((newZ % totalRange) + totalRange) % totalRange
@@ -532,15 +545,14 @@ function GalleryScene({
     })
   })
 
-  if (normalizedImages.length === 0) return null
+  if (items.length === 0) return null
 
   return (
     <>
       {planesData.current.map((plane, i) => {
-        const texture = textures[plane.imageIndex]
+        const texture = textures[plane.itemIndex]
         const material = materials[i]
-        const imageData = normalizedImages[plane.imageIndex]
-        const link = imageData?.link
+        const item = items[plane.itemIndex]
 
         if (!texture || !material) return null
 
@@ -557,7 +569,9 @@ function GalleryScene({
             position={[plane.x, plane.y, worldZ]} // Position planes relative to camera center
             scale={scale}
             material={material}
-            link={link}
+            item={item}
+            onSelect={onItemSelect}
+            onHover={onItemHover}
           />
         )
       })}
@@ -565,19 +579,14 @@ function GalleryScene({
   )
 }
 
-// Fallback component for when WebGL is not available
-function FallbackGallery({ images }: { images: ImageItem[] }) {
-  const normalizedImages = useMemo(
-    () => images.map((img) => (typeof img === "string" ? { src: img, alt: "" } : img)),
-    [images],
-  )
+function FallbackGallery({ images }: { images: Project[] }) {
 
   return (
     <div className="flex flex-col items-center justify-center h-full bg-gray-100 p-4">
       <p className="text-gray-600 mb-4">WebGL not supported. Showing image list:</p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-h-96 overflow-y-auto">
-        {normalizedImages.map((img, i) => (
-          <img key={i} src={img.src || "/placeholder.svg"} alt={img.alt} className="w-full h-32 object-cover rounded" />
+        {images.map((img, i) => (
+          <img key={i} src={img.src || "/placeholder.svg"} alt={img.title} className="w-full h-32 object-cover rounded" />
         ))}
       </div>
     </div>
@@ -585,7 +594,7 @@ function FallbackGallery({ images }: { images: ImageItem[] }) {
 }
 
 export default function InfiniteGallery({
-  images,
+  items,
   className = "h-96 w-full",
   style,
   fadeSettings = {
@@ -597,6 +606,8 @@ export default function InfiniteGallery({
     blurOut: { start: 0.4, end: 0.43 },
     maxBlur: 8.0,
   },
+  onItemSelect,
+  onItemHover,
 }: InfiniteGalleryProps) {
   const [webglSupported, setWebglSupported] = useState(true)
 
@@ -616,7 +627,7 @@ export default function InfiniteGallery({
   if (!webglSupported) {
     return (
       <div className={className} style={style}>
-        <FallbackGallery images={images} />
+        <FallbackGallery images={items} />
       </div>
     )
   }
@@ -624,7 +635,13 @@ export default function InfiniteGallery({
   return (
     <div className={className} style={style}>
       <Canvas camera={{ position: [0, 0, 0], fov: 55 }} gl={{ antialias: true, alpha: true }}>
-        <GalleryScene images={images} fadeSettings={fadeSettings} blurSettings={blurSettings} />
+        <GalleryScene
+          items={items}
+          fadeSettings={fadeSettings}
+          blurSettings={blurSettings}
+          onItemSelect={onItemSelect}
+          onItemHover={onItemHover}
+        />
       </Canvas>
     </div>
   )
