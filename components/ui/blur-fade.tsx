@@ -32,7 +32,7 @@ export function BlurFade({
     children,
     className,
     variant,
-    duration = 0.4,
+    duration = 0.2,
     delay = 0,
     offset = 6,
     direction = "down",
