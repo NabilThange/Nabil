@@ -12,8 +12,15 @@ export default function IntroPage() {
   const router = useRouter()
   const { setSoundEnabled } = useSound()
   const [showButtons, setShowButtons] = useState(false)
-
+  const [startAnimation, setStartAnimation] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setStartAnimation(true)
+    }, 500)
+    return () => clearTimeout(timer)
+  }, [])
 
   useEffect(() => {
     // Prevent double initialization in Strict Mode
@@ -89,6 +96,7 @@ export default function IntroPage() {
           glowColor="rgba(255, 255, 255, 0.6)"
           animationDuration={0.3}
           pauseBetweenAnimations={0.2}
+          autoAnimate={startAnimation}
           onFinish={() => setShowButtons(true)}
         />
       </div>
