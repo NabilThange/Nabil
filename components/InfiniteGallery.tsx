@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useRef, useMemo, useCallback, useState, useEffect } from "react"
-import { Canvas, useFrame } from "@react-three/fiber"
+import { Canvas, useFrame, useThree } from "@react-three/fiber"
 import { useTexture } from "@react-three/drei"
 import * as THREE from "three"
 
@@ -223,12 +223,10 @@ function ImagePlane({
       onPointerEnter={() => {
         setIsHovered(true)
         if (onHover) onHover(item)
-        document.body.style.cursor = "pointer"
       }}
       onPointerLeave={() => {
         setIsHovered(false)
         if (onHover) onHover(null)
-        document.body.style.cursor = "auto"
       }}
       onClick={handleClick}
     >
@@ -391,38 +389,44 @@ function GalleryScene({
     lastTouchY.current = null
   }, [])
 
+  const { gl } = useThree()
+
   useEffect(() => {
-    const canvas = document.querySelector("canvas")
-    const container = canvas?.parentElement
+    const canvas = gl.domElement
+    const container = canvas.parentElement
 
     if (canvas && container) {
-      // Add wheel listener to canvas
-      canvas.addEventListener("wheel", handleWheel, { passive: false })
-
-      // Add touch listeners to both canvas and container for better mobile support
-      canvas.addEventListener("touchstart", handleTouchStart, { passive: false })
-      canvas.addEventListener("touchmove", handleTouchMove, { passive: false })
-      canvas.addEventListener("touchend", handleTouchEnd, { passive: false })
-
+      // Attach wheel listener to container to capture scrolls over the entire gallery area
+      container.addEventListener("wheel", handleWheel, { passive: false })
       container.addEventListener("touchstart", handleTouchStart, { passive: false })
       container.addEventListener("touchmove", handleTouchMove, { passive: false })
       container.addEventListener("touchend", handleTouchEnd, { passive: false })
 
-      // Add keyboard listener to document
-      document.addEventListener("keydown", handleKeyDown)
+      // Also attach to canvas if found
+      canvas.addEventListener("wheel", handleWheel, { passive: false })
+      canvas.addEventListener("touchstart", handleTouchStart, { passive: false })
+      canvas.addEventListener("touchmove", handleTouchMove, { passive: false })
+      canvas.addEventListener("touchend", handleTouchEnd, { passive: false })
+    }
 
-      return () => {
+    document.addEventListener("keydown", handleKeyDown)
+
+    return () => {
+      if (container) {
+        container.removeEventListener("wheel", handleWheel)
+        container.removeEventListener("touchstart", handleTouchStart)
+        container.removeEventListener("touchmove", handleTouchMove)
+        container.removeEventListener("touchend", handleTouchEnd)
+      }
+
+      if (canvas) {
         canvas.removeEventListener("wheel", handleWheel)
         canvas.removeEventListener("touchstart", handleTouchStart)
         canvas.removeEventListener("touchmove", handleTouchMove)
         canvas.removeEventListener("touchend", handleTouchEnd)
-
-        container.removeEventListener("touchstart", handleTouchStart)
-        container.removeEventListener("touchmove", handleTouchMove)
-        container.removeEventListener("touchend", handleTouchEnd)
-
-        document.removeEventListener("keydown", handleKeyDown)
       }
+
+      document.removeEventListener("keydown", handleKeyDown)
     }
   }, [handleWheel, handleKeyDown, handleTouchStart, handleTouchMove, handleTouchEnd])
 
@@ -586,7 +590,7 @@ function FallbackGallery({ images }: { images: Project[] }) {
       <p className="text-gray-600 mb-4">WebGL not supported. Showing image list:</p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-h-96 overflow-y-auto">
         {images.map((img, i) => (
-          <img key={i} src={img.src || "/placeholder.svg"} alt={img.title} className="w-full h-32 object-cover rounded" />
+          <img key={i} src={img.src || "/placeholder.svg"} alt={img.title} className="cursor-target w-full h-32 object-cover rounded" />
         ))}
       </div>
     </div>

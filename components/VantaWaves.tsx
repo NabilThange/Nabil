@@ -23,7 +23,7 @@ const VantaWaves = () => {
                         scale: 1.00,
                         scaleMobile: 1.00,
                         color: 0x40404, // Dark gray color
-                        shininess: 2.00,
+                        shininess: 5.00,
                         waveHeight: 15,
                         waveSpeed: 1,
                         zoom: 1

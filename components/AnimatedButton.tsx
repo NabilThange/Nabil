@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import { useClickSound } from "@/hooks/useClickSound"
 
 interface AnimatedButtonProps {
   href: string
@@ -8,8 +9,9 @@ interface AnimatedButtonProps {
 }
 
 export default function AnimatedButton({ href, text }: AnimatedButtonProps) {
+  const playClickSound = useClickSound()
   return (
-    <Link href={href} className="animated-button-wrapper">
+    <Link href={href} className="animated-button-wrapper" onClick={playClickSound}>
       <button className="animated-button">
         <div className="text">
           {text.map((word, i) => (

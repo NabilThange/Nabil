@@ -211,7 +211,7 @@ export default function GalleryContent() {
     <main className="min-h-screen bg-black overflow-hidden relative">
       <button
         onClick={handleBack}
-        className="fixed top-6 left-6 z-50 p-2 rounded-lg hover:bg-white/10 transition-colors duration-200 text-white/60 hover:text-white/90"
+        className="cursor-target fixed top-6 left-6 z-50 p-2 rounded-lg hover:bg-white/10 transition-colors duration-200 text-white/60 hover:text-white/90"
         aria-label="Go back"
       >
         <ChevronLeft size={20} />

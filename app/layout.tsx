@@ -4,6 +4,9 @@ import { Geist } from "next/font/google"
 import "./globals.css"
 import { generateDefaultMetadata, siteConfig, getSocialProfileURLs } from "@/components/SEOManager"
 import StructuredData, { createPersonSchema, createWebSiteSchema } from "@/components/StructuredData"
+import { Providers } from "@/components/Providers"
+import ClickSpark from "@/components/ClickSpark"
+import TargetCursor from "@/components/TargetCursor"
 
 const geist = Geist({
   subsets: ["latin"],
@@ -47,29 +50,42 @@ export default function RootLayout({
       <head>
         {/* Structured Data for SEO/AEO/GEO */}
         <StructuredData data={knowledgeGraph} />
-        
+
         {/* RSS Feed for AI discovery and content syndication */}
-        <link 
-          rel="alternate" 
-          type="application/rss+xml" 
-          title="Nabil Thange Blog RSS Feed" 
-          href="https://nabil-thange.vercel.app/feed.xml" 
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Nabil Thange Blog RSS Feed"
+          href="https://nabil-thange.vercel.app/feed.xml"
         />
-        
+
         {/* Preconnect to critical domains for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+
         <meta name="google-site-verification" content="ECVhL-uOKKAR4INSHOcwPxBFg9lULvqSJD2qwx4viTQ" />
-        
+
         {/* Viewport optimization for mobile-first indexing */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        
+
         {/* Theme color for browser UI */}
         <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
         <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
       </head>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <Providers>
+          <TargetCursor />
+          <ClickSpark
+            sparkColor="#ffffff"
+            sparkSize={10}
+            sparkRadius={15}
+            sparkCount={8}
+            duration={400}
+          >
+            {children}
+          </ClickSpark>
+        </Providers>
+      </body>
     </html>
   )
 }
