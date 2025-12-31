@@ -92,7 +92,7 @@ const Prism: React.FC<PrismProps> = ({
     `;
 
         // Dynamic STEPS based on device
-        const steps = isMobile ? 25 : 100;
+        const steps = isMobile ? 50 : 100;
 
         const fragment = /* glsl */ `
       precision highp float;

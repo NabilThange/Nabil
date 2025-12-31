@@ -30,27 +30,32 @@ export default function IntroPage() {
     audio.volume = 1.0
     audioRef.current = audio
 
-    const playAudio = async () => {
-      try {
-        await audio.play()
-      } catch (e) {
-        console.log("Autoplay blocked, waiting for interaction:", e)
+    const timer = setTimeout(() => {
+      const playAudio = async () => {
+        try {
+          await audio.play()
+        } catch (e) {
+          console.log("Autoplay blocked, waiting for interaction:", e)
 
-        const handleInteraction = () => {
-          audio.play().catch(console.error)
-          // Remove listeners once played
-          document.removeEventListener('click', handleInteraction)
-          document.removeEventListener('keydown', handleInteraction)
-          document.removeEventListener('touchstart', handleInteraction)
+          const handleInteraction = () => {
+            audio.play().catch(console.error)
+            // Remove listeners once played
+            document.removeEventListener('click', handleInteraction)
+            document.removeEventListener('keydown', handleInteraction)
+            document.removeEventListener('touchstart', handleInteraction)
+            document.removeEventListener('pointerdown', handleInteraction)
+          }
+
+          document.addEventListener('click', handleInteraction)
+          document.addEventListener('keydown', handleInteraction)
+          document.addEventListener('touchstart', handleInteraction)
+          document.addEventListener('pointerdown', handleInteraction)
         }
-
-        document.addEventListener('click', handleInteraction)
-        document.addEventListener('keydown', handleInteraction)
-        document.addEventListener('touchstart', handleInteraction)
       }
-    }
+      playAudio()
+    }, 500)
 
-    playAudio()
+    return () => clearTimeout(timer)
   }, [])
 
   const handleEnter = (sound: boolean) => {
