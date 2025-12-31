@@ -5,13 +5,11 @@ import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import AnimatedButton from "@/components/AnimatedButton"
 import { blogPosts } from "@/lib/blog-posts"
-import { useClickSound } from "@/hooks/useClickSound"
 
 export default function Home() {
   const [isDark, setIsDark] = useState(true)
   const [activeSection, setActiveSection] = useState("")
   const sectionsRef = useRef<(HTMLElement | null)[]>([])
-  const playClickSound = useClickSound()
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", isDark)
@@ -38,7 +36,6 @@ export default function Home() {
   }, [])
 
   const toggleTheme = () => {
-    playClickSound()
     setIsDark(!isDark)
   }
 
@@ -52,7 +49,6 @@ export default function Home() {
               <button
                 key={section}
                 onClick={() => {
-                  playClickSound()
                   document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })
                 }}
                 className={`w-2 h-8 rounded-full transition-all duration-500 ${activeSection === section ? "bg-foreground" : "bg-muted-foreground/30 hover:bg-muted-foreground/60"
@@ -140,7 +136,6 @@ export default function Home() {
                 <h2 className="text-3xl sm:text-4xl font-light">{"My Work"} </h2>
                 <Link
                   href="/gallery"
-                  onClick={playClickSound}
                   className="cursor-target group relative px-5 py-2.5 text-sm font-medium border-2 border-foreground rounded-lg bg-foreground text-background hover:bg-transparent hover:text-foreground transition-all duration-300 inline-flex items-center gap-2 whitespace-nowrap"
                 >
                   <span className="relative z-10">View All Projects</span>
@@ -234,7 +229,7 @@ export default function Home() {
 
               <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
                 {blogPosts.map((post) => (
-                  <Link key={post.slug} href={`/blog/${post.slug}`} onClick={playClickSound}>
+                  <Link key={post.slug} href={`/blog/${post.slug}`}>
                     <article
                       className="cursor-target group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg cursor-pointer"
                     >
@@ -288,7 +283,6 @@ export default function Home() {
                   <div className="space-y-4">
                     <Link
                       href="mailto:thangenabil@gmail.com"
-                      onClick={playClickSound}
                       className="cursor-target group flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors duration-300"
                     >
                       <span className="text-base sm:text-lg">thangenabil@gmail.com</span>
@@ -322,7 +316,6 @@ export default function Home() {
                     <Link
                       key={social.name}
                       href={social.url}
-                      onClick={playClickSound}
                       className="cursor-target group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm"
                     >
                       <div className="space-y-2">
