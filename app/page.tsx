@@ -33,7 +33,10 @@ export default function IntroPage() {
       }
     }
 
-    router.push("/home")
+    // Delay navigation slightly to allow sound to play
+    setTimeout(() => {
+      router.push("/home")
+    }, 300)
   }
 
   return (

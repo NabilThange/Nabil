@@ -62,7 +62,9 @@ const Prism: React.FC<PrismProps> = ({
         const HOVSTR = Math.max(0, hoverStrength || 1);
         const INERT = Math.max(0, Math.min(1, inertia || 0.12));
 
-        const dpr = Math.min(2, window.devicePixelRatio || 1);
+        const isMobile = window.innerWidth < 768; // Mobile detection
+        const dpr = isMobile ? 1 : Math.min(2, window.devicePixelRatio || 1); // Reduced DPR for mobile
+
         const renderer = new Renderer({
             dpr,
             alpha: transparent,
@@ -88,6 +90,9 @@ const Prism: React.FC<PrismProps> = ({
         gl_Position = vec4(position, 0.0, 1.0);
       }
     `;
+
+        // Dynamic STEPS based on device
+        const steps = isMobile ? 25 : 100;
 
         const fragment = /* glsl */ `
       precision highp float;
@@ -176,7 +181,7 @@ const Prism: React.FC<PrismProps> = ({
           wob = mat2(c0, c1, c2, c0);
         }
 
-        const int STEPS = 100;
+        const int STEPS = ${steps};
         for (int i = 0; i < STEPS; i++) {
           p = vec3(f, z);
           p.xz = p.xz * wob;
