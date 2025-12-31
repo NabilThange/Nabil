@@ -1,6 +1,6 @@
 "use client"
 
-import VantaWaves from "@/components/VantaWaves"
+import Dither from "@/components/ui/Dither"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import AnimatedButton from "@/components/AnimatedButton"
@@ -43,7 +43,16 @@ export default function Home() {
 
   return (
     <>
-      <VantaWaves />
+      <div className="fixed inset-0 z-0">
+        <Dither
+          waveColor={isDark ? [0.1, 0.1, 0.1] : [0.9, 0.9, 0.9]}
+          colorNum={4}
+          waveSpeed={0.03}
+          waveAmplitude={0.3}
+          waveFrequency={3}
+          enableMouseInteraction={true}
+        />
+      </div>
       <div>
         <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
           <div className="flex flex-col gap-4">
