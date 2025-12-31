@@ -16,7 +16,22 @@ export default function IntroPage() {
   useEffect(() => {
     const audio = new Audio("/glitch.mp3")
     audio.volume = 0.5
-    audio.play().catch((e) => console.log("Autoplay blocked:", e))
+
+    const playAudio = () => {
+      audio.play().catch((e) => {
+        console.log("Autoplay blocked, waiting for interaction:", e)
+        // If blocked, wait for first interaction
+        const handleInteraction = () => {
+          audio.play().catch(console.error)
+          document.removeEventListener('click', handleInteraction)
+          document.removeEventListener('touchstart', handleInteraction)
+        }
+        document.addEventListener('click', handleInteraction)
+        document.addEventListener('touchstart', handleInteraction)
+      })
+    }
+
+    playAudio()
   }, [])
 
   const handleEnter = (sound: boolean) => {

@@ -68,11 +68,6 @@
   ],
   "redirects": [
     {
-      "source": "/home",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/:path*",
       "destination": "https://nabil-thange.vercel.app/:path*",
       "permanent": true,
@@ -184,6 +179,8 @@
     }
   ],
   "rewrites": [],
-  "regions": ["iad1"],
+  "regions": [
+    "iad1"
+  ],
   "framework": "nextjs"
 }
