@@ -18,6 +18,11 @@ type PrismProps = {
     bloom?: number;
     suspendWhenOffscreen?: boolean;
     timeScale?: number;
+    // Optimization controls
+    mobileSteps?: number;
+    desktopSteps?: number;
+    mobileDpr?: number;
+    desktopDpr?: number;
 };
 
 const Prism: React.FC<PrismProps> = ({
@@ -35,7 +40,11 @@ const Prism: React.FC<PrismProps> = ({
     inertia = 0.05,
     bloom = 1,
     suspendWhenOffscreen = false,
-    timeScale = 0.5
+    timeScale = 0.5,
+    mobileSteps = 30,
+    desktopSteps = 100,
+    mobileDpr = 1,
+    desktopDpr = 2
 }) => {
     const containerRef = useRef<HTMLDivElement | null>(null);
 
@@ -63,7 +72,7 @@ const Prism: React.FC<PrismProps> = ({
         const INERT = Math.max(0, Math.min(1, inertia || 0.12));
 
         const isMobile = window.innerWidth < 768; // Mobile detection
-        const dpr = isMobile ? 1 : Math.min(2, window.devicePixelRatio || 1); // Reduced DPR for mobile
+        const dpr = isMobile ? mobileDpr : Math.min(desktopDpr, window.devicePixelRatio || 1);
 
         const renderer = new Renderer({
             dpr,
@@ -92,7 +101,7 @@ const Prism: React.FC<PrismProps> = ({
     `;
 
         // Dynamic STEPS based on device
-        const steps = isMobile ? 50 : 100;
+        const steps = isMobile ? mobileSteps : desktopSteps;
 
         const fragment = /* glsl */ `
       precision highp float;
