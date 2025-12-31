@@ -45,12 +45,13 @@ export default function Home() {
     <>
       <div className="fixed inset-0 z-0">
         <Dither
-          waveColor={isDark ? [0.1, 0.1, 0.1] : [0.9, 0.9, 0.9]}
-          colorNum={4}
-          waveSpeed={0.03}
-          waveAmplitude={0.3}
-          waveFrequency={3}
-          enableMouseInteraction={true}
+          waveColor={isDark ? [0.12, 0.12, 0.12] : [0.75, 0.75, 0.75]}
+          colorNum={3}
+          waveSpeed={0.02}
+          waveAmplitude={0.04}
+          waveFrequency={0}
+          pixelSize={3}
+          enableMouseInteraction={false}
         />
       </div>
       <div>

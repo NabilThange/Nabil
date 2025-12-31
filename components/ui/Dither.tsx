@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 /* eslint-disable react/no-unknown-property */
 import { useRef, useState, useEffect, forwardRef } from 'react';
@@ -301,15 +301,15 @@ interface DitherProps {
 }
 
 export default function Dither({
-    waveSpeed = 0.05,
-    waveFrequency = 3,
-    waveAmplitude = 0.3,
-    waveColor = [0.5, 0.5, 0.5],
-    colorNum = 4,
-    pixelSize = 2,
+    waveSpeed = 0.01,
+    waveFrequency = 0,
+    waveAmplitude = 0.01,
+    waveColor = [0.1, 0.1, 0.1],
+    colorNum = 0,
+    pixelSize = 0.5,
     disableAnimation = false,
-    enableMouseInteraction = true,
-    mouseRadius = 1
+    enableMouseInteraction = false,
+    mouseRadius = 0
 }: DitherProps) {
     return (
         <Canvas
