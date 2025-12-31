@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation"
 import TrueFocus from "@/components/ui/true-focus"
 import Prism from "@/components/Prism"
 import { useSound } from "@/context/SoundContext"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import { cn } from "@/lib/utils"
 import { ArrowUpRight } from "lucide-react"
 
@@ -13,22 +13,34 @@ export default function IntroPage() {
   const { setSoundEnabled } = useSound()
   const [showButtons, setShowButtons] = useState(false)
 
-  useEffect(() => {
-    const audio = new Audio("/glitch.mp3")
-    audio.volume = 0.5
+  const audioRef = useRef<HTMLAudioElement | null>(null)
 
-    const playAudio = () => {
-      audio.play().catch((e) => {
+  useEffect(() => {
+    // Prevent double initialization in Strict Mode
+    if (audioRef.current) return
+
+    const audio = new Audio("/glitch.mp3")
+    audio.volume = 1.0
+    audioRef.current = audio
+
+    const playAudio = async () => {
+      try {
+        await audio.play()
+      } catch (e) {
         console.log("Autoplay blocked, waiting for interaction:", e)
-        // If blocked, wait for first interaction
+
         const handleInteraction = () => {
           audio.play().catch(console.error)
+          // Remove listeners once played
           document.removeEventListener('click', handleInteraction)
+          document.removeEventListener('keydown', handleInteraction)
           document.removeEventListener('touchstart', handleInteraction)
         }
+
         document.addEventListener('click', handleInteraction)
+        document.addEventListener('keydown', handleInteraction)
         document.addEventListener('touchstart', handleInteraction)
-      })
+      }
     }
 
     playAudio()
