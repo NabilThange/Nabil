@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: [
     "Nabil Thange",
     "Nabil Salim Thange",
+    "Nabil",
     "19 year old developer",
     "developer born 2006",
     "October 16 2006",
@@ -282,6 +283,9 @@ export default function About() {
       "https://devpost.com/thangenabil",
       "https://huggingface.co/Nabil-Oc",
       "https://lablab.ai/u/@NabilT",
+      "https://medium.com/@thangenabil",
+      "https://www.kaggle.com/nabilthange",
+      "https://stackoverflow.com/users/32129529/nabil-thange?tab=profile",
     ],
   }
 

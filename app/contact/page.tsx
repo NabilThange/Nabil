@@ -137,6 +137,9 @@ export default function ContactPage() {
                     { name: "HuggingFace", handle: "Nabil-Oc", url: "https://huggingface.co/Nabil-Oc" },
                     { name: "Instagram", handle: "@nabil_thange", url: "https://www.instagram.com/nabil_thange/" },
                     { name: "lablab.ai", handle: "@NabilT", url: "https://lablab.ai/u/@NabilT" },
+                    { name: "Medium", handle: "@thangenabil", url: "https://medium.com/@thangenabil" },
+                    { name: "Kaggle", handle: "nabilthange", url: "https://www.kaggle.com/nabilthange" },
+                    { name: "StackOverflow", handle: "nabil-thange", url: "https://stackoverflow.com/users/32129529/nabil-thange?tab=profile" },
                   ].map((social) => (
                     <Link
                       key={social.name}

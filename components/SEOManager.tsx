@@ -58,6 +58,9 @@ export const siteConfig = {
     huggingface: 'https://huggingface.co/Nabil-Oc',
     instagram: 'https://www.instagram.com/nabil_thange/',
     lablab: 'https://lablab.ai/u/@NabilT',
+    medium: 'https://medium.com/@thangenabil',
+    kaggle: 'https://www.kaggle.com/nabilthange',
+    stackoverflow: 'https://stackoverflow.com/users/32129529/nabil-thange?tab=profile',
   },
 };
 
