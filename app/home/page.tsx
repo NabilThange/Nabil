@@ -7,15 +7,36 @@ import { useEffect, useRef, useState } from "react"
 import { blogPosts } from "@/lib/blog-posts"
 
 import { BlurFade } from "@/components/ui/blur-fade"
+import { Tooltip } from "@/components/ui/tooltip-card"
+import { useTheme } from "next-themes"
+
+const TooltipCard = ({ title, description, image }: { title: string, description: string, image: string }) => {
+  return (
+    <div>
+      <img
+        src={image}
+        alt={title}
+        className="aspect-square w-full rounded-sm object-cover"
+      />
+      <div className="my-4 flex flex-col">
+        <p className="text-lg font-bold text-neutral-900 dark:text-neutral-100">{title}</p>
+        <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
+          {description}
+        </p>
+      </div>
+    </div>
+  );
+};
 
 export default function Home() {
-  const [isDark, setIsDark] = useState(true)
+  const { setTheme, resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
   const [activeSection, setActiveSection] = useState("")
   const sectionsRef = useRef<(HTMLElement | null)[]>([])
 
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", isDark)
-  }, [isDark])
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -27,7 +48,14 @@ export default function Home() {
           }
         })
       },
-      { threshold: 0.3, rootMargin: "0px 0px -20% 0px" },
+      {
+        // TWEAK HERE: Controls when the section reveals
+        // threshold: 0.1 means trigger when 10% of the item is visible (0.5 would be 50%)
+        // rootMargin: "-10%" effectively moves the trigger line up from the bottom. 
+        //             Change -10% to -5% or 0px to make it appear even sooner.
+        threshold: 0.1,
+        rootMargin: "0px 0px -10% 0px",
+      },
     )
 
     sectionsRef.current.forEach((section) => {
@@ -37,8 +65,10 @@ export default function Home() {
     return () => observer.disconnect()
   }, [])
 
+  const isDark = !mounted || resolvedTheme === "dark"
+
   const toggleTheme = () => {
-    setIsDark(!isDark)
+    setTheme(isDark ? "light" : "dark")
   }
 
   return (
@@ -193,6 +223,7 @@ export default function Home() {
                       description:
                         "Created a revolutionary platform featuring 60+ brutalist templates that allows developers to build stunning GitHub profiles without writing code. Used by developers globally.",
                       tech: ["Vite", "Netlify", "BOLT", "No-Code"],
+                      image: "/gitskinz.jpg"
                     },
                     {
                       year: "2025",
@@ -201,54 +232,63 @@ export default function Home() {
                       description:
                         "Engineered an AI-powered assistant with real-time voice control and desktop automation. HackHazards 2025 Winner featuring multimodal capabilities powered by Groq.",
                       tech: ["Next.js", "Three.js", "Groq", "Voice Recognition"],
+                      image: "/nbail.jpg"
+                    },
+                    {
+                      year: "2025",
+                      role: "AI Engineer",
+                      company: "Style",
+                      description:
+                        "An AI-powered fashion design tool that instantly generates outfit variations. Upload images of a person and garments to visualize endless combinations with a single click.",
+                      tech: ["AI", "Fashion Tech", "Generative Design"],
+                      image: "/style.jpg"
                     },
                     {
                       year: "2025",
                       role: "Full-Stack Developer",
-                      company: "NutriSnap",
+                      company: "Techwiser CMS",
                       description:
-                        "Solved a critical gap in nutrition tracking by building the first comprehensive app with proper Indian food support. Users snap photos and receive instant nutritional breakdowns.",
-                      tech: ["AI Image Recognition", "React", "Real-time Processing"],
-                    },
-                    {
-                      year: "2025",
-                      role: "AI/UX Developer",
-                      company: "Shopwiz",
-                      description:
-                        "Revolutionized product discovery with natural language shopping. Instead of filters and endless scrolling, users simply describe what they want with conversational refinement.",
-                      tech: ["NLP", "Conversational AI", "Web Scraping"],
+                        "Custom content management system built for the Techwiser blog.",
+                      tech: ["Next.js", "CMS", "Admin Panel"],
+                      image: "/techwiser-cms.jpg"
                     },
                   ].map((job, index) => (
-                    <div
+                    <Tooltip
                       key={index}
-                      className="cursor-target group grid lg:grid-cols-12 gap-4 sm:gap-8 py-6 sm:py-8 border-b border-border/50 hover:border-border transition-colors duration-500"
+                      content={<TooltipCard title={job.company} description={job.description} image={job.image} />}
+                      containerClassName="w-full"
                     >
-                      <div className="lg:col-span-2">
-                        <div className="text-xl sm:text-2xl font-light text-muted-foreground group-hover:text-foreground transition-colors duration-500">
-                          {job.year}
+                      <div
+                        className="cursor-target group grid lg:grid-cols-12 gap-4 sm:gap-8 py-6 sm:py-8 border-b border-border/50 hover:border-border transition-colors duration-500"
+                      >
+                        <div className="lg:col-span-2">
+                          <div className="text-xl sm:text-2xl font-light text-muted-foreground group-hover:text-foreground transition-colors duration-500">
+                            {job.year}
+                          </div>
+                        </div>
+
+                        <div className="lg:col-span-6 space-y-3">
+                          <div>
+                            <h3 className="text-lg sm:text-xl font-medium">{job.role}</h3>
+                            <div className="text-muted-foreground">{job.company}</div>
+                          </div>
+                          <p className="text-muted-foreground leading-relaxed max-w-lg">{job.description}</p>
+                        </div>
+
+                        <div className="lg:col-span-4 flex flex-wrap gap-2 lg:justify-end mt-2 lg:mt-0">
+                          {job.tech.map((tech) => (
+                            <span
+                              key={tech}
+                              className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
+                            >
+                              {tech}
+                            </span>
+                          ))}
                         </div>
                       </div>
-
-                      <div className="lg:col-span-6 space-y-3">
-                        <div>
-                          <h3 className="text-lg sm:text-xl font-medium">{job.role}</h3>
-                          <div className="text-muted-foreground">{job.company}</div>
-                        </div>
-                        <p className="text-muted-foreground leading-relaxed max-w-lg">{job.description}</p>
-                      </div>
-
-                      <div className="lg:col-span-4 flex flex-wrap gap-2 lg:justify-end mt-2 lg:mt-0">
-                        {job.tech.map((tech) => (
-                          <span
-                            key={tech}
-                            className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
+                    </Tooltip>
+                  ))
+                  }
                 </div>
               </BlurFade>
             </div>

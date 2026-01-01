@@ -61,7 +61,7 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="en" className={`${geist.variable} ${spaceGrotesk.variable}`}>
+    <html lang="en" className={`${geist.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
       <head>
         {/* Structured Data for SEO/AEO/GEO */}
         <StructuredData data={knowledgeGraph} />
