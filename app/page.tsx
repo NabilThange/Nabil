@@ -8,11 +8,32 @@ import { useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
 import { ArrowUpRight } from "lucide-react"
 
+// Custom hook to detect mobile devices
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+
+    // Check on mount
+    checkMobile()
+
+    // Check on resize
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
+
+  return isMobile
+}
+
 export default function IntroPage() {
   const router = useRouter()
   const { setSoundEnabled } = useSound()
   const [showButtons, setShowButtons] = useState(false)
   const [startAnimation, setStartAnimation] = useState(false)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -20,8 +41,6 @@ export default function IntroPage() {
     }, 500)
     return () => clearTimeout(timer)
   }, [])
-
-
 
   const handleEnter = (sound: boolean) => {
     setSoundEnabled(sound)
@@ -43,24 +62,46 @@ export default function IntroPage() {
     }, 300)
   }
 
+  // Mobile-optimized Prism configuration
+  const prismConfig = isMobile ? {
+    animationType: "3drotate" as const,
+    timeScale: 0.5,
+    height: 3.5,
+    baseWidth: 5.5,
+    scale: 3.0,              // Reduced for mobile
+    hueShift: 0,
+    colorFrequency: 1,
+    noise: 0.3,              // Reduced for mobile
+    glow: 0.7,               // Reduced for mobile
+    bloom: 0.8,              // Added for mobile
+    mobileSteps: 20,
+    desktopSteps: 100,
+    mobileDpr: 1,
+    desktopDpr: 2,
+    suspendWhenOffscreen: true
+  } : {
+    // Desktop-optimized configuration
+    animationType: "3drotate" as const,
+    timeScale: 0.5,
+    height: 3.5,
+    baseWidth: 5.5,
+    scale: 3.6,
+    hueShift: 0,
+    colorFrequency: 1,
+    noise: 0.4,
+    glow: 1,
+    bloom: 1,
+    mobileSteps: 20,
+    desktopSteps: 100,
+    mobileDpr: 1,
+    desktopDpr: 2,
+    suspendWhenOffscreen: true
+  }
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white p-4 relative overflow-hidden">
       <div className="absolute inset-0 w-full h-full pointer-events-none">
-        <Prism
-          animationType="3drotate"
-          timeScale={0.5}
-          height={3.5}
-          baseWidth={5.5}
-          scale={3.6}
-          hueShift={0}
-          colorFrequency={1}
-          noise={0.4}
-          glow={1}
-          mobileSteps={35}
-          desktopSteps={100}
-          mobileDpr={1}
-          desktopDpr={2}
-        />
+        <Prism {...prismConfig} />
       </div>
 
       <div className="mb-12 relative z-10 w-full flex justify-center">
