@@ -11,8 +11,11 @@ import { ArrowUpRight } from "lucide-react"
 // Custom hook to detect mobile devices
 function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
+
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768)
     }
@@ -25,7 +28,7 @@ function useIsMobile() {
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
-  return isMobile
+  return { isMobile, mounted }
 }
 
 export default function IntroPage() {
@@ -33,7 +36,7 @@ export default function IntroPage() {
   const { setSoundEnabled } = useSound()
   const [showButtons, setShowButtons] = useState(false)
   const [startAnimation, setStartAnimation] = useState(false)
-  const isMobile = useIsMobile()
+  const { isMobile, mounted } = useIsMobile()
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -63,7 +66,26 @@ export default function IntroPage() {
   }
 
   // Mobile-optimized Prism configuration
-  const prismConfig = isMobile ? {
+  // Use desktop config during SSR/initial render to avoid hydration mismatch
+  const prismConfig = !mounted ? {
+    // Default (desktop) configuration for SSR
+    animationType: "3drotate" as const,
+    timeScale: 0.5,
+    height: 3.5,
+    baseWidth: 5.5,
+    scale: 3.6,
+    hueShift: 0,
+    colorFrequency: 1,
+    noise: 0.4,
+    glow: 1,
+    bloom: 1,
+    mobileSteps: 20,
+    desktopSteps: 100,
+    mobileDpr: 1,
+    desktopDpr: 2,
+    suspendWhenOffscreen: true
+  } : isMobile ? {
+    // Mobile-specific configuration
     animationType: "3drotate" as const,
     timeScale: 0.5,
     height: 3.5,
