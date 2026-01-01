@@ -14,6 +14,7 @@ export interface Project {
   link: string
   tags?: string[]
   year?: string
+  githubUrl?: string  // Optional GitHub repository URL, null or undefined for private projects
 }
 
 interface FadeSettings {

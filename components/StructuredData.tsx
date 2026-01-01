@@ -81,6 +81,7 @@ export function createPersonSchema(config: {
   email?: string;
   socialProfiles?: string[];
   sameAs?: string[];
+  knowsAbout?: string[];
 }) {
   return {
     '@context': 'https://schema.org',
@@ -93,6 +94,9 @@ export function createPersonSchema(config: {
     ...(config.email && { email: config.email }),
     ...(config.socialProfiles && config.socialProfiles.length > 0 && {
       sameAs: config.socialProfiles,
+    }),
+    ...(config.knowsAbout && config.knowsAbout.length > 0 && {
+      knowsAbout: config.knowsAbout,
     }),
   };
 }

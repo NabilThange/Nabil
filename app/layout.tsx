@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist } from "next/font/google"
+import { Geist, Space_Grotesk } from "next/font/google"
 import "./globals.css"
 import { generateDefaultMetadata, siteConfig, getSocialProfileURLs } from "@/components/SEOManager"
 import StructuredData, { createPersonSchema, createWebSiteSchema } from "@/components/StructuredData"
@@ -12,6 +12,12 @@ const geist = Geist({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-geist",
+})
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-space-grotesk",
 })
 
 // Comprehensive SEO metadata for optimal discoverability across search engines and AI platforms
@@ -30,6 +36,15 @@ export default function RootLayout({
     jobTitle: "Full-Stack Developer & Creative Technologist",
     description: siteConfig.description,
     socialProfiles: getSocialProfileURLs(),
+    knowsAbout: [
+      "Full-Stack Development",
+      "Generative AI",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Creative Web Design",
+      "Artificial Intelligence",
+    ],
   })
 
   // WebSite schema for search functionality and site-wide data
@@ -46,7 +61,7 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="en" className={`${geist.variable}`}>
+    <html lang="en" className={`${geist.variable} ${spaceGrotesk.variable}`}>
       <head>
         {/* Structured Data for SEO/AEO/GEO */}
         <StructuredData data={knowledgeGraph} />

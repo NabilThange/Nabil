@@ -18,14 +18,20 @@ import { getAllBlogPosts } from '@/lib/blog-posts'
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://nabil-thange.vercel.app'
   const currentDate = new Date()
-  
+
   // Static routes
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: currentDate,
       changeFrequency: 'weekly',
-      priority: 1.0, // Homepage - highest priority
+      priority: 1.0, // Intro/Landing Page
+    },
+    {
+      url: `${baseUrl}/home`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 1.0, // Main Portfolio Dashboard (Critical for indexing)
     },
     {
       url: `${baseUrl}/about`,
@@ -52,7 +58,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8, // Blog hub page
     },
   ]
-  
+
   // Dynamic blog post routes
   const blogPosts = getAllBlogPosts()
   const blogPostPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
@@ -61,7 +67,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: 'monthly',
     priority: 0.7,
   }))
-  
+
   // Example for projects:
   // const projects = await getAllProjects()
   // const projectPages: MetadataRoute.Sitemap = projects.map((project) => ({
@@ -70,7 +76,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   //   changeFrequency: 'monthly',
   //   priority: 0.8,
   // }))
-  
+
   return [
     ...staticPages,
     ...blogPostPages,

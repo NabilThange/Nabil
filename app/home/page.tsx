@@ -3,7 +3,7 @@
 import Dither from "@/components/ui/Dither"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
-import AnimatedButton from "@/components/AnimatedButton"
+
 import { blogPosts } from "@/lib/blog-posts"
 
 import { BlurFade } from "@/components/ui/blur-fade"
@@ -45,12 +45,12 @@ export default function Home() {
     <>
       <div className="fixed inset-0 z-0">
         <Dither
-          waveColor={isDark ? [0.12, 0.12, 0.12] : [0.75, 0.75, 0.75]}
+          waveColor={isDark ? [0.15, 0.15, 0.15] : [0.2, 0.2, 0.2]}
           colorNum={3}
-          waveSpeed={0.02}
-          waveAmplitude={0.04}
-          waveFrequency={0}
-          pixelSize={3}
+          waveSpeed={0.01}
+          waveAmplitude={0.6}
+          waveFrequency={0.06}
+          pixelSize={1}
           enableMouseInteraction={false}
         />
       </div>
@@ -107,7 +107,20 @@ export default function Home() {
                       <div className="flex items-center gap-3">
                         <div>Mumbai, India</div>
                         <div className="scale-75 origin-left">
-                          <AnimatedButton href="/about" text={["More"]} />
+                          <Link
+                            href="/about"
+                            className="cursor-target group relative px-5 py-2.5 text-sm font-medium border-2 border-foreground rounded-lg bg-background text-foreground hover:bg-foreground hover:text-background transition-all duration-300 inline-flex items-center gap-2 whitespace-nowrap"
+                          >
+                            <span className="relative z-10">More</span>
+                            <svg
+                              className="w-4 h-4 relative z-10 transform group-hover:translate-x-1 transition-transform duration-300"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -254,9 +267,9 @@ export default function Home() {
               <BlurFade delay={0.5} inView>
                 <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
                   {blogPosts.map((post) => (
-                    <Link key={post.slug} href={`/blog/${post.slug}`}>
+                    <Link key={post.slug} href={`/blog/${post.slug}`} className="block h-full">
                       <article
-                        className="cursor-target group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg cursor-pointer"
+                        className="cursor-target group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg cursor-pointer h-full flex flex-col"
                       >
                         <div className="space-y-4">
                           <div className="flex items-center justify-between text-xs text-muted-foreground font-mono">

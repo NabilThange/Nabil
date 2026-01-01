@@ -119,13 +119,14 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
                         ref={el => {
                             wordRefs.current[index] = el;
                         }}
-                        className="relative text-[3rem] font-sans font-black cursor-pointer text-white"
+                        className="relative text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight cursor-pointer text-white font-['var(--font-space-grotesk)']"
                         style={
                             {
                                 filter: isActive ? `blur(0px)` : `blur(${blurAmount}px)`,
                                 transition: `filter ${animationDuration}s ease`,
                                 outline: 'none',
-                                userSelect: 'none'
+                                userSelect: 'none',
+                                fontFamily: 'var(--font-space-grotesk)'
                             } as React.CSSProperties
                         }
                     >

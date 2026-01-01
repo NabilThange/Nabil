@@ -39,6 +39,14 @@ export default function IntroPage() {
   const { isMobile, mounted } = useIsMobile()
 
   useEffect(() => {
+    // Play glitch sound on load
+    const audio = new Audio("/glitch.mp3")
+    audio.volume = 0.5
+    audio.play().catch((e) => {
+      // Autoplay might be blocked by browser
+      console.log("Autoplay blocked/failed", e)
+    })
+
     const timer = setTimeout(() => {
       setStartAnimation(true)
     }, 500)
@@ -90,13 +98,13 @@ export default function IntroPage() {
     timeScale: 0.5,
     height: 3.5,
     baseWidth: 5.5,
-    scale: 3.0,              // Reduced for mobile
+    scale: 3.45,              // Match desktop scale
     hueShift: 0,
     colorFrequency: 1,
-    noise: 0.3,              // Reduced for mobile
-    glow: 0.7,               // Reduced for mobile
+    noise: 0.2,              // Reduced for mobile
+    glow: 0.9,                 // Match desktop glow
     bloom: 0.8,              // Added for mobile
-    mobileSteps: 20,
+    mobileSteps: 35,         // Increased from 20 to ensure visibility
     desktopSteps: 100,
     mobileDpr: 1,
     desktopDpr: 2,
@@ -153,7 +161,7 @@ export default function IntroPage() {
 
         <button
           onClick={() => handleEnter(false)}
-          className="cursor-target px-6 py-3 font-semibold text-gray-500 hover:text-white transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-2 after:left-6 after:w-0 after:h-[1px] after:bg-white hover:after:w-[calc(100%-48px)] after:transition-all after:duration-300"
+          className="cursor-target px-6 py-3 font-semibold text-gray-300 hover:text-white transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-2 after:left-6 after:w-0 after:h-[1px] after:bg-white hover:after:w-[calc(100%-48px)] after:transition-all after:duration-300"
         >
           Enter without sound
         </button>

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     "Web Projects",
     "Three.js",
     "Next.js Portfolio",
+    "Nabil Salim Thange",
+    "Nabil Thange Saraswati College of Engineering",
+    "Nabil",
     "Mumbai Developer",
   ],
   openGraph: {

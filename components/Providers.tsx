@@ -1,13 +1,18 @@
 "use client"
 
 import React, { useEffect } from "react"
+import { usePathname } from "next/navigation"
 import { SoundProvider, useSound } from "@/context/SoundContext"
 
 function GlobalClickSound() {
     const { soundEnabled } = useSound()
+    const pathname = usePathname()
 
     useEffect(() => {
         const handleClick = () => {
+            // Don't play click sound on the intro page
+            if (pathname === "/") return
+
             if (soundEnabled) {
                 const audio = new Audio("/click.mp3")
                 audio.volume = 0.5
@@ -18,7 +23,7 @@ function GlobalClickSound() {
 
         window.addEventListener("click", handleClick)
         return () => window.removeEventListener("click", handleClick)
-    }, [soundEnabled])
+    }, [soundEnabled, pathname])
 
     return null
 }
