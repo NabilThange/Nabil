@@ -47,15 +47,19 @@ export default function IntroPage() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white p-4 relative overflow-hidden">
       <div className="absolute inset-0 w-full h-full pointer-events-none">
         <Prism
-          animationType="rotate"
+          animationType="3drotate"
           timeScale={0.5}
           height={3.5}
           baseWidth={5.5}
           scale={3.6}
           hueShift={0}
           colorFrequency={1}
-          noise={0.5}
+          noise={0.4}
           glow={1}
+          mobileSteps={35}
+          desktopSteps={100}
+          mobileDpr={1}
+          desktopDpr={2}
         />
       </div>
 
