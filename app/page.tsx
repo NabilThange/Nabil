@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation"
 import TrueFocus from "@/components/ui/true-focus"
 import Prism from "@/components/Prism"
 import { useSound } from "@/context/SoundContext"
-import { useEffect, useState, useRef } from "react"
+import { useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
 import { ArrowUpRight } from "lucide-react"
 
@@ -13,7 +13,6 @@ export default function IntroPage() {
   const { setSoundEnabled } = useSound()
   const [showButtons, setShowButtons] = useState(false)
   const [startAnimation, setStartAnimation] = useState(false)
-  const audioRef = useRef<HTMLAudioElement | null>(null)
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -22,49 +21,15 @@ export default function IntroPage() {
     return () => clearTimeout(timer)
   }, [])
 
-  useEffect(() => {
-    // Prevent double initialization in Strict Mode
-    if (audioRef.current) return
 
-    const audio = new Audio("/glitch.mp3")
-    audio.volume = 1.0
-    audioRef.current = audio
-
-    const timer = setTimeout(() => {
-      const playAudio = async () => {
-        try {
-          await audio.play()
-        } catch (e) {
-          console.log("Autoplay blocked, waiting for interaction:", e)
-
-          const handleInteraction = () => {
-            audio.play().catch(console.error)
-            // Remove listeners once played
-            document.removeEventListener('click', handleInteraction)
-            document.removeEventListener('keydown', handleInteraction)
-            document.removeEventListener('touchstart', handleInteraction)
-            document.removeEventListener('pointerdown', handleInteraction)
-          }
-
-          document.addEventListener('click', handleInteraction)
-          document.addEventListener('keydown', handleInteraction)
-          document.addEventListener('touchstart', handleInteraction)
-          document.addEventListener('pointerdown', handleInteraction)
-        }
-      }
-      playAudio()
-    }, 500)
-
-    return () => clearTimeout(timer)
-  }, [])
 
   const handleEnter = (sound: boolean) => {
     setSoundEnabled(sound)
 
     if (sound) {
-      // Play sound immediately as feedback
+      // Play glitch sound immediately as feedback
       try {
-        const audio = new Audio("/click.mp3")
+        const audio = new Audio("/glitch.mp3")
         audio.volume = 0.5
         audio.play()
       } catch (e) {
