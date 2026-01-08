@@ -113,10 +113,10 @@ export default function robots(): MetadataRoute.Robots {
       
       // Optional: Block specific crawlers if needed
       // Uncomment to block CommonCrawl (used for many AI training datasets)
-      // {
-      //   userAgent: 'CCBot',
-      //   disallow: '/',
-      // },
+      {
+        userAgent: 'CCBot',
+        disallow: '/',
+      },
       
       // Block ByteDance/TikTok crawler if desired
       // {

@@ -9,6 +9,8 @@ import { blogPosts } from "@/lib/blog-posts"
 import { BlurFade } from "@/components/ui/blur-fade"
 import { Tooltip } from "@/components/ui/tooltip-card"
 import { useTheme } from "next-themes"
+import StructuredData, { createPortfolioSchema } from "@/components/StructuredData"
+import { siteConfig } from "@/components/SEOManager"
 
 const TooltipCard = ({ title, description, image }: { title: string, description: string, image: string }) => {
   return (
@@ -27,6 +29,45 @@ const TooltipCard = ({ title, description, image }: { title: string, description
     </div>
   );
 };
+
+const projects = [
+  {
+    year: "2025",
+    role: "Founder & Creator",
+    company: "Gitskinz",
+    description:
+      "Created a revolutionary platform featuring 60+ brutalist templates that allows developers to build stunning GitHub profiles without writing code. Used by developers globally.",
+    tech: ["Vite", "Netlify", "BOLT", "No-Code"],
+    image: "/gitskinz.jpg"
+  },
+  {
+    year: "2025",
+    role: "AI Engineer & Full-Stack Developer",
+    company: "NbAIl",
+    description:
+      "Engineered an AI-powered assistant with real-time voice control and desktop automation. HackHazards 2025 Winner featuring multimodal capabilities powered by Groq.",
+    tech: ["Next.js", "Three.js", "Groq", "Voice Recognition"],
+    image: "/nbail.jpg"
+  },
+  {
+    year: "2025",
+    role: "AI Engineer",
+    company: "Style",
+    description:
+      "An AI-powered fashion design tool that instantly generates outfit variations. Upload images of a person and garments to visualize endless combinations with a single click.",
+    tech: ["AI", "Fashion Tech", "Generative Design"],
+    image: "/style.jpg"
+  },
+  {
+    year: "2025",
+    role: "Full-Stack Developer",
+    company: "Techwiser CMS",
+    description:
+      "Custom content management system built for the Techwiser blog.",
+    tech: ["Next.js", "CMS", "Admin Panel"],
+    image: "/techwiser-cms.jpg"
+  },
+];
 
 export default function Home() {
   const { setTheme, resolvedTheme } = useTheme()
@@ -71,8 +112,27 @@ export default function Home() {
     setTheme(isDark ? "light" : "dark")
   }
 
+  const portfolioSchema = createPortfolioSchema({
+    name: "Nabil Thange - Portfolio",
+    url: siteConfig.url,
+    description: siteConfig.description,
+    creator: {
+      name: siteConfig.author.name,
+      url: siteConfig.url,
+      jobTitle: "Full-Stack Developer",
+      image: `${siteConfig.url}/profile.png`,
+    },
+    works: projects.map((project) => ({
+      name: project.company,
+      url: `${siteConfig.url}/#work`,
+      description: project.description,
+      image: `${siteConfig.url}${project.image}`,
+    })),
+  })
+
   return (
     <>
+      <StructuredData data={portfolioSchema} />
       <div className="fixed inset-0 z-0">
         <Dither
           waveColor={isDark ? [0.15, 0.15, 0.15] : [0.2, 0.2, 0.2]}
@@ -215,44 +275,7 @@ export default function Home() {
 
               <BlurFade delay={0.5} inView>
                 <div className="space-y-8 sm:space-y-12">
-                  {[
-                    {
-                      year: "2025",
-                      role: "Founder & Creator",
-                      company: "Gitskinz",
-                      description:
-                        "Created a revolutionary platform featuring 60+ brutalist templates that allows developers to build stunning GitHub profiles without writing code. Used by developers globally.",
-                      tech: ["Vite", "Netlify", "BOLT", "No-Code"],
-                      image: "/gitskinz.jpg"
-                    },
-                    {
-                      year: "2025",
-                      role: "AI Engineer & Full-Stack Developer",
-                      company: "NbAIl",
-                      description:
-                        "Engineered an AI-powered assistant with real-time voice control and desktop automation. HackHazards 2025 Winner featuring multimodal capabilities powered by Groq.",
-                      tech: ["Next.js", "Three.js", "Groq", "Voice Recognition"],
-                      image: "/nbail.jpg"
-                    },
-                    {
-                      year: "2025",
-                      role: "AI Engineer",
-                      company: "Style",
-                      description:
-                        "An AI-powered fashion design tool that instantly generates outfit variations. Upload images of a person and garments to visualize endless combinations with a single click.",
-                      tech: ["AI", "Fashion Tech", "Generative Design"],
-                      image: "/style.jpg"
-                    },
-                    {
-                      year: "2025",
-                      role: "Full-Stack Developer",
-                      company: "Techwiser CMS",
-                      description:
-                        "Custom content management system built for the Techwiser blog.",
-                      tech: ["Next.js", "CMS", "Admin Panel"],
-                      image: "/techwiser-cms.jpg"
-                    },
-                  ].map((job, index) => (
+                  {projects.map((job, index) => (
                     <Tooltip
                       key={index}
                       content={<TooltipCard title={job.company} description={job.description} image={job.image} />}

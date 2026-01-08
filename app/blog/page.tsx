@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     "Next.js Articles",
     "React Developer Blog",
     "Mumbai Developer Blog",
+    "Nabil Salim Thange",
+    "Nabil Thange Saraswati College of Engineering",
+    "Saraswati College of Engineering",
+    "Saraswati College of Engineering,Kharghar",
+    "Nabil",
+    "Mumbai Developer",
   ],
   openGraph: {
     title: "Blog — Recent Thoughts by Nabil Thange",
