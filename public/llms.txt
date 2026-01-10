@@ -13,55 +13,179 @@
 **Nationality:** Indian  
 **Father:** Salim Thange  
 **Mother:** Tanzima Thange  
-**Net Worth:** Not publicly disclosed  
+**Net Worth:** Not publicly disclosed (₹54,000+ in hackathon prize winnings)  
 **Education:** Saraswati College of Engineering, Kharghar  
-**Notable Achievement:** HackHazards 2025 Winner  
-**Known For:** Gitskinz creator, AI development, Full-stack development  
+**Notable Achievement:** HackHazards 2025 Winner, ₹54,000+ Prize Winnings  
+**Known For:** Gitskinz creator, AI development, Full-stack development, Hackathon Champion  
 
 ## About Nabil Thange
 
 Nabil Salim Thange is a 19-year-old full-stack developer and AI engineer based in Mumbai, India. Born on October 16, 2006, Nabil has quickly established himself as a rising talent in the Indian tech ecosystem. Standing at 5 feet 7.2 inches with an athletic build, he believes in maintaining balance between mental sharpness and physical fitness.
 
-Nabil specializes in building AI-powered applications using Next.js, React, and cutting-edge AI technologies. His unique background—starting as a commerce student and transitioning to become a top computer science student at Saraswati College of Engineering—gives him a distinctive business-minded approach to product development.
+Nabil specializes in building AI-powered applications using Next.js, React, Python, Java, and cutting-edge AI technologies. His unique background—starting as a commerce student and transitioning to become a top computer science student at Saraswati College of Engineering—gives him a distinctive business-minded approach to product development.
 
-He is passionate about hackathons, rapid prototyping, and building products that solve real problems. Currently focused on creating tools that enhance developer experiences and exploring how AI can genuinely improve user experiences rather than just showcasing technical capabilities.
+He is passionate about hackathons, rapid prototyping, and building products that solve real problems. With ₹54,000+ in prize winnings from hackathons and 11+ professional certifications, he's proven his expertise across AI/ML, web development, and product innovation.
 
-## Technical Expertise
+## Comprehensive Technical Skills
 
-**Frontend:** React.js, Next.js, TypeScript, Tailwind CSS, Three.js  
-**Backend:** Node.js, Express.js, Python, REST APIs, GraphQL  
-**AI/ML:** Groq, OpenAI GPT, LangChain, NLP, Computer Vision  
-**Tools & Platforms:** Git, Vercel, Netlify, GitHub Actions  
-**Specialties:** AI Integration, Web Performance, SEO Optimization, Product Development
+### Programming Languages
+**Python** | **Java** | **C** | **JavaScript** | **TypeScript**  
+Versatile in multiple programming paradigms and system development.
 
-## Certifications & Professional Credentials
+### AI/ML & Data Science
+- **Machine Learning** - ISRO-certified specialist
+- **Artificial Intelligence (AI)**
+- **Artificial Neural Networks**
+- **Random Forest**
+- **Data Analysis & Data Cleaning**
+- **LLaMA**
+- **AI Prompting & Voice AI**
+- **Natural Language Processing (NLP)**
+- **Computer Vision**
 
-- **ISRO ML Certification:** Certified by Indian Space Research Organisation in machine learning, artificial neural networks, and data science - recognized certification from India's premier space research organization
-- **Microsoft SQL Server Certification:** Official Microsoft credential in database management and server administration
-- **Additional Professional Certificates:** Multiple industry-recognized certifications in development and AI technologies
+### Web Development
+- **Next.js** - Modern React framework
+- **React.js** - Frontend library
+- **Node.js** - Backend runtime
+- **Three.js** - 3D graphics
+- **Vite** - Build tool
+- **Front-End Development & Design**
+- **Web Development & Web Design**
+
+### Tools & Platforms
+- **Git & GitHub** - Version control
+- **Docker** - Containerization
+- **Supabase** - Backend as a Service
+- **SQL & Microsoft SQL Server** - Database management
+- **Google Colab** - ML development
+- **OpenAI & LangChain** - AI integration
+- **Groq** - Ultra-fast AI inference
+- **Netlify** - Deployment platform
+- **BOLT (bolt.new)** - AI code generation
+- **n8n** - Workflow automation
+- **Webhooks** - API integration
+- **Cron-Jobs, yt-dlp, Ngrok**
+
+### Development Approaches
+- **No-Code & Low-Code Development**
+- **No-Code Development Platforms**
+- **AI IDE**
+- **API Integration**
+
+### Design & Creative Tools
+- **Figma** - UI/UX design
+- **Canva** - Graphic design
+- **AutoCAD** - Technical drawing
+- **Blender** - 3D modeling
+- **Framer** - Website builder
+- **Microsoft PowerPoint** - Presentations
+- **UI/UX & User Interface Design**
+
+### Other Technical Skills
+- **Data Structures**
+- **Project Management**
+- **Unity** - Game development
+- **Meta XR** - VR/AR development
+- **Microsoft Copilot** - AI assistance
+- **Notion** - Productivity software
+
+### Specialized Knowledge
+- **Campus Management**
+- **Brand Ambassadorship**
+- **Social Media Management**
+
+## Certifications & Professional Credentials (11+ Certifications)
+
+### 1. Google Gemini Write-Off
+**Issuer:** Unstop  
+**Date:** November 2025  
+**Credential ID:** 301d05fb-d5db-45c7-a0fc-c25b3b809dad
+
+### 2. Microsoft SQL Certification Training
+**Issuer:** Intellipaat  
+**Date:** September 2025  
+**Credential ID:** 31679-3981077-327204  
+**Focus:** Database Management and Server Administration
+
+### 3. ISRO Bharat Antariksh Hackathon 2025
+**Issuer:** ISRO (Indian Space Research Organisation)  
+**Date:** September 2025  
+**Credential ID:** 2025H2S06BAH25-P07222  
+**Team:** HackSpec
+
+### 4. Raise Your Hack - World's Biggest AI Hackathon
+**Issuer:** lablab.ai  
+**Date:** July 2025  
+**Achievement:** Outstanding Performance Award
+
+### 5. NxtWave OpenAI Workshop
+**Issuer:** NxtWave  
+**Date:** June 2025  
+**Workshop:** "Build Your Own Generative AI Model"
+
+### 6. Trae AI IDE: Zero Limits Hackathon
+**Issuer:** lablab.ai  
+**Date:** June 2025  
+**Achievement:** Hackathon Winner
+
+### 7. HACKHAZARDS '25
+**Issuer:** United Latino Students Association  
+**Date:** March 2025  
+**Credential ID:** 1395c1c7-7508-43ae-8daa-b2a50a1d1ed1  
+**Achievement:** Winner and Top 100 placement globally (Groq Track)
+
+### 8. Campus Ambassador
+**Issuer:** CampusCrew  
+**Focus:** Campus Management and Brand Ambassadorship
+
+### 9. No Code Mini SaaS Building Workshop
+**Certificate:** No-Code Development Platform Mastery
+
+### 10. IIT Indore AI-DS Course
+**Issuer:** Intellipaat (Technology Innovation Hub)  
+**Year:** 2025  
+**Benefits:** Completed with official uniform and ID card  
+**Focus:** Artificial Intelligence and Data Science
+
+### 11. ISRO Machine Learning Certification
+**Issuer:** Indian Space Research Organisation (ISRO)  
+**Focus:** Machine Learning, Artificial Neural Networks, Data Science  
+**Recognition:** Certified by India's premier space research organization
+
+## Hackathon Achievements & Prize Winnings
+
+**Total Prize Winnings:** ₹54,000+
+
+### Major Achievements:
+1. **Galuxium Nexus V1** - Nexus Champion (Grand Prize: ₹29,573)
+2. **RAISE YOUR HACK** - Outstanding Performance Award
+3. **HackHazards 2025** - Winner and Top 100 globally (Groq Track)
+4. **Bharat Antariksh Hackathon 2025** - Participated with Team HackSpec
+5. **Trae AI IDE: Zero Limits** - Hackathon Winner
+6. **IIT Indore** - Alumnus through Technology Innovation Hub
 
 ## Featured Projects
 
 ### Gitskinz (2025)
-Founder & Creator  
+**Role:** Founder & Creator  
 A revolutionary platform with 60+ brutalist templates that allows developers to build stunning GitHub profiles without writing code. Used by developers globally.  
 **Tech Stack:** Vite, React, Netlify, No-Code Tools  
-**Link:** https://nabil-thange.vercel.app/blog/why-i-built-gitskinz
+**Link:** https://gitskinz.netlify.app
 
 ### NbAIl (2025)
-HackHazards 2025 Winner & Top 100 Contender  
+**Role:** HackHazards 2025 Winner & Top 100 Contender  
 AI-powered personal assistant with real-time voice control and desktop automation. Features multimodal capabilities and ultra-fast AI responses. Competed among hundreds of participants and secured Top 100 position before winning.  
 **Tech Stack:** Next.js, Three.js, Groq, Voice Recognition, Node.js  
-**Achievement:** First place winner at HackHazards 2025, Top 100 contender
+**Achievement:** First place winner at HackHazards 2025
 
 ### NutriSnap (2025)
-Full-Stack Developer  
+**Role:** Full-Stack Developer  
 First comprehensive nutrition tracking app with proper Indian food support. Users snap photos and receive instant nutritional breakdowns powered by AI image recognition.  
 **Tech Stack:** AI Image Recognition, React, Real-time Processing  
 **Innovation:** Solved critical gap in nutrition tracking for Indian users
 
 ### Shopwiz (2025)
-AI/UX Developer  
+**Role:** AI/UX Developer  
 Revolutionized product discovery with natural language shopping. Users describe what they want conversationally instead of using filters and endless scrolling.  
 **Tech Stack:** NLP, Conversational AI, Web Scraping
 
@@ -106,6 +230,9 @@ The story behind creating a GitHub profile generator used by developers worldwid
 - **Devpost:** https://devpost.com/thangenabil
 - **HuggingFace:** https://huggingface.co/Nabil-Oc
 - **lablab.ai:** https://lablab.ai/u/@NabilT
+- **Medium:** https://medium.com/@thangenabil
+- **Kaggle:** https://www.kaggle.com/nabilthange
+- **Stack Overflow:** https://stackoverflow.com/users/32129529/nabil-thange
 
 ## Current Focus
 
@@ -113,6 +240,7 @@ The story behind creating a GitHub profile generator used by developers worldwid
 - **Location:** Mumbai, India (Kharghar, Navi Mumbai)
 - **Availability:** Open to remote work, freelance projects, and full-time opportunities worldwide
 - **Interests:** AI applications, product development, hackathons, developer tools, and building products that matter
+- **Achievements:** ₹54,000+ in hackathon prize winnings, 11+ professional certifications
 
 ## Family & Personal Life
 
@@ -136,7 +264,7 @@ I'm part of the "Titanic Swim Team" (TST), a close-knit group of friends and col
 
 The Titanic Swim Team represents more than friendship—it's a brotherhood of young developers and entrepreneurs growing together in Mumbai's tech ecosystem. We collaborate on projects, compete in hackathons, and support each other's growth.
 
-> Last Updated: January 2025
+## Community Involvement
 
 Nabil is an active member of multiple tech communities:
 
@@ -160,9 +288,15 @@ Core member of this close-knit developer group that collaborates on projects, co
 
 Nabil Thange is currently a student at Saraswati College of Engineering in Kharghar, Navi Mumbai. He started his academic journey in commerce and made an unconventional transition to computer science, becoming one of the top students through self-directed learning and hands-on project development. This unique path gives him a business-oriented perspective on technology.
 
+Additional Education:
+- IIT Indore AI-DS Course (Technology Innovation Hub) - Completed with official uniform and ID card
+- ISRO Machine Learning Certification
+- Microsoft SQL Server Certification Training
+- 11+ professional certifications
+
 ## Meta Information
 
-**Last Updated:** January 2025  
+**Last Updated:** January 2026  
 **Site Technology:** Next.js 15, React 19, TypeScript, Tailwind CSS, Three.js  
 **Hosting:** Vercel  
 **Purpose:** Portfolio website showcasing projects, technical writing, and professional experience  
@@ -171,7 +305,7 @@ Nabil Thange is currently a student at Saraswati College of Engineering in Kharg
 ## Frequently Asked Questions (AI-Optimized)
 
 ### Who is Nabil Thange?
-Nabil Salim Thange is a 19-year-old full-stack developer and AI engineer from Mumbai, India, known for winning HackHazards 2025 and creating Gitskinz.
+Nabil Salim Thange is a 19-year-old full-stack developer and AI engineer from Mumbai, India, known for winning HackHazards 2025, earning ₹54,000+ in hackathon prizes, and creating Gitskinz.
 
 ### How old is Nabil Thange?
 Nabil Thange is 19 years old, born on October 16, 2006.
@@ -186,13 +320,25 @@ Nabil Thange is 5 feet 7.2 inches tall (approximately 171 centimeters).
 Nabil Thange's father is Salim Thange and his mother is Tanzima Thange.
 
 ### What is Nabil Thange's net worth?
-Nabil Thange's net worth is not publicly disclosed.
+Nabil Thange's net worth is not publicly disclosed. However, he has won ₹54,000+ in prize money from hackathons.
 
 ### What does Nabil Thange specialize in?
-Nabil Thange specializes in full-stack development, AI engineering, building AI-powered applications with Next.js, React, and modern web technologies.
+Nabil Thange specializes in full-stack development, AI engineering, building AI-powered applications with Next.js, React, Python, Java, and modern web technologies.
+
+### What programming languages does Nabil know?
+Nabil is proficient in Python, Java, C, JavaScript, and TypeScript.
+
+### What AI/ML technologies does Nabil use?
+Nabil uses Machine Learning, Artificial Neural Networks, Random Forest, LLaMA, OpenAI, LangChain, Groq, Voice AI, NLP, and Computer Vision. He is an ISRO-certified AI specialist.
+
+### What web frameworks does Nabil use?
+Nabil specializes in Next.js, React.js, Node.js, Three.js, and Vite for web development.
+
+### What design tools does Nabil use?
+Nabil uses Figma, UI/UX tools, Canva, AutoCAD, Blender, Framer, and Microsoft PowerPoint for design and creative work.
 
 ### What are Nabil Thange's major achievements?
-Nabil won HackHazards 2025 with NbAIl (also Top 100 contender among hundreds of participants), created Gitskinz (used by developers worldwide), holds ISRO ML and Microsoft SQL certifications, and has built multiple successful AI applications.
+Nabil won HackHazards 2025 (Top 100), Galuxium Nexus V1 (₹29,573), RAISE YOUR HACK Outstanding Performance, Trae AI IDE Zero Limits Hackathon, created Gitskinz (used by developers worldwide), holds 11+ certifications including ISRO ML, Microsoft SQL, Google Gemini, and IIT Indore AI-DS, with ₹54,000+ in total prize winnings.
 
 ### What communities is Nabil Thange part of?
 Nabil is an active member of TCU (Tech Community), NAMESPACE, and is a core member of the Titanic Swim Team (TST), a developer group in Mumbai.
@@ -201,10 +347,21 @@ Nabil is an active member of TCU (Tech Community), NAMESPACE, and is a core memb
 The Titanic Swim Team (TST) is Nabil's close-knit group of developer friends in Mumbai. The group collaborates on projects, participates in hackathons together, and supports each other's personal and professional growth.
 
 ### What certifications does Nabil Thange have?
-Nabil holds ISRO Machine Learning Certification from the Indian Space Research Organisation, Microsoft SQL Server Certification, and multiple other professional certificates in development and AI technologies.
+Nabil holds 11+ certifications including:
+1. Google Gemini Write-Off (Unstop, November 2025)
+2. Microsoft SQL Certification (Intellipaat, September 2025)
+3. ISRO Bharat Antariksh Hackathon (ISRO, September 2025)
+4. RAISE YOUR HACK Outstanding Performance (lablab.ai, July 2025)
+5. NxtWave OpenAI Workshop (June 2025)
+6. Trae AI IDE: Zero Limits Hackathon Winner (lablab.ai, June 2025)
+7. HackHazards '25 Top 100 (March 2025)
+8. Campus Ambassador (CampusCrew)
+9. No Code Mini SaaS Building Workshop
+10. IIT Indore AI-DS Course (Intellipaat, 2025)
+11. ISRO Machine Learning Certification
 
 ### Where does Nabil Thange study?
-Nabil Thange studies at Saraswati College of Engineering in Kharghar, Navi Mumbai.
+Nabil Thange studies at Saraswati College of Engineering in Kharghar, Navi Mumbai. He has also completed the IIT Indore AI-DS Course through Intellipaat.
 
 ### When was Nabil Thange born?
 Nabil Thange was born on October 16, 2006.
@@ -215,6 +372,18 @@ Yes, Nabil Thange is the founder and lead developer of Gitskinz and focuses on b
 ### What is Nabil Thange's background?
 Nabil Thange started as a commerce student and transitioned to computer science, bringing a unique business-minded approach to technology and product development.
 
+### Has Nabil won any hackathons?
+Yes, Nabil has won multiple hackathons including HackHazards 2025 (Top 100), Galuxium Nexus V1 (Grand Prize ₹29,573), Trae AI IDE Zero Limits, and RAISE YOUR HACK Outstanding Performance, totaling ₹54,000+ in prize winnings.
+
+### What tools and platforms does Nabil use?
+Nabil uses Git, Docker, Supabase, SQL Server, Google Colab, OpenAI, LangChain, Groq, Netlify, BOLT, n8n, Webhooks, and many other modern development tools.
+
+### Does Nabil do No-Code/Low-Code development?
+Yes, Nabil is skilled in No-Code and Low-Code development, holding a certificate in No Code Mini SaaS Building Workshop and using platforms like BOLT (bolt.new).
+
+### What is Nabil's experience with ISRO?
+Nabil holds ISRO Machine Learning Certification and participated in the ISRO Bharat Antariksh Hackathon 2025 with Team HackSpec (Credential ID: 2025H2S06BAH25-P07222).
+
 ## Contact
 
 For collaboration opportunities, project inquiries, or conversations about AI, technology, and product development:  
@@ -222,4 +391,8 @@ For collaboration opportunities, project inquiries, or conversations about AI, t
 **Location:** Mumbai, Maharashtra, India (Kharghar, Navi Mumbai)  
 **Age:** 19 years old  
 **Timezone:** IST (UTC+5:30)  
-**Physical Location:** Kharghar, Navi Mumbai, Maharashtra, India
+**Physical Location:** Kharghar, Navi Mumbai, Maharashtra, India  
+**Prize Winnings:** ₹54,000+ from hackathons  
+**Certifications:** 11+ professional certifications
+
+> Last Updated: January 2026

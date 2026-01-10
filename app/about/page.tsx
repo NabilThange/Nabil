@@ -197,26 +197,81 @@ export default function About() {
       },
     },
     "knowsAbout": [
-      "React.js",
-      "Next.js",
+      "Python",
+      "Java",
+      "C Programming",
       "JavaScript",
       "TypeScript",
-      "Python",
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Full-Stack Development",
-      "Web Development",
+      "React.js",
+      "Next.js",
       "Node.js",
-      "AI Engineering",
-      "ISRO Machine Learning",
-      "Hackathon Development",
+      "Three.js",
+      "Machine Learning",
+      "Artificial Intelligence",
+      "Artificial Neural Networks",
+      "Random Forest",
+      "Data Analysis",
+      "Data Cleaning",
+      "LLaMA",
+      "AI Prompting",
+      "Voice AI",
+      "Front-End Development",
+      "Front-End Design",
+      "Web Development",
+      "Web Design",
+      "SQL",
+      "Microsoft SQL Server",
+      "Google Colab",
+      "OpenAI",
+      "LangChain",
+      "Groq",
+      "Git",
+      "GitHub",
+      "Vite",
+      "Netlify",
+      "BOLT (bolt.new)",
+      "n8n",
+      "Webhooks",
+      "Docker",
+      "Supabase",
+      "No-Code Development",
+      "Low-Code Development",
+      "AI IDE",
+      "API Integration",
+      "Figma",
+      "UI/UX",
+      "User Interface Design",
+      "Canva",
+      "AutoCAD",
+      "Blender",
+      "Framer",
+      "Microsoft PowerPoint",
+      "Data Structures",
+      "Project Management",
+      "Unity",
+      "Meta XR",
+      "Microsoft Copilot",
+      "Notion",
+      "Campus Management",
+      "Brand Ambassadorship",
+      "Social Media",
+      "Full-Stack Development",
       "Product Development",
+      "Hackathon Development",
     ],
     "award": [
-      "HackHazards 2025 Winner",
-      "HackHazards 2025 Top 100 Contender",
-      "ISRO Machine Learning Certification",
-      "Microsoft SQL Server Certification",
+      "HackHazards 2025 Winner (Top 100 Globally)",
+      "Galuxium Nexus V1 - Nexus Champion (Grand Prize ₹29,573)",
+      "RAISE YOUR HACK Outstanding Performance Award",
+      "Google Gemini Write-Off Certification (November 2025)",
+      "Microsoft SQL Server Certification (September 2025)",
+      "ISRO Bharat Antariksh Hackathon 2025 Participant",
+      "ISRO Machine Learning Certification (September 2025)",
+      "Trae AI IDE: Zero Limits Hackathon Winner",
+      "Total Prize Winnings: ₹54,000+",
+      "Campus Ambassador - CampusCrew",
+      "IIT Indore AI-DS Course Graduate",
+      "No Code Mini SaaS Building Workshop Certificate",
     ],
     "memberOf": [
       {
@@ -370,23 +425,41 @@ export default function About() {
           {/* Technical Expertise */}
           <section className="space-y-8">
             <h2 className="text-3xl sm:text-4xl font-light">Technical Expertise</h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="space-y-4">
-                <div className="text-sm text-muted-foreground font-mono">FRONTEND</div>
+                <div className="text-sm text-muted-foreground font-mono">PROGRAMMING LANGUAGES</div>
                 <p className="text-muted-foreground leading-relaxed">
-                  React.js, Next.js, TypeScript, Tailwind CSS, Three.js. Building fast-loading, mobile-responsive interfaces that prioritize user experience.
+                  Python, Java, C, JavaScript, TypeScript. Versatile in multiple programming paradigms and system development.
                 </p>
               </div>
               <div className="space-y-4">
-                <div className="text-sm text-muted-foreground font-mono">BACKEND</div>
+                <div className="text-sm text-muted-foreground font-mono">AI/ML & DATA SCIENCE</div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Node.js, Express.js, Python, REST APIs, GraphQL. Creating robust systems from database design to deployment.
+                  Machine Learning, Neural Networks, Random Forest, LLaMA, OpenAI, Groq, LangChain, Voice AI, AI Prompting. ISRO-certified specialist.
                 </p>
               </div>
               <div className="space-y-4">
-                <div className="text-sm text-muted-foreground font-mono">AI & ML</div>
+                <div className="text-sm text-muted-foreground font-mono">WEB DEVELOPMENT</div>
                 <p className="text-muted-foreground leading-relaxed">
-                  ISRO-certified AI specialist. Groq, OpenAI GPT, LangChain, NLP, and computer vision for intelligent applications.
+                  Next.js, React.js, Node.js, Three.js, Vite, Front-End Development. Building fast, responsive, and beautiful web applications.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <div className="text-sm text-muted-foreground font-mono">DESIGN & CREATIVE</div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Figma, UI/UX, Canva, AutoCAD, Blender, Framer. Creating stunning visual experiences from wireframes to 3D models.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <div className="text-sm text-muted-foreground font-mono">TOOLS & PLATFORMS</div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Git, Docker, Supabase, SQL Server, Google Colab, n8n, Netlify, BOLT, Webhooks, API Integration. Complete modern development stack.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <div className="text-sm text-muted-foreground font-mono">SPECIALIZED</div>
+                <p className="text-muted-foreground leading-relaxed">
+                  Unity, Meta XR, No-Code/Low-Code Development, Data Structures, Project Management, Microsoft Copilot.
                 </p>
               </div>
             </div>
@@ -482,30 +555,64 @@ export default function About() {
           {/* Certifications & Achievements */}
           <section className="space-y-8">
             <h2 className="text-3xl sm:text-4xl font-light">Certifications & Achievements</h2>
-            <div className="grid sm:grid-cols-2 gap-6">
+            <p className="text-lg text-muted-foreground">
+              <span className="text-foreground font-medium">₹54,000+ in prize winnings</span> from hackathons and competitions. Multiple industry-recognized certifications from prestigious organizations.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
-                <h3 className="text-lg font-medium mb-2">HackHazards 2025</h3>
-                <p className="text-muted-foreground">
-                  Winner and Top 100 Contender among hundreds of participants. Built NbAIl, an AI personal assistant with voice control.
-                </p>
+                <h3 className="text-lg font-medium mb-2">Google Gemini Write-Off</h3>
+                <p className="text-sm text-muted-foreground mb-2">Unstop • November 2025</p>
+                <p className="text-xs text-muted-foreground/70 font-mono">ID: 301d05fb-d5db-45c7-a0fc-c25b3b809dad</p>
               </div>
               <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
-                <h3 className="text-lg font-medium mb-2">ISRO ML Certification</h3>
-                <p className="text-muted-foreground">
-                  Certified by Indian Space Research Organisation in machine learning, artificial neural networks, and data science.
-                </p>
+                <h3 className="text-lg font-medium mb-2">Microsoft SQL Certification</h3>
+                <p className="text-sm text-muted-foreground mb-2">Intellipaat • September 2025</p>
+                <p className="text-xs text-muted-foreground/70 font-mono">ID: 31679-3981077-327204</p>
               </div>
               <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
-                <h3 className="text-lg font-medium mb-2">Microsoft SQL Server</h3>
-                <p className="text-muted-foreground">
-                  Official Microsoft certification in database management and server administration.
-                </p>
+                <h3 className="text-lg font-medium mb-2">ISRO Bharat Antariksh Hackathon</h3>
+                <p className="text-sm text-muted-foreground mb-2">ISRO • September 2025</p>
+                <p className="text-xs text-muted-foreground/70 font-mono">ID: 2025H2S06BAH25-P07222</p>
               </div>
               <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
-                <h3 className="text-lg font-medium mb-2">Additional Certifications</h3>
-                <p className="text-muted-foreground">
-                  Multiple industry-recognized professional certificates in development and AI technologies.
-                </p>
+                <h3 className="text-lg font-medium mb-2">HackHazards '25 Winner</h3>
+                <p className="text-sm text-muted-foreground mb-2">Top 100 Globally • March 2025</p>
+                <p className="text-xs text-muted-foreground/70 font-mono">ID: 1395c1c7-7508-43ae-8daa-b2a50a1d1ed1</p>
+              </div>
+              <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
+                <h3 className="text-lg font-medium mb-2">Galuxium Nexus V1</h3>
+                <p className="text-sm text-muted-foreground mb-2">Nexus Champion • Prize: ₹29,573</p>
+                <p className="text-xs text-muted-foreground/70">Grand Prize Winner</p>
+              </div>
+              <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
+                <h3 className="text-lg font-medium mb-2">RAISE YOUR HACK</h3>
+                <p className="text-sm text-muted-foreground mb-2">lablab.ai • July 2025</p>
+                <p className="text-xs text-muted-foreground/70">World's Biggest AI Hackathon - Outstanding Performance</p>
+              </div>
+              <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
+                <h3 className="text-lg font-medium mb-2">Trae AI IDE: Zero Limits</h3>
+                <p className="text-sm text-muted-foreground mb-2">lablab.ai • June 2025</p>
+                <p className="text-xs text-muted-foreground/70">Hackathon Winner</p>
+              </div>
+              <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
+                <h3 className="text-lg font-medium mb-2">NxtWave OpenAI Workshop</h3>
+                <p className="text-sm text-muted-foreground mb-2">NxtWave • June 2025</p>
+                <p className="text-xs text-muted-foreground/70">Build Your Own Generative AI Model</p>
+              </div>
+              <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
+                <h3 className="text-lg font-medium mb-2">IIT Indore AI-DS Course</h3>
+                <p className="text-sm text-muted-foreground mb-2">Intellipaat • 2025</p>
+                <p className="text-xs text-muted-foreground/70">Technology Innovation Hub - Complete with official uniform & ID</p>
+              </div>
+              <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
+                <h3 className="text-lg font-medium mb-2">Campus Ambassador</h3>
+                <p className="text-sm text-muted-foreground mb-2">CampusCrew</p>
+                <p className="text-xs text-muted-foreground/70">Brand Ambassadorship & Campus Management</p>
+              </div>
+              <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
+                <h3 className="text-lg font-medium mb-2">No Code Mini SaaS Workshop</h3>
+                <p className="text-sm text-muted-foreground mb-2">2025</p>
+                <p className="text-xs text-muted-foreground/70">No-Code Development Platform Mastery</p>
               </div>
             </div>
           </section>

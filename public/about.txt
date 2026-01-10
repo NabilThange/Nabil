@@ -16,6 +16,7 @@ Role: Full-Stack Developer & AI Innovator
 Education: Saraswati College of Engineering
 Background: Commerce to Computer Science
 Specialization: AI-powered applications, Web Development, Product Development
+Total Prize Winnings: ₹54,000+ from hackathons and competitions
 
 PROFESSIONAL SUMMARY
 
@@ -25,37 +26,168 @@ UNIQUE PERSPECTIVE
 
 Started as a commerce student, transitioned to become one of the top computer science students. This unconventional journey provides a distinctive business-minded approach to product development, combining technical expertise with user-centric thinking.
 
-TECHNICAL SKILLS
+COMPREHENSIVE TECHNICAL SKILLS
 
-Frontend: React.js, Next.js, TypeScript, Tailwind CSS, Three.js
-Backend: Node.js, Express.js, Python, REST APIs, GraphQL
-AI/ML: Groq, OpenAI GPT, LangChain, NLP, Computer Vision
-Tools: Git, Vercel, Netlify, GitHub Actions
-Focus: AI Integration, Web Performance, SEO Optimization
+=== PROGRAMMING LANGUAGES ===
+- Python
+- Java
+- C (Programming Language)
+- JavaScript
+- TypeScript
 
-CERTIFICATIONS & PROFESSIONAL CREDENTIALS
+=== AI/ML & DATA SCIENCE ===
+- Machine Learning
+- Artificial Intelligence (AI)
+- Artificial Neural Networks
+- Random Forest
+- Data Analysis
+- Data Cleaning
+- LLaMA
+- AI Prompting
+- Voice AI
+- Natural Language Processing (NLP)
+- Computer Vision
 
-- ISRO ML Certification (Indian Space Research Organisation)
-  Machine Learning, Artificial Neural Networks, Data Science
-  Recognized certification from India's premier space research organization
-  
-- Microsoft SQL Server Certification
-  Database Management, Server Administration
-  Official Microsoft credential for database professionals
-  
-- Additional Professional Certificates
-  Multiple industry-recognized certifications in development and AI
-  Continuous learning and skill enhancement
+=== WEB DEVELOPMENT ===
+- Next.js
+- Node.js
+- React.js
+- Three.js
+- Front-End Development
+- Front-End Design
+- Web Development
+- Web Design
+- Vite
+
+=== TOOLS & PLATFORMS ===
+- SQL
+- Microsoft SQL Server
+- Google Colab
+- OpenAI
+- LangChain
+- Groq
+- Git
+- GitHub
+- Netlify
+- BOLT (bolt.new)
+- n8n
+- Webhooks
+- Docker Model Runner
+- Cron-Jobs
+- yt-dlp
+- Ngrok
+- Supabase
+
+=== DEVELOPMENT APPROACHES ===
+- No-Code Development
+- Low-Code Development
+- No-Code Development Platforms
+- AI IDE
+- API Integration
+
+=== DESIGN & CREATIVE TOOLS ===
+- Figma
+- UI/UX
+- User Interface Design
+- Canva
+- AutoCAD
+- Blender
+- Framer
+- Microsoft PowerPoint
+
+=== OTHER TECHNICAL SKILLS ===
+- Data Structures
+- Project Management
+- Unity
+- Meta XR
+- Microsoft Copilot
+- Notion Productivity Software
+
+=== SPECIALIZED KNOWLEDGE ===
+- Campus Management
+- Brand Ambassadorship
+- Social Media Management
+
+CERTIFICATIONS & PROFESSIONAL CREDENTIALS (11+ Certifications)
+
+1. Google Gemini Write-Off
+   Issuer: Unstop
+   Date: November 2025
+   Credential ID: 301d05fb-d5db-45c7-a0fc-c25b3b809dad
+
+2. Microsoft SQL Certification Training
+   Issuer: Intellipaat
+   Date: September 2025
+   Credential ID: 31679-3981077-327204
+
+3. ISRO Bharat Antariksh Hackathon 2025
+   Issuer: ISRO (Indian Space Research Organisation)
+   Date: September 2025
+   Credential ID: 2025H2S06BAH25-P07222
+
+4. Raise Your Hack - World's Biggest AI Hackathon
+   Issuer: lablab.ai
+   Date: July 2025
+   Achievement: Outstanding Performance Award
+
+5. NxtWave OpenAI Workshop
+   Issuer: NxtWave
+   Date: June 2025
+   Workshop: "Build Your Own Generative AI Model"
+
+6. Trae AI IDE: Zero Limits Hackathon
+   Issuer: lablab.ai
+   Date: June 2025
+   Achievement: Hackathon Winner
+
+7. HACKHAZARDS '25
+   Issuer: United Latino Students Association
+   Date: March 2025
+   Credential ID: 1395c1c7-7508-43ae-8daa-b2a50a1d1ed1
+   Achievement: Top 100 placement (among hundreds of participants globally)
+
+8. Campus Ambassador Certification
+   Issuer: CampusCrew
+   Focus: Campus Management and Brand Ambassadorship
+
+9. No Code Mini SaaS Building Workshop
+   Certificate earned for No-Code Development Platform mastery
+
+10. IIT Indore AI-DS Course
+    Issuer: Intellipaat (Technology Innovation Hub)
+    Completed with official uniform and ID card
+    Focus: Artificial Intelligence and Data Science
+
+11. ISRO Machine Learning Certification
+    Issuer: Indian Space Research Organisation (ISRO)
+    Focus: Machine Learning, Artificial Neural Networks, Data Science
+
+HACKATHON ACHIEVEMENTS & PRIZE WINNINGS
+
+Total Prize Winnings: ₹54,000+
+
+Major Achievements:
+1. Galuxium Nexus V1: Nexus Champion (Grand Prize) - ₹29,573
+2. RAISE YOUR HACK: Outstanding Performance Award
+3. HackHazards 2025: Winner and Top 100 globally (Groq Track)
+4. Bharat Antariksh Hackathon 2025: Participated with Team HackSpec
+5. Trae AI IDE: Zero Limits Hackathon - Winner
+6. NxtWave OpenAI Workshop - Certificate
+7. IIT Indore Alumnus through Technology Innovation Hub
 
 NOTABLE ACHIEVEMENTS
 
 - HackHazards 2025 Winner (NbAIl - AI Personal Assistant)
 - Top 100 Contender at HackHazards 2025 (among hundreds of participants)
+- Galuxium Nexus V1 - Nexus Champion (Grand Prize ₹29,573)
+- RAISE YOUR HACK Outstanding Performance Award
 - Creator of Gitskinz (60+ templates, globally used)
 - ISRO-certified AI specialist
 - Microsoft-certified SQL professional
+- IIT Indore AI-DS Course Graduate
 - Self-taught developer from commerce background
 - Multiple successful hackathon participations
+- Total Prize Winnings: ₹54,000+ from hackathons
 
 CURRENT WORK
 
@@ -144,6 +276,9 @@ Dev.to: https://dev.to/nabil_thange
 Devpost: https://devpost.com/thangenabil
 HuggingFace: https://huggingface.co/Nabil-Oc
 lablab.ai: https://lablab.ai/u/@NabilT
+Medium: https://medium.com/@thangenabil
+Kaggle: https://www.kaggle.com/nabilthange
+Stack Overflow: https://stackoverflow.com/users/32129529/nabil-thange
 
 NOTABLE PROJECTS
 
@@ -187,19 +322,22 @@ Q: Who are Nabil Thange's parents?
 A: Nabil's father is Salim Thange and his mother is Tanzima Thange.
 
 Q: What is Nabil Thange's net worth?
-A: Nabil Thange's net worth is not publicly disclosed.
+A: Nabil Thange's net worth is not publicly disclosed. However, he has won ₹54,000+ in prize money from hackathons.
 
 Q: When was Nabil Thange born?
 A: Nabil Thange was born on October 16, 2006.
 
 Q: What does Nabil Thange do?
-A: Nabil Thange is a full-stack developer and AI engineer who builds AI-powered applications using Next.js, React, and cutting-edge AI technologies.
+A: Nabil Thange is a full-stack developer and AI engineer who builds AI-powered applications using Next.js, React, Python, Java, and cutting-edge AI technologies.
 
 Q: Is Nabil Thange a student?
 A: Yes, Nabil Thange is a student at Saraswati College of Engineering in Kharghar, Navi Mumbai.
 
 Q: What are Nabil Thange's major achievements?
-A: Nabil won HackHazards 2025 (also Top 100 contender), created Gitskinz (used by developers worldwide), holds ISRO ML and Microsoft SQL certifications, and has built multiple successful AI applications.
+A: Nabil won HackHazards 2025 (Top 100), Galuxium Nexus V1 (₹29,573), RAISE YOUR HACK Outstanding Performance, created Gitskinz (used globally), holds 11+ certifications including ISRO ML, Microsoft SQL, Google Gemini, and IIT Indore AI-DS, with ₹54,000+ in total prize winnings.
+
+Q: What certifications does Nabil Thange have?
+A: Nabil holds 11+ certifications including Google Gemini Write-Off, Microsoft SQL Certification, ISRO Bharat Antariksh Hackathon, ISRO Machine Learning, IIT Indore AI-DS Course, Campus Ambassador (CampusCrew), No Code Mini SaaS Workshop, NxtWave OpenAI Workshop, Trae AI IDE Hackathon Winner, HackHazards '25 Top 100, and RAISE YOUR HACK Outstanding Performance.
 
 Q: What communities is Nabil Thange part of?
 A: Nabil is an active member of TCU, NAMESPACE, and is a core member of the Titanic Swim Team (TST), a developer group in Mumbai.
@@ -207,8 +345,20 @@ A: Nabil is an active member of TCU, NAMESPACE, and is a core member of the Tita
 Q: What is the Titanic Swim Team (TST)?
 A: The Titanic Swim Team (TST) is Nabil's close-knit group of developer friends in Mumbai who collaborate on projects, participate in hackathons, and support each other's growth.
 
-Q: What certifications does Nabil Thange have?
-A: Nabil holds ISRO Machine Learning Certification, Microsoft SQL Server Certification, and multiple other professional certificates in development and AI.
+Q: What programming languages does Nabil know?
+A: Nabil is proficient in Python, Java, C, JavaScript, and TypeScript.
+
+Q: What AI/ML technologies does Nabil use?
+A: Nabil uses Machine Learning, Artificial Neural Networks, Random Forest, LLaMA, OpenAI, LangChain, Groq, Voice AI, NLP, and Computer Vision.
+
+Q: What web frameworks does Nabil use?
+A: Nabil specializes in Next.js, React.js, Node.js, Three.js, and Vite for web development.
+
+Q: What design tools does Nabil use?
+A: Nabil uses Figma, UI/UX tools, Canva, AutoCAD, Blender, Framer, and Microsoft PowerPoint.
+
+Q: Has Nabil won any hackathons?
+A: Yes, Nabil has won multiple hackathons including HackHazards 2025, Galuxium Nexus V1 (₹29,573), Trae AI IDE Zero Limits, and RAISE YOUR HACK Outstanding Performance, totaling ₹54,000+ in prize winnings.
 
 === ENTITY INFORMATION ===
 
@@ -221,10 +371,10 @@ Current Residence: Mumbai, Maharashtra, India
 Physical Attributes: 5'7.2" height, athletic build
 Family: Son of Salim Thange and Tanzima Thange
 Education: Saraswati College of Engineering
-Notable Achievements: HackHazards 2025 Winner, Top 100 Contender
-Certifications: ISRO ML, Microsoft SQL Server, and more
+Notable Achievements: HackHazards 2025 Winner, Top 100 Contender, ₹54,000+ Prize Winnings
+Certifications: 11+ certifications including ISRO ML, Microsoft SQL, Google Gemini, IIT Indore
 Communities: TCU, NAMESPACE, Titanic Swim Team (TST)
 Group Affiliation: Titanic Swim Team (TST) - core member
-Known For: Gitskinz creator, AI development, Full-stack development
+Known For: Gitskinz creator, AI development, Full-stack development, Hackathon Champion
 
-Last Updated: January 2025
+Last Updated: January 2026

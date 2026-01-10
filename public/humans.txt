@@ -15,8 +15,12 @@ Father: Salim Thange
 Mother: Tanzima Thange
 Education: Saraswati College of Engineering, Kharghar
 Background: Commerce to Computer Science transition
-Notable: HackHazards 2025 Winner & Top 100 Contender, Gitskinz Creator
-Certifications: ISRO ML, Microsoft SQL Server, and more
+Notable: HackHazards 2025 Winner & Top 100, Gitskinz Creator, ₹54,000+ Prize Winnings
+Certifications: 11+ (Google Gemini, ISRO ML, Microsoft SQL, IIT Indore AI-DS, Campus Ambassador, and more)
+Skills: Python, Java, C, JavaScript, TypeScript, React, Next.js, Node.js, AI/ML, UI/UX Design
+Achievements: Galuxium Nexus V1 Champion (₹29,573), RAISE YOUR HACK Outstanding Performance
+Platforms: Git, Docker, Supabase, OpenAI, LangChain, Groq, Figma, Blender, Unity, Meta XR
+
 
 /* NETWORK - TITANIC SWIM TEAM (TST) */
 Core Members: Tanish Soni, Sujal Solaskar, Sachin Yadav, Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
