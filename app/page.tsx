@@ -135,6 +135,8 @@ export default function IntroPage() {
       </div>
 
       <div className="mb-12 relative z-10 w-full flex justify-center">
+        {/* H1 for SEO - Hidden visually but accessible to search engines and screen readers */}
+        <h1 className="sr-only">Nabil Thange</h1>
         <TrueFocus
           sentence="Nabil Thange"
           borderColor="#ffffff"
