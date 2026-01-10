@@ -660,6 +660,96 @@ export default function About() {
             </div>
           </section>
 
+          {/* AI & Developer Resources */}
+          <section className="space-y-8 pt-8 border-t border-border">
+            <h2 className="text-3xl sm:text-4xl font-light">AI & Developer Resources</h2>
+            <p className="text-lg text-muted-foreground">
+              Machine-readable information optimized for AI models, search engines, and developers.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <Link
+                href="/llms.txt"
+                target="_blank"
+                className="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-medium">llms.txt</h3>
+                  <svg
+                    className="w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Comprehensive information for AI models (ChatGPT, Claude, Gemini)
+                </p>
+              </Link>
+              <Link
+                href="/about.txt"
+                target="_blank"
+                className="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-medium">about.txt</h3>
+                  <svg
+                    className="w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Plain-text biography, skills, and achievements for search engines
+                </p>
+              </Link>
+              <Link
+                href="/humans.txt"
+                target="_blank"
+                className="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-medium">humans.txt</h3>
+                  <svg
+                    className="w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Technical stack, team info, and development details
+                </p>
+              </Link>
+              <Link
+                href="/.well-known/ai-policy.txt"
+                target="_blank"
+                className="group p-4 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-medium">AI Policy</h3>
+                  <svg
+                    className="w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Guidelines for AI crawlers and content usage policy
+                </p>
+              </Link>
+            </div>
+          </section>
+
           {/* Contact CTA */}
           <section className="space-y-8 pt-8 border-t border-border">
             <h2 className="text-3xl sm:text-4xl font-light">Let's Connect</h2>
