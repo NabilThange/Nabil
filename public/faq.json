@@ -7,23 +7,15 @@
       "name": "Who is Nabil Thange?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nabil Salim Thange is a 19-year-old full-stack developer and AI engineer from Mumbai, India. Born on October 16, 2006, he specializes in AI integration and modern web applications. He won HackHazards 2025 and created Gitskinz, a developer tool used globally."
+        "text": "Nabil Thange is a full-stack developer and creative technologist based in Mumbai, India. He specializes in AI-powered web applications, generative AI integration, and immersive 3D web experiences. Nabil graduated from Saraswati College of Engineering in Navi Mumbai with a degree in Computer Engineering."
       }
     },
     {
       "@type": "Question",
-      "name": "How old is Nabil Thange?",
+      "name": "What services does Nabil Thange offer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nabil Thange is 19 years old, born on October 16, 2006."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where is Nabil Thange located?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nabil is based in Mumbai, Maharashtra, India, specifically in Kharghar, Navi Mumbai."
+        "text": "Nabil offers full-stack web development, AI integration and chatbot development, 3D interactive experiences using Three.js, UI/UX design and prototyping, API development and integration, and custom web application development. He is available for freelance projects and collaborations worldwide."
       }
     },
     {
@@ -31,47 +23,15 @@
       "name": "What technologies does Nabil Thange use?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nabil primarily works with JavaScript, TypeScript, React, Next.js, Node.js, Python, and AI technologies including OpenAI API, Groq, and LangChain. He specializes in building AI-powered web applications."
+        "text": "Nabil works with Python, Java, JavaScript, TypeScript, React, Next.js, Node.js, Three.js for web development. For AI and machine learning, he uses OpenAI, LLaMA, LangChain, Groq, and various neural network frameworks. He also uses design tools like Figma, Canva, Blender, and development tools like Git, Docker, and Supabase."
       }
     },
     {
       "@type": "Question",
-      "name": "What is Gitskinz?",
+      "name": "Where is Nabil Thange located?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gitskinz is a developer tool created by Nabil Thange that features 60+ brutalist templates, allowing developers to build stunning GitHub profiles without writing code. It's used by developers worldwide."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is NbAIl?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "NbAIl is an AI-powered personal assistant built by Nabil Thange that won HackHazards 2025. It features real-time voice control, desktop automation, and multimodal capabilities powered by Groq AI."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What does Nabil Thange blog about?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nabil writes about AI development, career transitions from commerce to tech, hackathon strategies, building developer tools, and practical product development. His writing focuses on real-world experiences and helping others learn."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are Nabil Thange's major achievements?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nabil won HackHazards 2025 (also Top 100 Contender), created Gitskinz used by developers worldwide, holds ISRO Machine Learning Certification and Microsoft SQL Server Certification, and has built multiple successful AI applications including NutriSnap and Shopwiz."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What communities is Nabil Thange part of?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nabil is an active member of TCU (Tech Community), NAMESPACE, and is a core member of the Titanic Swim Team (TST), a developer group in Mumbai that collaborates on projects and participates in hackathons."
+        "text": "Nabil Thange is based in Mumbai, Maharashtra, India. He is available for remote work worldwide and open to both freelance projects and full-time opportunities in software development, AI integration, and creative technology."
       }
     },
     {
@@ -79,55 +39,31 @@
       "name": "What is Nabil Thange's educational background?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nabil is a student at Saraswati College of Engineering in Kharghar, Navi Mumbai. He started as a commerce student and transitioned to computer science, becoming one of the top students through self-directed learning."
+        "text": "Nabil Thange holds a Bachelor of Engineering degree in Computer Engineering from Saraswati College of Engineering, located in Kharghar, Navi Mumbai. His studies focused on artificial intelligence, machine learning, and full-stack development."
       }
     },
     {
       "@type": "Question",
-      "name": "What certifications does Nabil Thange have?",
+      "name": "How can I hire Nabil Thange for a project?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nabil holds ISRO Machine Learning Certification from the Indian Space Research Organisation, Microsoft SQL Server Certification, and multiple other professional certificates in development and AI technologies."
+        "text": "You can contact Nabil Thange through the contact form on his website at https://nabil-thange.vercel.app/contact. He is available for freelance web development projects, AI integration work, and creative technology collaborations. Nabil works with clients in Mumbai, across India, and internationally."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Nabil Thange available for hire?",
+      "name": "What makes Nabil Thange different as a developer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, Nabil is open to remote work, freelance projects, and full-time opportunities worldwide. Contact him at thangenabil@gmail.com or visit https://nabil-thange.vercel.app/contact"
+        "text": "Nabil combines technical expertise in full-stack development with creative vision, specializing in AI-powered applications and immersive 3D web experiences. His unique approach blends modern web technologies like React and Next.js with cutting-edge AI tools and creative design, making him a versatile 'vibe coder' who can handle both technical implementation and creative direction."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the Titanic Swim Team (TST)?",
+      "name": "Does Nabil Thange work with AI and machine learning?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Titanic Swim Team (TST) is Nabil's close-knit developer group in Mumbai with 10 core members: Tanish Soni, Sujal Solaskar, Sachin Yadav, Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, and Piyush Yenorkar. The group collaborates on projects, competes in hackathons, and supports each other's growth in tech."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who are Nabil Thange's closest collaborators?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nabil collaborates closely with the Titanic Swim Team (TST) members including Tanish Soni, Sujal Solaskar, and Sachin Yadav. These friends work together on tech projects and hackathons in Mumbai."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What programming languages does Nabil Thange know?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nabil is proficient in JavaScript, TypeScript, Python, and has experience with HTML, CSS, and modern web technologies including React, Next.js, Node.js, and Express.js."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who are Nabil Thange's parents?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nabil's father is Salim Thange and his mother is Tanzima Thange. They have been instrumental in supporting his journey into technology and entrepreneurship."
+        "text": "Yes, Nabil has extensive experience with AI and machine learning. He works with generative AI models like OpenAI's GPT, LLaMA, and uses frameworks like LangChain and Groq for AI integration. He has experience building AI-powered chatbots, voice AI applications, and implementing neural networks and machine learning algorithms in web applications."
       }
     }
   ]

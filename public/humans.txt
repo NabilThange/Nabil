@@ -1,90 +1,48 @@
 /* TEAM */
-Developer & Designer: Nabil Salim Thange
-Age: 19 years old
-Born: October 16, 2006
-Height: 5 feet 7.2 inches (171 cm)
-Build: Athletic/Fairly Built
-Contact: thangenabil@gmail.com
-Location: Mumbai, Maharashtra, India (Kharghar, Navi Mumbai)
-Website: https://nabil-thange.vercel.app
-GitHub: https://github.com/NabilThange
-LinkedIn: https://linkedin.com/in/nabil-thange
 
-/* PERSONAL */
-Father: Salim Thange
-Mother: Tanzima Thange
-Education: Saraswati College of Engineering, Kharghar
-Background: Commerce to Computer Science transition
-Notable: HackHazards 2025 Winner & Top 100, Gitskinz Creator, ₹54,000+ Prize Winnings
-Certifications: 11+ (Google Gemini, ISRO ML, Microsoft SQL, IIT Indore AI-DS, Campus Ambassador, and more)
-Skills: Python, Java, C, JavaScript, TypeScript, React, Next.js, Node.js, AI/ML, UI/UX Design
-Achievements: Galuxium Nexus V1 Champion (₹29,573), RAISE YOUR HACK Outstanding Performance
-Platforms: Git, Docker, Supabase, OpenAI, LangChain, Groq, Figma, Blender, Unity, Meta XR
-
-
-/* NETWORK - TITANIC SWIM TEAM (TST) */
-Core Members: Tanish Soni, Sujal Solaskar, Sachin Yadav, Aniket Yadav, Yojith Rao, Sahil Tate, Aditya Patil, Sahil Nikam, Gaurav Yadav, Piyush Yenorkar
-Nicknames: AngryBird, Chota Packet Bada Dhamaka, Grass Eater, Panoti, Lappu sa Sachin, Pehla Mard, Lamboo, Bengal Lover
-Philosophy: Brotherhood of developers in Mumbai's tech ecosystem
+Developer & Designer: Nabil Thange
+Role: Full-Stack Developer & Creative Technologist
 Location: Mumbai, Maharashtra, India
-Founded: 2024
-/* COMMUNITIES */
-TCU: Tech Community - Active participant
-NAMESPACE: Developer-focused community - Active member
-Titanic Swim Team (TST): Core member and founder group
-Contributions: Hackathons, open-source, knowledge sharing, peer collaboration
+Education: Saraswati College of Engineering, Navi Mumbai
+Contact: https://nabil-thange.vercel.app/contact
 
 /* SITE */
-Last update: 2025-01-19
-Language: English
+
 Standards: HTML5, CSS3, JavaScript ES6+, TypeScript
-Components: React 19, Next.js 15
-Styling: Tailwind CSS 4
-3D Graphics: Three.js, React Three Fiber
-Fonts: Geist (sans-serif)
-IDE: Visual Studio Code
+Components: React 19, Next.js 16, Three.js, Framer Motion
+Backend: Node.js, Supabase
+Styling: Tailwind CSS, Custom CSS
+Fonts: Geist, Space Grotesk
+IDE: VS Code, Cursor AI
+Version Control: Git, GitHub
 
-/* TECH STACK */
-Frontend Framework: Next.js 15.2.4
+/* TECHNOLOGIES */
+
+Frontend Framework: Next.js 16.1.1 (App Router)
 UI Library: React 19
-Language: TypeScript 5
+3D Graphics: Three.js, React Three Fiber
+Animation: Framer Motion, GSAP
 Styling: Tailwind CSS 4.1.9
-Animation: Tailwind Animate, Three.js
-Icons: Lucide React
-Components: Radix UI
-Forms: React Hook Form with Zod validation
-Markdown: React Markdown with remark-gfm
-3D Engine: Three.js 0.180.0
-
-/* HOSTING */
-Platform: Vercel
-Domain: nabil-thange.vercel.app
-CDN: Vercel Edge Network
-Deployment: Continuous deployment from Git
-Performance: Edge-optimized with ISR
-
-/* FEATURES */
-- Responsive design (mobile-first)
-- Dark/light theme support
-- SEO optimized with structured data (Schema.org)
-- AI-friendly (llms.txt, comprehensive meta tags)
-- Fast page loads (Next.js App Router)
-- Blog with markdown support
-- 3D interactive gallery
-- Sitemap and robots.txt
-- Open Graph and Twitter Cards
-- Progressive Web App ready
+Deployment: Vercel
+AI Integration: OpenAI, LangChain, Groq
 
 /* THANKS */
-Inspiration: The developer community
-UI Components: Radix UI, shadcn/ui patterns
-Fonts: Vercel (Geist font family)
-Icons: Lucide Icons
-Community: Dev.to, GitHub, lablab.ai
 
-/* PHILOSOPHY */
-Building with purpose: Every line of code should serve the user
-AI-first design: Optimized for both humans and AI discovery
-Performance matters: Fast, lightweight, accessible
-Learn in public: Share knowledge through blog posts
-Build to solve: Create tools that solve real problems
+Inspiration: The web development community
+Tools: Next.js team, Vercel, React Three Fiber community
+Design: Tailwind CSS, Radix UI
+AI: OpenAI, Anthropic, open-source AI community
+
+/* LAST UPDATE */
+
+Date: February 2026
+Version: 1.0
+Status: Active Development
+
+/* KEYWORDS */
+
+Portfolio, Full-Stack Developer, Mumbai Developer, India Freelancer,
+Software Engineer, AI Developer, React Developer, Next.js,
+Saraswati College of Engineering, Computer Engineering,
+Web Development, Creative Technologist, Vibe Coder,
+3D Web Experiences, Generative AI, Machine Learning
