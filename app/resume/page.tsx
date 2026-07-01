@@ -1,50 +1,9 @@
 "use client"
 
-import { useState } from 'react'
-import dynamic from 'next/dynamic'
-import { ChevronLeft, ChevronRight, Download, ZoomIn, ZoomOut } from 'lucide-react'
-
-// Dynamically import PDFViewer with no SSR
-const PDFViewer = dynamic(() => import('./PDFViewer'), {
-  ssr: false,
-  loading: () => (
-    <div className="flex items-center justify-center min-h-[600px]">
-      <div className="animate-pulse text-muted-foreground">
-        Loading PDF viewer...
-      </div>
-    </div>
-  ),
-})
+import Link from "next/link"
+import { Download } from 'lucide-react'
 
 export default function ResumePage() {
-  const [numPages, setNumPages] = useState<number>(0)
-  const [pageNumber, setPageNumber] = useState<number>(1)
-  const [scale, setScale] = useState<number>(1.0)
-
-  function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
-    setNumPages(numPages)
-  }
-
-  const changePage = (offset: number) => {
-    setPageNumber(prevPageNumber => prevPageNumber + offset)
-  }
-
-  const previousPage = () => {
-    changePage(-1)
-  }
-
-  const nextPage = () => {
-    changePage(1)
-  }
-
-  const zoomIn = () => {
-    setScale(prevScale => Math.min(prevScale + 0.2, 2.0))
-  }
-
-  const zoomOut = () => {
-    setScale(prevScale => Math.max(prevScale - 0.2, 0.5))
-  }
-
   return (
     <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
@@ -58,80 +17,34 @@ export default function ResumePage() {
           </p>
         </div>
 
-        {/* Controls */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6 p-4 border border-border rounded-lg bg-card">
-          {/* Page Navigation */}
-          <div className="flex items-center gap-2">
-            <button
-              onClick={previousPage}
-              disabled={pageNumber <= 1}
-              className="p-2 border border-border rounded hover:bg-muted disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-              aria-label="Previous page"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <span className="text-sm px-3 py-1 bg-muted rounded">
-              Page {pageNumber} of {numPages || '—'}
-            </span>
-            <button
-              onClick={nextPage}
-              disabled={pageNumber >= numPages}
-              className="p-2 border border-border rounded hover:bg-muted disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-              aria-label="Next page"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
-          </div>
-
-          {/* Zoom Controls */}
-          <div className="flex items-center gap-2">
-            <button
-              onClick={zoomOut}
-              disabled={scale <= 0.5}
-              className="p-2 border border-border rounded hover:bg-muted disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-              aria-label="Zoom out"
-            >
-              <ZoomOut className="w-5 h-5" />
-            </button>
-            <span className="text-sm px-3 py-1 bg-muted rounded min-w-[4rem] text-center">
-              {Math.round(scale * 100)}%
-            </span>
-            <button
-              onClick={zoomIn}
-              disabled={scale >= 2.0}
-              className="p-2 border border-border rounded hover:bg-muted disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-              aria-label="Zoom in"
-            >
-              <ZoomIn className="w-5 h-5" />
-            </button>
-          </div>
-
-          {/* Download Button */}
+        {/* Download Button */}
+        <div className="flex justify-center mb-6">
           <a
             href="/resume.pdf"
             download="Nabil_Thange_Resume.pdf"
-            className="flex items-center gap-2 px-4 py-2 bg-foreground text-background rounded hover:bg-foreground/90 transition-colors"
+            className="flex items-center gap-2 px-6 py-3 bg-foreground text-background rounded-lg hover:bg-foreground/90 transition-colors shadow-lg"
           >
-            <Download className="w-4 h-4" />
-            <span>Download PDF</span>
+            <Download className="w-5 h-5" />
+            <span className="font-medium">Download PDF</span>
           </a>
         </div>
 
-        {/* PDF Viewer */}
+        {/* PDF Viewer - Native Browser Viewer */}
         <div className="border border-border rounded-lg overflow-hidden shadow-lg bg-white">
-          <div className="flex justify-center overflow-x-auto">
-            <PDFViewer
-              scale={scale}
-              pageNumber={pageNumber}
-              onLoadSuccess={onDocumentLoadSuccess}
-            />
-          </div>
+          <iframe
+            src="/resume.pdf"
+            width="100%"
+            height="800px"
+            title="Resume PDF"
+            className="w-full"
+            style={{ border: "none", minHeight: "800px" }}
+          />
         </div>
 
         {/* Footer Info */}
         <div className="mt-8 text-center text-sm text-muted-foreground">
           <p>
-            For best experience, download the PDF or view on desktop.
+            Using the browser's native PDF viewer for the best experience.
           </p>
           <p className="mt-2">
             Last updated: February 2026
@@ -140,7 +53,7 @@ export default function ResumePage() {
 
         {/* Alternative Links */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <a
+          <Link
             href="/about"
             className="p-6 border border-border rounded-lg hover:border-muted-foreground transition-colors text-center"
           >
@@ -148,8 +61,8 @@ export default function ResumePage() {
             <p className="text-sm text-muted-foreground">
               Learn more about my background
             </p>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/gallery"
             className="p-6 border border-border rounded-lg hover:border-muted-foreground transition-colors text-center"
           >
@@ -157,16 +70,16 @@ export default function ResumePage() {
             <p className="text-sm text-muted-foreground">
               View my projects and work
             </p>
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            href="/"
             className="p-6 border border-border rounded-lg hover:border-muted-foreground transition-colors text-center"
           >
-            <h3 className="font-medium mb-2">Contact</h3>
+            <h3 className="font-medium mb-2">Home</h3>
             <p className="text-sm text-muted-foreground">
-              Get in touch for opportunities
+              Back to homepage
             </p>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
