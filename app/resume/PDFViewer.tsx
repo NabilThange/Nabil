@@ -5,7 +5,7 @@ import { Document, Page, pdfjs } from 'react-pdf'
 import './resume-pdf.css'
 
 // Configure PDF.js worker
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`
 
 interface PDFViewerProps {
   scale: number
@@ -14,10 +14,16 @@ interface PDFViewerProps {
 }
 
 export default function PDFViewer({ scale, pageNumber, onLoadSuccess }: PDFViewerProps) {
+  const [error, setError] = useState<string | null>(null)
+
   return (
     <Document
       file="/resume.pdf"
       onLoadSuccess={onLoadSuccess}
+      onLoadError={(error) => {
+        console.error('PDF Load Error:', error)
+        setError(error.message || 'Unknown error')
+      }}
       loading={
         <div className="flex items-center justify-center min-h-[600px]">
           <div className="animate-pulse text-muted-foreground">
@@ -28,6 +34,11 @@ export default function PDFViewer({ scale, pageNumber, onLoadSuccess }: PDFViewe
       error={
         <div className="flex flex-col items-center justify-center min-h-[600px] p-8">
           <p className="text-red-500 mb-4">Failed to load PDF</p>
+          {error && (
+            <p className="text-xs text-muted-foreground mb-4 font-mono bg-muted p-2 rounded">
+              Error: {error}
+            </p>
+          )}
           <p className="text-sm text-muted-foreground mb-4">
             Please download the resume instead
           </p>
