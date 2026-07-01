@@ -1,13 +1,20 @@
 "use client"
 
 import { useState } from 'react'
-import { Document, Page, pdfjs } from 'react-pdf'
+import dynamic from 'next/dynamic'
 import { ChevronLeft, ChevronRight, Download, ZoomIn, ZoomOut } from 'lucide-react'
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
-import 'react-pdf/dist/esm/Page/TextLayer.css'
 
-// Configure PDF.js worker
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`
+// Dynamically import PDFViewer with no SSR
+const PDFViewer = dynamic(() => import('./PDFViewer'), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center min-h-[600px]">
+      <div className="animate-pulse text-muted-foreground">
+        Loading PDF viewer...
+      </div>
+    </div>
+  ),
+})
 
 export default function ResumePage() {
   const [numPages, setNumPages] = useState<number>(0)
@@ -113,40 +120,11 @@ export default function ResumePage() {
         {/* PDF Viewer */}
         <div className="border border-border rounded-lg overflow-hidden shadow-lg bg-white">
           <div className="flex justify-center overflow-x-auto">
-            <Document
-              file="/resume.pdf"
+            <PDFViewer
+              scale={scale}
+              pageNumber={pageNumber}
               onLoadSuccess={onDocumentLoadSuccess}
-              loading={
-                <div className="flex items-center justify-center min-h-[600px]">
-                  <div className="animate-pulse text-muted-foreground">
-                    Loading resume...
-                  </div>
-                </div>
-              }
-              error={
-                <div className="flex flex-col items-center justify-center min-h-[600px] p-8">
-                  <p className="text-red-500 mb-4">Failed to load PDF</p>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Please download the resume instead
-                  </p>
-                  <a
-                    href="/resume.pdf"
-                    download="Nabil_Thange_Resume.pdf"
-                    className="px-4 py-2 bg-foreground text-background rounded hover:bg-foreground/90 transition-colors"
-                  >
-                    Download Resume
-                  </a>
-                </div>
-              }
-            >
-              <Page
-                pageNumber={pageNumber}
-                scale={scale}
-                renderTextLayer={true}
-                renderAnnotationLayer={true}
-                className="mx-auto"
-              />
-            </Document>
+            />
           </div>
         </div>
 

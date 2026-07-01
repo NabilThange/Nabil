@@ -357,9 +357,9 @@ After building multiple AI projects, I've encountered three memory patterns that
 This was my first approach with early prototypes.
 
 **The workflow:**
-```
+\`\`\`
 Input → LLM Call → Output → Forget Everything
-```
+\`\`\`
 
 **Works for:**
 - Simple chatbots
@@ -491,16 +491,16 @@ const vectorStore = await PineconeStore.fromExistingIndex(
 \`\`\`
 
 **When a preference becomes known:**
-```
+\`\`\`
 "User prefers brutalist design with dark themes"
-```
+\`\`\`
 
 Store it as an embedding.
 
 **Later, when generating a new template:**
-```
+\`\`\`
 "What design style does this user prefer?"
-```
+\`\`\`
 
 Similarity search retrieves only relevant memories. No massive prompt required.
 
