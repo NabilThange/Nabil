@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Download } from 'lucide-react'
+import { Download, ExternalLink } from 'lucide-react'
 
 export default function ResumePage() {
   return (
@@ -17,28 +17,63 @@ export default function ResumePage() {
           </p>
         </div>
 
-        {/* Download Button */}
-        <div className="flex justify-center mb-6">
+        {/* Action Buttons */}
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
           <a
             href="/resume.pdf"
             download="Nabil_Thange_Resume.pdf"
-            className="flex items-center gap-2 px-6 py-3 bg-foreground text-background rounded-lg hover:bg-foreground/90 transition-colors shadow-lg"
+            className="flex items-center justify-center gap-2 px-6 py-3 bg-foreground text-background rounded-lg hover:bg-foreground/90 transition-colors shadow-lg"
           >
             <Download className="w-5 h-5" />
             <span className="font-medium">Download PDF</span>
+          </a>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-foreground text-foreground rounded-lg hover:bg-foreground hover:text-background transition-colors"
+          >
+            <ExternalLink className="w-5 h-5" />
+            <span className="font-medium">Open in New Tab</span>
           </a>
         </div>
 
         {/* PDF Viewer - Native Browser Viewer */}
         <div className="border border-border rounded-lg overflow-hidden shadow-lg bg-white">
-          <iframe
-            src="/resume.pdf"
+          <object
+            data="/resume.pdf#view=FitH"
+            type="application/pdf"
             width="100%"
             height="800px"
-            title="Resume PDF"
             className="w-full"
-            style={{ border: "none", minHeight: "800px" }}
-          />
+            style={{ minHeight: "800px" }}
+          >
+            <div className="flex flex-col items-center justify-center h-full p-8 bg-muted/20">
+              <p className="text-lg font-medium mb-2">PDF Preview Not Available</p>
+              <p className="text-muted-foreground mb-6 text-center max-w-md">
+                Your browser doesn't support inline PDF viewing. Please download the PDF or open it in a new tab.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="/resume.pdf"
+                  download="Nabil_Thange_Resume.pdf"
+                  className="flex items-center gap-2 px-6 py-3 bg-foreground text-background rounded-lg hover:bg-foreground/90 transition-colors"
+                >
+                  <Download className="w-5 h-5" />
+                  <span className="font-medium">Download PDF</span>
+                </a>
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-6 py-3 border-2 border-foreground text-foreground rounded-lg hover:bg-foreground hover:text-background transition-colors"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  <span className="font-medium">Open in New Tab</span>
+                </a>
+              </div>
+            </div>
+          </object>
         </div>
 
         {/* Footer Info */}
