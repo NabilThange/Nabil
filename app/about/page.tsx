@@ -334,14 +334,63 @@ export default function About() {
       "https://github.com/NabilThange",
       "https://www.linkedin.com/in/nabil-thange/",
       "https://x.com/THEONLYNABIL",
+      "https://twitter.com/THEONLYNABIL",
       "https://dev.to/nabil_thange",
       "https://devpost.com/thangenabil",
       "https://huggingface.co/Nabil-Oc",
       "https://lablab.ai/u/@NabilT",
       "https://medium.com/@thangenabil",
       "https://www.kaggle.com/nabilthange",
-      "https://stackoverflow.com/users/32129529/nabil-thange?tab=profile",
+      "https://stackoverflow.com/users/32129529/nabil-thange",
+      "https://www.instagram.com/nabil_thange/",
+      "https://www.crunchbase.com/person/nabil-thange",
+      "https://scholar.google.com/citations?user=nabil-thange",
+      "https://www.behance.net/nabilthange",
+      "https://dribbble.com/nabil_thange",
+      "https://hashnode.com/@nabilthange",
+      "https://www.reddit.com/user/nabil_thange",
+      "https://discord.com/users/nabilthange",
+      "https://keybase.io/nabilthange",
     ],
+    "knowsAbout": [
+      "Full-Stack Development",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Python",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "AI Integration",
+      "Web Development",
+      "API Development",
+      "Cloud Computing",
+      "Three.js",
+      "WebGL",
+      "UI/UX Design",
+      "Freelance Development",
+      "Software Engineering"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Saraswati College of Engineering",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kharghar",
+        "addressRegion": "Navi Mumbai",
+        "addressCountry": "IN"
+      }
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Gitskinz",
+      "url": "https://gitskinz.netlify.app"
+    },
+    "award": [
+      "HackHazards 2025 Winner",
+      "ISRO ML Certification",
+      "Microsoft SQL Developer Certification"
+    ]
   }
 
   return (

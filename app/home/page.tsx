@@ -170,23 +170,24 @@ export default function Home() {
             <div className="grid lg:grid-cols-5 gap-12 sm:gap-16 w-full">
               <div className="lg:col-span-3 space-y-6 sm:space-y-8">
                 <div className="space-y-3 sm:space-y-2">
-                  <div className="text-sm text-muted-foreground font-mono tracking-wider">PORTFOLIO / 2025</div>
+                  <div className="text-sm text-muted-foreground font-mono tracking-wider">FULL-STACK DEVELOPER MUMBAI</div>
                   <BlurFade delay={0.25} inView>
                     <h1 className="cursor-target text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
-                      Nabil
+                      Full-Stack Developer in Mumbai
                       <br />
-                      <span className="text-muted-foreground">Thange</span>
+                      <span className="text-muted-foreground text-4xl sm:text-5xl lg:text-6xl">React, Next.js & AI Specialist</span>
                     </h1>
                   </BlurFade>
+                  <p className="sr-only">Nabil Thange - Full-Stack Developer based in Mumbai, India specializing in React, Next.js, and AI-powered web applications</p>
                 </div>
 
                 <BlurFade delay={0.5} inView>
                   <div className="space-y-6 max-w-md">
                     <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-                      Full-stack developer and AI innovator building intelligent digital experiences at the intersection of
-                      <span className="text-foreground"> artificial intelligence</span>,
-                      <span className="text-foreground"> modern web technologies</span>, and
-                      <span className="text-foreground"> human-centered design</span>.
+                      I'm <span className="text-foreground font-medium">Nabil Thange</span>, a full-stack developer based in Mumbai, India, specializing in
+                      <span className="text-foreground"> React</span>,
+                      <span className="text-foreground"> Next.js</span>, and
+                      <span className="text-foreground"> AI-powered web applications</span>. Available for freelance projects worldwide.
                     </p>
 
                     <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
