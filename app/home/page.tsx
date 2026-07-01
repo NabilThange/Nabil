@@ -38,7 +38,7 @@ const projects = [
     description:
       "B2B cybersecurity tool for banking institutions with automated APK/URL vulnerability detection. Won IIT Hyderabad hackathon with ₹60,000+ prize, Special Valor Award, and fully-sponsored campus invitation. Uses AST-based code indexing and GenAI for RBI-compliant reports.",
     tech: ["Python", "FastAPI", "Docker", "PostgreSQL", "MobSF"],
-    image: "/sentient.png"
+    image: "/sentinel.png"
   },
   {
     year: "2025",
@@ -190,10 +190,10 @@ export default function Home() {
                 <div className="space-y-3 sm:space-y-2">
                   <div className="text-sm text-muted-foreground font-mono tracking-wider">FULL-STACK DEVELOPER MUMBAI</div>
                   <BlurFade delay={0.25} inView>
-                    <h1 className="cursor-target text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
-                      Full-Stack Developer in Mumbai
+                    <h1 className="cursor-target text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight">
+                      React • Next.js • AI
                       <br />
-                      <span className="text-muted-foreground text-4xl sm:text-5xl lg:text-6xl">React, Next.js & AI Specialist</span>
+                      <span className="text-muted-foreground text-3xl sm:text-4xl lg:text-5xl">Full-Stack Developer Mumbai</span>
                     </h1>
                   </BlurFade>
                   <p className="sr-only">Nabil Thange - Full-Stack Developer based in Mumbai, India specializing in React, Next.js, and AI-powered web applications</p>
@@ -246,6 +246,32 @@ export default function Home() {
                       <div className="text-muted-foreground">@ FlyRank AI</div>
                       <div className="text-xs text-muted-foreground">Feb 2026 — Present</div>
                     </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="text-sm text-muted-foreground font-mono">RESUME</div>
+                    <Link
+                      href="/resume"
+                      className="cursor-target group relative px-5 py-2.5 text-sm font-medium border-2 border-foreground rounded-lg bg-background text-foreground hover:bg-foreground hover:text-background transition-all duration-300 inline-flex items-center gap-2 w-fit"
+                    >
+                      <svg
+                        className="w-4 h-4 relative z-10"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                      <span className="relative z-10">View Resume</span>
+                      <svg
+                        className="w-4 h-4 relative z-10 transform group-hover:translate-x-1 transition-transform duration-300"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </Link>
                   </div>
 
                   <div className="space-y-4 mt-8">
@@ -342,13 +368,29 @@ export default function Home() {
             className="min-h-screen py-20 sm:py-32 opacity-0"
           >
             <div className="space-y-12 sm:space-y-16">
-              <BlurFade delay={0.25} inView>
-                <h2 className="text-3xl sm:text-4xl font-light">Recent Thoughts</h2>
-              </BlurFade>
+              <div className="flex flex-row items-center justify-between gap-4">
+                <BlurFade delay={0.25} inView>
+                  <h2 className="text-3xl sm:text-4xl font-light">Recent Thoughts</h2>
+                </BlurFade>
+                <Link
+                  href="/blog"
+                  className="cursor-target group relative px-5 py-2.5 text-sm font-medium border-2 border-foreground rounded-lg bg-background text-foreground hover:bg-foreground hover:text-background transition-all duration-300 inline-flex items-center gap-2 whitespace-nowrap"
+                >
+                  <span className="relative z-10">Show More</span>
+                  <svg
+                    className="w-4 h-4 relative z-10 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
 
               <BlurFade delay={0.5} inView>
                 <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
-                  {blogPosts.map((post) => (
+                  {blogPosts.slice(0, 4).map((post) => (
                     <Link key={post.slug} href={`/blog/${post.slug}`} className="block h-full">
                       <article
                         className="cursor-target group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg cursor-pointer h-full flex flex-col"
