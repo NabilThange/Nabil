@@ -32,12 +32,30 @@ const TooltipCard = ({ title, description, image }: { title: string, description
 
 const projects = [
   {
+    year: "2026",
+    role: "Lead Developer & Security Architect",
+    company: "Sentient",
+    description:
+      "B2B cybersecurity tool for banking institutions with automated APK/URL vulnerability detection. Won IIT Hyderabad hackathon with ₹60,000+ prize, Special Valor Award, and fully-sponsored campus invitation. Uses AST-based code indexing and GenAI for RBI-compliant reports.",
+    tech: ["Python", "FastAPI", "Docker", "PostgreSQL", "MobSF"],
+    image: "/sentient.jpg"
+  },
+  {
+    year: "2025",
+    role: "System Architect & Lead Developer",
+    company: "ARIA",
+    description:
+      "Multi-agent autonomous computer control system with 8 specialized agents. Redis-backed shared memory for real-time state sync. Achieved ~20% accuracy improvement over open-source competitors with live VNC desktop automation.",
+    tech: ["Python", "Docker", "Redis", "Multi-Agent Systems", "VNC"],
+    image: "/aria.jpg"
+  },
+  {
     year: "2025",
     role: "Founder & Creator",
     company: "Gitskinz",
     description:
-      "Created a revolutionary platform featuring 60+ brutalist templates that allows developers to build stunning GitHub profiles without writing code. Used by developers globally.",
-    tech: ["Vite", "Netlify", "BOLT", "No-Code"],
+      "Platform with 70+ brutalist GitHub README templates. Organically grew to 2,000+ monthly active users with zero paid marketing. Built with modern web stack and deployed globally.",
+    tech: ["Next.js", "React", "Netlify", "Vite"],
     image: "/gitskinz.jpg"
   },
   {
@@ -45,27 +63,27 @@ const projects = [
     role: "AI Engineer & Full-Stack Developer",
     company: "NbAIl",
     description:
-      "Engineered an AI-powered assistant with real-time voice control and desktop automation. HackHazards 2025 Winner featuring multimodal capabilities powered by Groq.",
+      "HackHazards 2025 Winner. AI-powered assistant with real-time voice control and desktop automation featuring multimodal capabilities powered by Groq for ultra-fast responses.",
     tech: ["Next.js", "Three.js", "Groq", "Voice Recognition"],
     image: "/nbail.jpg"
+  },
+  {
+    year: "2024-Present",
+    role: "Freelance Full-Stack Developer",
+    company: "RafRaf International",
+    description:
+      "Complete production website for international import/export client. End-to-end delivery from Figma design to deployment with AEO/GEO optimization for global discoverability.",
+    tech: ["Next.js", "React", "Figma", "SEO"],
+    image: "/rafraf.jpg"
   },
   {
     year: "2025",
     role: "AI Engineer",
     company: "Style",
     description:
-      "An AI-powered fashion design tool that instantly generates outfit variations. Upload images of a person and garments to visualize endless combinations with a single click.",
+      "AI-powered fashion design tool that instantly generates outfit variations. Upload images of a person and garments to visualize endless combinations with a single click.",
     tech: ["AI", "Fashion Tech", "Generative Design"],
     image: "/style.jpg"
-  },
-  {
-    year: "2025",
-    role: "Full-Stack Developer",
-    company: "Techwiser CMS",
-    description:
-      "Custom content management system built for the Techwiser blog.",
-    tech: ["Next.js", "CMS", "Admin Panel"],
-    image: "/techwiser-cms.jpg"
   },
 ];
 
@@ -224,16 +242,16 @@ export default function Home() {
                   <div className="space-y-4">
                     <div className="text-sm text-muted-foreground font-mono">CURRENTLY</div>
                     <div className="space-y-2">
-                      <div className="text-foreground">Founder & Lead Developer</div>
-                      <div className="text-muted-foreground">@ Gitskinz</div>
-                      <div className="text-xs text-muted-foreground">2025 — Present</div>
+                      <div className="text-foreground">Frontend AI Development Intern</div>
+                      <div className="text-muted-foreground">@ FlyRank AI</div>
+                      <div className="text-xs text-muted-foreground">Feb 2026 — Present</div>
                     </div>
                   </div>
 
                   <div className="space-y-4 mt-8">
                     <div className="text-sm text-muted-foreground font-mono">FOCUS</div>
                     <div className="flex flex-wrap gap-2">
-                      {["Next.js", "React", "Three.js", "AI/ML", "Groq", "LangChain", "Node.js", "Python"].map((skill) => (
+                      {["Next.js", "React", "Three.js", "AI/ML", "Python", "FastAPI", "Multi-Agent Systems", "LangChain", "Docker", "Redis"].map((skill) => (
                         <span
                           key={skill}
                           className="px-3 py-1 text-xs border border-border rounded-full hover:border-muted-foreground/50 transition-colors duration-300"
