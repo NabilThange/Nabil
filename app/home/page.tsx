@@ -38,7 +38,7 @@ const projects = [
     description:
       "B2B cybersecurity tool for banking institutions with automated APK/URL vulnerability detection. Won IIT Hyderabad hackathon with ₹60,000+ prize, Special Valor Award, and fully-sponsored campus invitation. Uses AST-based code indexing and GenAI for RBI-compliant reports.",
     tech: ["Python", "FastAPI", "Docker", "PostgreSQL", "MobSF"],
-    image: "/sentient.jpg"
+    image: "/sentient.png"
   },
   {
     year: "2025",
@@ -47,7 +47,7 @@ const projects = [
     description:
       "Multi-agent autonomous computer control system with 8 specialized agents. Redis-backed shared memory for real-time state sync. Achieved ~20% accuracy improvement over open-source competitors with live VNC desktop automation.",
     tech: ["Python", "Docker", "Redis", "Multi-Agent Systems", "VNC"],
-    image: "/aria.jpg"
+    image: "/aria.png"
   },
   {
     year: "2025",
@@ -74,7 +74,7 @@ const projects = [
     description:
       "Complete production website for international import/export client. End-to-end delivery from Figma design to deployment with AEO/GEO optimization for global discoverability.",
     tech: ["Next.js", "React", "Figma", "SEO"],
-    image: "/rafraf.jpg"
+    image: "/rafraf.png"
   },
   {
     year: "2025",
