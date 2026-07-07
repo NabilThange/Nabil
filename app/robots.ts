@@ -23,10 +23,10 @@ export default function robots(): MetadataRoute.Robots {
         allow: [
           '/',
           '/llms.txt',
+          '/llms-full.txt',
           '/humans.txt',
           '/about.txt',
           '/faq.json',
-          '/breadcrumbs.json',
           '/feed.xml',
           '/.well-known/ai-policy.txt',
         ],

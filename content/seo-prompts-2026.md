@@ -92,6 +92,8 @@ After delivering the report, stop and ask:
 
 If **No** → stop.
 
+Also run that html page on localhost, and give the user a link. tell him to see the report at there.
+
 ## Phase 4 — Gather Deployment Info (only if Yes)
 
 Ask: Is the site currently hosted and publicly accessible?

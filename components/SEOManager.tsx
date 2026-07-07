@@ -167,11 +167,12 @@ export function generateDefaultMetadata(overrides?: Partial<Metadata>): Metadata
       apple: '/apple-touch-icon.png',
     },
     manifest: '/site.webmanifest',
+    alternates: {
+      canonical: siteConfig.url,
+    },
     // Google Search Console verification
     verification: {
-      google: siteConfig.googleVerification !== 'ECVhL-uOKKAR4INSHOcwPxBFg9lULvqSJD2qwx4viTQ'
-        ? siteConfig.googleVerification
-        : undefined,
+      google: siteConfig.googleVerification,
     },
     ...overrides,
   };

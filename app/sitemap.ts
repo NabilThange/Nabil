@@ -65,6 +65,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9, // High priority for AI model discovery
     },
     {
+      url: `${baseUrl}/llms-full.txt`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/about.txt`,
       lastModified: currentDate,
       changeFrequency: 'monthly',

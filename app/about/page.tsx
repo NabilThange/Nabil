@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
+import faqData from "@/public/faq.json"
 
 // SEO Metadata optimized for AEO and GEO
 export const metadata: Metadata = {
@@ -402,6 +404,13 @@ export default function About() {
           __html: JSON.stringify(personSchema).replace(/</g, "\\u003c"),
         }}
       />
+      {/* FAQPage Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqData).replace(/</g, "\\u003c"),
+        }}
+      />
 
       <div className="min-h-screen relative">
         {/* Navigation */}
@@ -796,6 +805,31 @@ export default function About() {
                   Guidelines for AI crawlers and content usage policy
                 </p>
               </Link>
+            </div>
+          </section>
+
+          {/* FAQ Section */}
+          <section className="space-y-8 pt-8 border-t border-border">
+            <div className="space-y-3 sm:space-y-2">
+              <div className="text-sm text-muted-foreground font-mono tracking-wider">FAQ</div>
+              <h2 className="text-3xl sm:text-4xl font-light">Frequently Asked Questions</h2>
+            </div>
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+              Answers to common questions about my background, skills, availability, and projects.
+            </p>
+            <div className="max-w-3xl">
+              <Accordion type="single" collapsible className="w-full">
+                {faqData.mainEntity.map((item: any, index: number) => (
+                  <AccordionItem key={index} value={`item-${index}`} className="border-border">
+                    <AccordionTrigger className="text-foreground text-left text-base font-normal py-4 hover:no-underline hover:text-muted-foreground transition-colors">
+                      {item.name}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-4">
+                      {item.acceptedAnswer.text}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
           </section>
 

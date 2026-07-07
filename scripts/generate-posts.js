@@ -252,6 +252,33 @@ export function getSEOSeriesNavigation(currentSlug: string): { prev: BlogPost | 
 
   fs.writeFileSync(outputFilePath, tsContent, 'utf8');
   console.log('Successfully generated lib/blog-posts.ts from markdown files!');
+
+  // Generate public/llms-full.txt (automated citation database for AI engines)
+  try {
+    const llmsBasePat = path.join(__dirname, '../public/llms.txt');
+    const llmsFullPat = path.join(__dirname, '../public/llms-full.txt');
+    let llmsBase = '';
+    if (fs.existsSync(llmsBasePat)) {
+      llmsBase = fs.readFileSync(llmsBasePat, 'utf8');
+    } else {
+      console.warn('public/llms.txt not found, creating llms-full.txt without base context.');
+    }
+
+    let llmsFullContent = llmsBase ? `${llmsBase}\n\n# FULL BLOG ARTICLES DATABASE\n\n` : '# Nabil Thange Blog database\n\n';
+    
+    // Sort posts oldest to newest or keep series order for logical reading
+    const orderedPosts = [...posts].reverse(); // Oldest first to match chronological learning flow
+    for (const post of orderedPosts) {
+      llmsFullContent += `## ARTICLE: ${post.title}\n`;
+      llmsFullContent += `**Slug:** ${post.slug} | **Date:** ${post.date} | **Tags:** ${post.tags.join(', ')}\n\n`;
+      llmsFullContent += `${post.content}\n\n---\n\n`;
+    }
+
+    fs.writeFileSync(llmsFullPat, llmsFullContent, 'utf8');
+    console.log('Successfully generated public/llms-full.txt!');
+  } catch (error) {
+    console.error('Failed to generate public/llms-full.txt:', error);
+  }
 }
 
 generate();

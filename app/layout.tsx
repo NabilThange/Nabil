@@ -112,19 +112,15 @@ export default function RootLayout({
         {/* AI Discovery Resources - Meta tags and links for AI crawlers */}
         <link rel="ai-policy" href="/.well-known/ai-policy.txt" />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs Information" />
+        <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLMs Full Information" />
         <link rel="alternate" type="text/plain" href="/about.txt" title="About Information" />
         <link rel="alternate" type="text/plain" href="/humans.txt" title="Humans Information" />
 
         <meta name="llms-txt" content="/llms.txt" />
+        <meta name="llms-full-txt" content="/llms-full.txt" />
         <meta name="ai-policy" content="/.well-known/ai-policy.txt" />
         <meta name="about-txt" content="/about.txt" />
         <meta name="humans-txt" content="/humans.txt" />
-
-        {/* Preconnect to critical domains for performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-
-        <meta name="google-site-verification" content="ECVhL-uOKKAR4INSHOcwPxBFg9lULvqSJD2qwx4viTQ" />
 
         {/* Viewport optimization for mobile-first indexing */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
