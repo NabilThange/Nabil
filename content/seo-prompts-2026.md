@@ -22,6 +22,8 @@ This guide contains **50+ production-ready prompts** I use for SEO, AEO (Answer 
 
 ## Content Optimization Prompts
 
+![System Audit Win95 Dashboard](/images/blog/system-audit-win95.png)
+
 ### 🚀 SUPER MEGA PROMPT — Full SEO + AEO + GEO Audit & Optimization
 
 > **Use this prompt to run a complete, automated audit of your entire codebase and get a premium HTML report with a full action roadmap. The most powerful prompt in this guide.**
