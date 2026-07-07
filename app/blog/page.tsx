@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { blogPosts } from "@/lib/blog-posts"
+import { getSortedBlogPosts } from "@/lib/blog-posts"
+import Blog2 from "@/components/ui/blog-2"
 
 // SEO Metadata optimized for AEO and GEO
 export const metadata: Metadata = {
@@ -62,6 +63,8 @@ export const metadata: Metadata = {
 }
 
 export default function BlogPage() {
+  const blogPosts = getSortedBlogPosts()
+  
   // Breadcrumb structured data
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -80,6 +83,25 @@ export default function BlogPage() {
     url: "https://nabil-thange.vercel.app/blog",
     description:
       "Recent thoughts and essays by Nabil Thange on AI, web development, hackathons, and building products.",
+  }
+
+  // Transform blog posts to match Blog2 component structure
+  const blog2Posts = blogPosts.map((post) => ({
+    meta: `${post.date} · ${post.readTime}`,
+    title: post.title,
+    author: {
+      name: "Nabil Thange",
+      role: "Developer & AI Engineer",
+      avatar: "/og-image.png", // You can update this with your actual avatar
+    },
+    href: `/blog/${post.slug}`,
+  }))
+
+  const blog2Header = {
+    heading: "Recent Thoughts",
+    description: "Ideas on AI, product development, hackathons, and learning — from Mumbai, India.",
+    ctaText: "View All Posts",
+    ctaHref: "/blog",
   }
 
   return (
@@ -113,67 +135,14 @@ export default function BlogPage() {
           </Link>
         </nav>
 
-        {/* Main Content */}
-        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-16 py-20 sm:py-32">
-          {/* Header */}
-          <header className="space-y-6 sm:space-y-8">
-            <div className="space-y-3 sm:space-y-2">
-              <div className="text-sm text-muted-foreground font-mono tracking-wider">BLOG</div>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">Recent Thoughts</h1>
-            </div>
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl">
-              Ideas on AI, product development, hackathons, and learning — from Mumbai, India.
-            </p>
-          </header>
-
-          {/* Posts */}
-          <section className="mt-12 sm:mt-16">
-            <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
-              {blogPosts.map((post) => (
-                <article
-                  key={post.slug}
-                  className="group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg"
-                >
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between text-xs text-muted-foreground font-mono">
-                      <span>{post.date}</span>
-                      <span>{post.readTime}</span>
-                    </div>
-
-                    <h3 className="text-lg sm:text-xl font-medium group-hover:text-muted-foreground transition-colors duration-300">
-                      {post.title}
-                    </h3>
-
-                    <p className="text-muted-foreground leading-relaxed">{post.excerpt}</p>
-
-                    <div className="flex items-center justify-between pt-2">
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                        <Link href={`/blog/${post.slug}`} className="inline-flex items-center gap-2">
-                          <span>Read more</span>
-                          <svg
-                            className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                          </svg>
-                        </Link>
-                      </div>
-                      <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
-                        {post.tags.slice(0, 3).map((tag) => (
-                          <span key={tag} className="px-2 py-1 rounded border border-border">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </section>
-        </div>
+        {/* Blog2 Component */}
+        <Blog2
+          header={blog2Header}
+          posts={blog2Posts}
+          renderCardLink={({ href, children }) => (
+            <Link href={href}>{children}</Link>
+          )}
+        />
       </main>
     </>
   )
