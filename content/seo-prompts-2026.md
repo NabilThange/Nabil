@@ -122,8 +122,8 @@ Once implementation is done, walk the user through going live with the changes, 
 3. **About Search Console** — briefly explain what it's for: monitoring indexing status, submitting the sitemap, checking Core Web Vitals/search performance, spotting crawl errors.
 4. **Bing Webmaster Tools** — tell the user to also register the site here (can import directly from Search Console in most cases), and briefly explain what it covers (Bing/Copilot indexing, sitemap submission, similar diagnostics).
 5. **Further resources** — close by pointing the user to:
-   - `http://localhost:3000/blog/seo-prompts-2026#ai-search-optimization-prompts` — more AI-search-optimization prompts
-   - `http://localhost:3000/blog/how-search-works-2026` — a 30-chapter deep-dive course covering SEO, AEO, and GEO
+   - `https://nabil-thange.vercel.app/blog/seo-prompts-2026#ai-search-optimization-prompts` — more AI-search-optimization prompts
+   - `https://nabil-thange.vercel.app/blog/how-search-works-2026` — a 30-chapter deep-dive course covering SEO, AEO, and GEO
 
 Keep this phase conversational and concise — it's a short walkthrough, not another report.
 ```
