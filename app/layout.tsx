@@ -12,12 +12,14 @@ const geist = Geist({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-geist",
+  preload: true,
 })
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-space-grotesk",
+  preload: true,
 })
 
 // Comprehensive SEO metadata for optimal discoverability across search engines and AI platforms
@@ -98,6 +100,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
       <head>
+        {/* Preconnect hints for critical origins - speeds up font and asset loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://nabil-thange.vercel.app" crossOrigin="anonymous" />
+
+        {/* Preload critical fonts - improves LCP */}
+        <link rel="preload" as="font" type="font/woff2" href="/_next/static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2" crossOrigin="anonymous" />
+        <link rel="preload" as="font" type="font/woff2" href="/_next/static/media/0c89a48fa5027cee-s.p.4564287c.woff2" crossOrigin="anonymous" />
+
         {/* Structured Data for SEO/AEO/GEO */}
         <StructuredData data={knowledgeGraph} />
 
@@ -123,11 +134,16 @@ export default function RootLayout({
         <meta name="humans-txt" content="/humans.txt" />
 
         {/* Viewport optimization for mobile-first indexing */}
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Theme color for browser UI */}
         <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
         <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+        {/* Security headers via meta tags (supplements HTTP headers) */}
+        <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+        <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+        <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()" />
       </head>
       <body className="font-sans antialiased">
         <Providers>
@@ -139,7 +155,10 @@ export default function RootLayout({
             sparkCount={8}
             duration={400}
           >
-            {children}
+            {/* Add main landmark for accessibility */}
+            <main id="main-content" tabIndex={-1}>
+              {children}
+            </main>
           </ClickSpark>
         </Providers>
       </body>

@@ -6,12 +6,12 @@ import remarkGfm from "remark-gfm"
 import { getBlogPost, getAllBlogPosts, isSEOSeriesPost, getSEOSeriesNavigation, seriesOrder } from "@/lib/blog-posts"
 import { siteConfig } from "@/components/SEOManager"
 import { SeriesNavigation } from "@/components/blog/SeriesNavigation"
-import { CodeBlock } from "@/components/blog/CodeBlock"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { cn } from "@/lib/utils"
 import { slugify } from "@/utils/slugify"
 import { TableOfContents, type HeadingItem } from "@/components/blog/TableOfContents"
+import { CodeBlockClient } from "@/components/blog/CodeBlockClient"
 
 const COURSE_BASE_URL = "https://nabil-thange.vercel.app"
 const COURSE_URL = `${COURSE_BASE_URL}/blog`
@@ -456,12 +456,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     const isFirst = counter.n === 0
                     counter.n++
                     return (
-                      <CodeBlock
+                      <CodeBlockClient
                         language={props.className?.replace(/language-/, '')}
                         className={isFirst ? "max-h-[500px] overflow-y-auto" : undefined}
                       >
                         {content}
-                      </CodeBlock>
+                      </CodeBlockClient>
                     )
                   }
                 })(),

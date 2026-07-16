@@ -1,12 +1,20 @@
 "use client"
 
-import Dither from "@/components/ui/Dither"
+import dynamic from "next/dynamic"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
+
+// Lazy-load the Dither WebGL background so Three.js / R3F / postprocessing stay out of
+// the initial bundle and load after the page is interactive (major mobile TBT win).
+const Dither = dynamic(() => import("@/components/ui/Dither"), {
+  ssr: false,
+  loading: () => <div className="w-full h-full bg-background" />,
+})
 
 import { blogPosts } from "@/lib/blog-posts"
 
 import { BlurFade } from "@/components/ui/blur-fade"
+import { Stagger, StaggerItem } from "@/components/ui/stagger"
 import { Tooltip } from "@/components/ui/tooltip-card"
 import { useTheme } from "next-themes"
 import StructuredData, { createPortfolioSchema } from "@/components/StructuredData"
@@ -92,10 +100,46 @@ export default function Home() {
   const [mounted, setMounted] = useState(false)
   const [activeSection, setActiveSection] = useState("")
   const sectionsRef = useRef<(HTMLElement | null)[]>([])
+  const bgRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     setMounted(true)
   }, [])
+
+  // Only mount the heavy WebGL Dither background on desktop. On mobile we render a
+  // lightweight static gradient instead, so Three.js/R3F never loads on phones
+  // (this is what was killing mobile TBT/LCP on the landing page).
+  const [isDesktop, setIsDesktop] = useState(false)
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 768px)")
+    const update = () => setIsDesktop(mq.matches)
+    update()
+    mq.addEventListener("change", update)
+    return () => mq.removeEventListener("change", update)
+  }, [])
+
+  // Subtle parallax: drift the fixed WebGL background as you scroll (desktop only,
+  // reduced-motion respected). Mutates the DOM ref directly so we don't re-render
+  // the whole page on every scroll frame. scale(1.12) gives overscan so the small
+  // translate never reveals an edge.
+  useEffect(() => {
+    const bg = bgRef.current
+    if (!bg || !isDesktop) return
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
+    let raf = 0
+    const onScroll = () => {
+      cancelAnimationFrame(raf)
+      raf = requestAnimationFrame(() => {
+        bg.style.transform = `translate3d(0, ${window.scrollY * -0.04}px, 0) scale(1.12)`
+      })
+    }
+    window.addEventListener("scroll", onScroll, { passive: true })
+    onScroll()
+    return () => {
+      window.removeEventListener("scroll", onScroll)
+      cancelAnimationFrame(raf)
+    }
+  }, [isDesktop])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -151,16 +195,24 @@ export default function Home() {
   return (
     <>
       <StructuredData data={portfolioSchema} />
-      <div className="fixed inset-0 z-0">
-        <Dither
-          waveColor={isDark ? [0.15, 0.15, 0.15] : [0.2, 0.2, 0.2]}
-          colorNum={3}
-          waveSpeed={0.01}
-          waveAmplitude={0.6}
-          waveFrequency={0.06}
-          pixelSize={1}
-          enableMouseInteraction={false}
-        />
+      <div
+        ref={bgRef}
+        className="fixed inset-0 z-0 will-change-transform"
+        style={{ transform: "scale(1.12)" }}
+      >
+        {isDesktop ? (
+          <Dither
+            waveColor={isDark ? [0.15, 0.15, 0.15] : [0.2, 0.2, 0.2]}
+            colorNum={3}
+            waveSpeed={0.01}
+            waveAmplitude={0.6}
+            waveFrequency={0.06}
+            pixelSize={1}
+            enableMouseInteraction={false}
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-neutral-900 via-neutral-950 to-black" />
+        )}
       </div>
       <div>
         <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
@@ -218,6 +270,7 @@ export default function Home() {
                         <div className="scale-75 origin-left">
                           <Link
                             href="/about"
+                            aria-label="More about Nabil"
                             className="cursor-target group relative px-5 py-2.5 text-sm font-medium border-2 border-foreground rounded-lg bg-background text-foreground hover:bg-foreground hover:text-background transition-all duration-300 inline-flex items-center gap-2 whitespace-nowrap"
                           >
                             <span className="relative z-10">More</span>
@@ -318,9 +371,9 @@ export default function Home() {
                 </Link>
               </div>
 
-              <BlurFade delay={0.5} inView>
-                <div className="space-y-8 sm:space-y-12">
-                  {projects.map((job, index) => (
+              <Stagger className="space-y-8 sm:space-y-12">
+                {projects.map((job, index) => (
+                  <StaggerItem key={index}>
                     <Tooltip
                       key={index}
                       content={<TooltipCard title={job.company} description={job.description} image={job.image} />}
@@ -355,10 +408,9 @@ export default function Home() {
                         </div>
                       </div>
                     </Tooltip>
-                  ))
-                  }
-                </div>
-              </BlurFade>
+                  </StaggerItem>
+                  ))}
+              </Stagger>
             </div>
           </section>
 
@@ -388,9 +440,9 @@ export default function Home() {
                 </Link>
               </div>
 
-              <BlurFade delay={0.5} inView>
-                <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
-                  {blogPosts.slice(0, 4).map((post) => (
+              <Stagger className="grid gap-6 sm:gap-8 lg:grid-cols-2">
+                {blogPosts.slice(0, 4).map((post) => (
+                  <StaggerItem key={post.slug}>
                     <Link key={post.slug} href={`/blog/${post.slug}`} className="block h-full">
                       <article
                         className="cursor-target group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg cursor-pointer h-full flex flex-col"
@@ -426,9 +478,9 @@ export default function Home() {
                         </div>
                       </article>
                     </Link>
-                  ))}
-                </div>
-              </BlurFade>
+                  </StaggerItem>
+                ))}
+              </Stagger>
             </div>
           </section>
 
@@ -470,7 +522,7 @@ export default function Home() {
                 <BlurFade delay={0.75} inView>
                   <div className="text-sm text-muted-foreground font-mono">ELSEWHERE</div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <Stagger className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
                     {[
                       { name: "GitHub", handle: "@NabilThange", url: "https://github.com/NabilThange" },
                       { name: "LinkedIn", handle: "/in/nabil-thange", url: "https://www.linkedin.com/in/nabil-thange/" },
@@ -484,6 +536,7 @@ export default function Home() {
                       { name: "Kaggle", handle: "nabilthange", url: "https://www.kaggle.com/nabilthange" },
                       { name: "StackOverflow", handle: "nabil-thange", url: "https://stackoverflow.com/users/32129529/nabil-thange?tab=profile" },
                     ].map((social) => (
+                      <StaggerItem key={social.name}>
                       <Link
                         key={social.name}
                         href={social.url}
@@ -496,8 +549,9 @@ export default function Home() {
                           <div className="text-sm text-muted-foreground">{social.handle}</div>
                         </div>
                       </Link>
+                      </StaggerItem>
                     ))}
-                  </div>
+                  </Stagger>
                 </BlurFade>
               </div>
             </div>
@@ -539,7 +593,10 @@ export default function Home() {
                   )}
                 </button>
 
-                <button className="group p-3 rounded-lg border border-border hover:border-muted-foreground/50 transition-all duration-300">
+                <button
+                  aria-label="Chat with Nabil"
+                  className="group p-3 rounded-lg border border-border hover:border-muted-foreground/50 transition-all duration-300"
+                >
                   <svg
                     className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors duration-300"
                     fill="none"

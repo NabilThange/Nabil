@@ -434,7 +434,8 @@ export default function About() {
         {/* Main Content */}
         <main className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-16 py-20 sm:py-32 space-y-20">
           {/* Hero Section */}
-          <header className="space-y-6 sm:space-y-8">
+          <header>
+            <BlurFade inView className="space-y-6 sm:space-y-8">
             <div className="space-y-3 sm:space-y-2">
               <div className="text-sm text-muted-foreground font-mono tracking-wider">ABOUT</div>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
@@ -448,11 +449,13 @@ export default function About() {
               19-year-old full-stack developer and AI engineer based in{" "}
               <span className="text-foreground">Mumbai, India</span>. Building intelligent digital experiences at the intersection of artificial intelligence, modern web technologies, and human-centered design.
             </p>
+            </BlurFade>
           </header>
 
           {/* Who I Am */}
-          <section className="space-y-8">
-            <h2 className="text-3xl sm:text-4xl font-light">Who I Am</h2>
+          <section>
+            <BlurFade inView className="space-y-8">
+              <h2 className="text-3xl sm:text-4xl font-light">Who I Am</h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p className="text-lg sm:text-xl">
                 Born on <span className="text-foreground">October 16, 2006</span>, I'm a{" "}
@@ -478,11 +481,13 @@ export default function About() {
                 <span className="text-foreground">Tanzima Thange</span> have been instrumental in my journey into technology and entrepreneurship.
               </p>
             </div>
+            </BlurFade>
           </section>
 
           {/* Technical Expertise */}
-          <section className="space-y-8">
-            <h2 className="text-3xl sm:text-4xl font-light">Technical Expertise</h2>
+          <section>
+            <BlurFade inView className="space-y-8">
+              <h2 className="text-3xl sm:text-4xl font-light">Technical Expertise</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="space-y-4">
                 <div className="text-sm text-muted-foreground font-mono">PROGRAMMING LANGUAGES</div>
@@ -521,11 +526,13 @@ export default function About() {
                 </p>
               </div>
             </div>
+            </BlurFade>
           </section>
 
           {/* Featured Work */}
-          <section className="space-y-8">
-            <div className="flex items-end justify-between">
+          <section>
+            <BlurFade inView className="space-y-8">
+              <div className="flex items-end justify-between">
               <h2 className="text-3xl sm:text-4xl font-light">Featured Work</h2>
               <Link
                 href="/gallery"
@@ -608,13 +615,15 @@ export default function About() {
                 </div>
               ))}
             </div>
+            </BlurFade>
           </section>
 
           {/* Certifications & Achievements */}
-          <section className="space-y-8">
-            <h2 className="text-3xl sm:text-4xl font-light">Certifications & Achievements</h2>
+          <section>
+            <BlurFade inView className="space-y-8">
+              <h2 className="text-3xl sm:text-4xl font-light">Certifications & Achievements</h2>
             <p className="text-lg text-muted-foreground">
-              <span className="text-foreground font-medium">₹54,000+ in prize winnings</span> from hackathons and competitions. Multiple industry-recognized certifications from prestigious organizations.
+              <span className="text-foreground font-medium"><NumberTicker value={54000} prefix="₹" suffix="+" /> in prize winnings</span> from hackathons and competitions. Multiple industry-recognized certifications from prestigious organizations.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="p-6 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300">
@@ -673,11 +682,13 @@ export default function About() {
                 <p className="text-xs text-muted-foreground/70">No-Code Development Platform Mastery</p>
               </div>
             </div>
+            </BlurFade>
           </section>
 
           {/* Community Involvement */}
-          <section className="space-y-8">
-            <h2 className="text-3xl sm:text-4xl font-light">Community Involvement</h2>
+          <section>
+            <BlurFade inView className="space-y-8">
+              <h2 className="text-3xl sm:text-4xl font-light">Community Involvement</h2>
             <div className="space-y-6">
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
                 Active member of multiple tech communities in Mumbai:
@@ -703,11 +714,13 @@ export default function About() {
                 </div>
               </div>
             </div>
+            </BlurFade>
           </section>
 
           {/* Location & Availability */}
-          <section className="space-y-8">
-            <h2 className="text-3xl sm:text-4xl font-light">Based in Mumbai, India</h2>
+          <section>
+            <BlurFade inView className="space-y-8">
+              <h2 className="text-3xl sm:text-4xl font-light">Based in Mumbai, India</h2>
             <div className="space-y-6">
               <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
                 At just <span className="text-foreground">19 years old</span>, located in <span className="text-foreground">Kharghar, Navi Mumbai</span>, at the heart of India's innovation landscape. Working with developers and clients globally.
@@ -716,11 +729,13 @@ export default function About() {
                 Available for <span className="text-foreground">remote work</span>, <span className="text-foreground">freelance projects</span>, and <span className="text-foreground">full-time opportunities</span> worldwide.
               </p>
             </div>
+            </BlurFade>
           </section>
 
           {/* AI & Developer Resources */}
-          <section className="space-y-8 pt-8 border-t border-border">
-            <h2 className="text-3xl sm:text-4xl font-light">AI & Developer Resources</h2>
+          <section>
+            <BlurFade inView className="space-y-8 pt-8 border-t border-border">
+              <h2 className="text-3xl sm:text-4xl font-light">AI & Developer Resources</h2>
             <p className="text-lg text-muted-foreground">
               Machine-readable information optimized for AI models, search engines, and developers.
             </p>
@@ -806,11 +821,13 @@ export default function About() {
                 </p>
               </Link>
             </div>
+            </BlurFade>
           </section>
 
           {/* FAQ Section */}
-          <section className="space-y-8 pt-8 border-t border-border">
-            <div className="space-y-3 sm:space-y-2">
+          <section>
+            <BlurFade inView className="space-y-8 pt-8 border-t border-border">
+              <div className="space-y-3 sm:space-y-2">
               <div className="text-sm text-muted-foreground font-mono tracking-wider">FAQ</div>
               <h2 className="text-3xl sm:text-4xl font-light">Frequently Asked Questions</h2>
             </div>
@@ -831,18 +848,20 @@ export default function About() {
                 ))}
               </Accordion>
             </div>
+            </BlurFade>
           </section>
 
           {/* Contact CTA */}
-          <section className="space-y-8 pt-8 border-t border-border">
-            <h2 className="text-3xl sm:text-4xl font-light">Let's Connect</h2>
+          <section>
+            <BlurFade inView className="space-y-8 pt-8 border-t border-border">
+              <h2 className="text-3xl sm:text-4xl font-light">Let's Connect</h2>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
               Interested in ambitious projects, collaborations, and conversations about technology, AI, design, and building products that matter.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact"
-                className="group px-6 py-3 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm inline-flex items-center gap-2 justify-center"
+                className="group px-6 py-3 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-sm inline-flex items-center gap-2 justify-center animate-pulse-soft"
               >
                 <span>Get in Touch</span>
                 <svg
@@ -869,6 +888,7 @@ export default function About() {
                 </svg>
               </Link>
             </div>
+            </BlurFade>
           </section>
         </main>
       </div>

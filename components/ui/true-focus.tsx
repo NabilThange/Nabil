@@ -6,7 +6,6 @@ import { motion } from 'motion/react';
 interface TrueFocusProps {
     sentence?: string;
     autoAnimate?: boolean; // Replaces manualMode for better clarity in this use case
-    blurAmount?: number;
     borderColor?: string;
     glowColor?: string;
     animationDuration?: number;
@@ -24,7 +23,6 @@ interface FocusRect {
 const TrueFocus: React.FC<TrueFocusProps> = ({
     sentence = 'True Focus',
     autoAnimate = true,
-    blurAmount = 5,
     borderColor = 'green',
     glowColor = 'rgba(0, 255, 0, 0.6)',
     animationDuration = 2,
@@ -122,11 +120,15 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
                         className="relative text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight cursor-pointer text-white font-['var(--font-space-grotesk)']"
                         style={
                             {
-                                filter: isActive ? `blur(0px)` : `blur(${blurAmount}px)`,
-                                transition: `filter ${animationDuration}s ease`,
+                                // Use opacity + transform for composited animations (GPU accelerated)
+                                // Instead of filter: blur() which forces layout recalculation
+                                opacity: isActive ? 1 : 0.4,
+                                transform: isActive ? 'scale(1)' : 'scale(0.98)',
+                                transition: `opacity ${animationDuration}s ease, transform ${animationDuration}s ease`,
                                 outline: 'none',
                                 userSelect: 'none',
-                                fontFamily: 'var(--font-space-grotesk)'
+                                fontFamily: 'var(--font-space-grotesk)',
+                                willChange: 'opacity, transform'
                             } as React.CSSProperties
                         }
                     >

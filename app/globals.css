@@ -137,4 +137,34 @@
       transform: translateY(0);
     }
   }
+
+  /* Gentle repeating pulse for a page-end CTA (Pulse vocabulary). */
+  .animate-pulse-soft {
+    animation: pulse-soft 2.4s ease-in-out infinite;
+  }
+
+  @keyframes pulse-soft {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.025);
+    }
+  }
+}
+
+/* Reduced motion: keep one-time reveals instant + visible, disable loops.
+   Home sections start at opacity-0 and rely on .animate-fade-in-up (forwards) to
+   become visible — without forcing opacity:1 here they would stay invisible. */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .animate-pulse-soft {
+    animation: none !important;
+  }
 }

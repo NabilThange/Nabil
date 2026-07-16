@@ -2,11 +2,17 @@
 
 import { useRouter } from "next/navigation"
 import TrueFocus from "@/components/ui/true-focus"
-import Prism from "@/components/Prism"
+import dynamic from "next/dynamic"
 import { useSound } from "@/context/SoundContext"
 import { useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
 import { ArrowUpRight } from "lucide-react"
+
+// Lazy-load Prism component only on client - heavy 3D animation
+const Prism = dynamic(() => import("@/components/Prism").then(mod => mod.default), {
+  ssr: false,
+  loading: () => <div className="absolute inset-0 w-full h-full" />,
+})
 
 // Custom hook to detect mobile devices
 function useIsMobile() {
@@ -150,20 +156,20 @@ export default function IntroPage() {
 
       <div
         className={cn(
-          "flex gap-8 transition-opacity duration-1000 z-10",
+          "flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-8 transition-opacity duration-1000 z-10 w-full px-2 sm:px-0",
           showButtons ? "opacity-100" : "opacity-0"
         )}
       >
         <button
           onClick={() => handleEnter(true)}
-          className="cursor-target group relative px-6 py-3 font-semibold text-white border border-transparent hover:border-white transition-all duration-300"
+          className="cursor-target group relative w-full sm:w-auto px-6 py-3 font-semibold text-white border border-transparent hover:border-white transition-all duration-300"
         >
           Enter with sound <ArrowUpRight className="inline-block w-4 h-4 ml-2 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
         </button>
 
         <button
           onClick={() => handleEnter(false)}
-          className="cursor-target px-6 py-3 font-semibold text-gray-300 hover:text-white transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-2 after:left-6 after:w-0 after:h-[1px] after:bg-white hover:after:w-[calc(100%-48px)] after:transition-all after:duration-300"
+          className="cursor-target w-full sm:w-auto px-6 py-3 font-semibold text-gray-300 hover:text-white transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-2 after:left-6 after:w-0 after:h-[1px] after:bg-white hover:after:w-[calc(100%-48px)] after:transition-all after:duration-300"
         >
           Enter without sound
         </button>
